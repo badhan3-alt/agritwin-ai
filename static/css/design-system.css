@@ -1,0 +1,180 @@
+/* AgriTwin field notebook. Canonical tokens and rationale: /DESIGN.md. */
+:root {
+  --muted: #526451;
+  --line: #d9e1d2;
+  --radius: 18px;
+  --shadow: 0 8px 24px #173d3208;
+  --danger: #a3372c;
+}
+@media screen {
+  body {font-size:15px;line-height:1.75}
+  .sidebar {padding:32px 18px 24px;overflow-y:auto;overscroll-behavior:contain}
+  .brand {padding:0 12px;gap:8px}
+  .brand small {max-width:170px;white-space:normal}
+  .nav-label {margin-top:36px;color:#b6c8b7}
+  .nav-link {border-radius:10px;min-height:50px;padding:12px 14px;line-height:1.6}
+  .nav-link.active {box-shadow:inset 3px 0 0 #ffffff70}
+  .farm-navigation {margin-top:8px}
+  .nav-farm-back {display:flex;align-items:center;gap:10px;margin-top:16px;padding:12px;color:#c5d3c5;min-height:44px;font-size:13px}
+  .nav-farm-back svg {width:16px;height:16px;transform:rotate(180deg)}
+  .nav-farm-heading {display:flex;align-items:center;gap:10px;padding:8px 12px;min-height:44px;color:var(--lime);font-size:14px;font-weight:600;overflow-wrap:anywhere}
+  .nav-farm-heading svg {width:18px;height:18px}
+  .farm-tool-links {margin:8px 0 0 20px;padding-left:8px;border-left:1px solid #ffffff25;display:flex;flex-direction:column;gap:6px}
+  .farm-tool-links .nav-link {padding:12px 10px;gap:10px}
+  .sidebar-bottom {padding-top:32px}
+  .sidebar-footnote {color:#b6c8b7}
+  .topbar {min-height:80px;height:auto;padding:16px 40px;background:var(--cream)}
+  .topbar-right {gap:16px}
+  .breadcrumb {font-size:13px;overflow-wrap:anywhere}
+  .earth-tag {font-size:12px}
+  .language-form button {min-height:40px;min-width:64px;font-size:13px;border-radius:10px;background:white}
+  .profile-avatar {width:40px;height:40px;font-size:12px}
+  .main-content {padding:40px;max-width:1440px}
+  .page-heading {align-items:flex-start;margin-bottom:32px;gap:24px}
+  .page-heading h1 {font-size:clamp(34px,3.2vw,48px);line-height:1.15;margin:16px 0}
+  .page-heading p {font-size:15px;max-width:640px;color:var(--muted)}
+  .page-heading>.button {margin-top:24px;flex-shrink:0}
+  .eyebrow {font-size:11px;letter-spacing:.1em;color:var(--muted)}
+  p,.field-help,.map-help,.muted {color:var(--muted)}
+  .button {min-height:46px;border-radius:10px;padding:12px 20px;font-size:14px;white-space:normal;line-height:1.6;transition:background .18s,box-shadow .18s}
+  .button:hover {transform:none;box-shadow:0 3px 10px #173d3214}
+  .button-primary {background:var(--pine);color:white}
+  .button-outline {background:white;border-color:#c5d1bd}
+  .text-link {min-height:32px;font-size:13px;line-height:1.7}
+  button,.icon-button {min-width:24px;min-height:24px}
+  .icon-button {width:44px;height:44px;border-radius:10px}
+  :focus-visible {outline:3px solid #557447;outline-offset:4px}
+  .sidebar :focus-visible,.hero-panel :focus-visible {outline-color:var(--lime)}
+  .hero-panel {grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);border-radius:24px;min-height:430px}
+  .hero-copy {padding:40px}
+  .hero-copy h2 {font-size:clamp(34px,3.2vw,48px);margin:24px 0}
+  .hero-copy p {font-size:15px;max-width:360px;line-height:1.85;color:#d1decd}
+  .hero-copy .badge {font-size:10px;letter-spacing:.06em;line-height:1.8}
+  .hero-copy .button {font-size:14px;padding:12px 20px}
+  .hero-note {font-size:12px;line-height:1.8;color:#c1d2bd}
+  .landscape-coordinate {font-size:11px;letter-spacing:.05em;flex-wrap:wrap}
+  .demo-entry {padding:8px 0;margin:12px 0 0;gap:8px 16px}
+  .demo-entry,.demo-entry .text-link,.demo-entry small {font-size:13px}
+  .feature-strip {gap:24px;margin:32px 0 40px;padding-bottom:32px}
+  .feature-strip article {padding:0;gap:12px;min-width:0}
+  .feature-strip article+article {padding-left:24px}
+  .feature-strip h3 {font-size:16px;line-height:1.6}
+  .feature-strip p {font-size:13px;color:var(--muted)}
+  .feature-icon {border:0;background:none;width:24px;height:32px}
+  .feature-number {font-size:13px;color:var(--muted)}
+  .panel {padding:28px;box-shadow:var(--shadow)}
+  .home-bottom-grid {gap:24px}
+  .section-heading {margin:32px 0 24px}
+  .section-heading h2 {font-size:30px;line-height:1.4}
+  .getting-started>p,.science-note p,.prose p {font-size:15px}
+  .numbered-steps {gap:24px;margin:28px 0}
+  .numbered-steps strong {font-size:14px}
+  .numbered-steps small {font-size:13px;color:var(--muted)}
+  .numbered-steps li>span {width:32px;height:32px;font-size:13px;flex-shrink:0}
+  .science-note {padding:32px;background:#eaf0df}
+  .science-note h3 {font-size:32px;line-height:1.4;max-width:85%}
+  .note-foot {font-size:11px;color:var(--muted);line-height:1.8}
+  .large-asterisk {opacity:.45}
+  .setup-grid {gap:32px;align-items:start}
+  .form-section {padding:28px;margin-bottom:24px}
+  .section-step {margin-bottom:24px}
+  .section-step>span {width:36px;height:36px;font-size:13px}
+  .section-step p,.field-help,.map-help {font-size:13px;line-height:1.8}
+  .form-grid {gap:24px}
+  .form-field label,.form-field legend {font-size:14px;font-weight:600;margin-bottom:8px}
+  .form-field input:not([type=checkbox]):not([type=radio]),.form-field select,.form-field textarea {font-size:15px;min-height:48px;border:1px solid #bac8b3;border-radius:10px;background:#fff;padding:12px;color:var(--ink);width:100%}
+  .form-field input:focus,.form-field select:focus,.form-field textarea:focus {border-color:var(--green);box-shadow:0 0 0 3px #55744714}
+  .form-field [id=id_current_crops] {gap:10px;background:none;border:0;padding:0}
+  #id_current_crops label {display:flex;align-items:center;gap:10px;margin:0;padding:12px;border:1px solid var(--line);border-radius:10px;min-height:48px;font-weight:400;cursor:pointer}
+  #id_current_crops label:has(input:checked) {background:#edf4e2;border-color:#7c9865;color:var(--pine)}
+  input[type=checkbox],input[type=radio] {width:20px;height:20px;accent-color:var(--pine);flex-shrink:0}
+  .has-error input,.has-error select {border-color:var(--danger)!important}
+  .field-error,.errorlist {font-size:14px;color:var(--danger)}
+  .notice {border-radius:12px;padding:20px;font-size:14px;line-height:1.8}
+  .notice p,.notice strong {font-size:14px}
+  #farm-form-errors {border-left:4px solid var(--danger)}
+  #farm-form-errors ul {margin:0;padding-left:20px}
+  #farm-form-errors a {text-decoration:underline;text-underline-offset:3px}
+  [id^=id_] {scroll-margin-top:24px}
+  .form-actions {gap:12px;padding:8px 0 24px;flex-wrap:wrap}
+  .farm-tabs {overflow-x:auto;max-width:100%;scrollbar-width:thin;gap:24px}
+  .farm-tabs a {min-height:44px;display:inline-flex;align-items:center;flex-shrink:0;font-size:14px}
+  .metric-card,.strategy-card,.farm-card {box-shadow:var(--shadow)}
+  .metric-label,.metric-card p {font-size:13px}
+  .strategy-card h3 {line-height:1.5}
+  .page-footer {padding:24px 40px;font-size:12px;line-height:1.8}
+  .page-footer a {min-height:32px;flex-shrink:0}
+  .chat-main {box-shadow:var(--shadow)}
+  .chat-launcher {position:static;display:flex;width:max-content;max-width:calc(100% - 32px);margin:0 40px 24px auto;box-shadow:none}
+  .chat-clear-button {min-height:44px}
+  .main-content>* {min-width:0}
+  .nav-close {display:none}
+  .loading-spinner {display:inline-block;width:18px;height:18px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;flex-shrink:0;animation:pending-spin .8s linear infinite}
+  [aria-busy=true] {cursor:wait}
+  button[aria-busy=true] {opacity:.85}
+  @keyframes pending-spin {to {transform:rotate(360deg)}}
+  html[lang=bn] .page-heading h1 {font-size:clamp(30px,3vw,42px);line-height:1.5}
+  html[lang=bn] .hero-copy h2 {font-size:clamp(30px,3vw,42px);line-height:1.5}
+  html[lang=bn] .brand {font-size:21px}
+}
+@media screen and (max-width:1100px) {
+  .main-content {padding:32px 24px}
+  .topbar,.page-footer {padding-left:24px;padding-right:24px}
+  .hero-copy {padding:32px}
+  .hero-panel {grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+  .feature-strip {gap:16px}
+  .feature-strip article+article {padding-left:16px}
+  .feature-number {display:none}
+  .setup-grid {grid-template-columns:minmax(0,1fr)}
+  .setup-aside {display:none}
+}
+@media screen and (max-width:760px) {
+  .topbar {padding:12px 16px;min-height:72px;gap:8px}
+  .topbar-left,.topbar-right {gap:8px;min-width:0}
+  .breadcrumb {font-size:12px}
+  .breadcrumb>span {margin:0 6px}
+  .earth-tag,.profile-avatar {display:none}
+  .language-form button {min-width:62px;min-height:44px}
+  .main-content {padding:24px 16px 40px}
+  .sidebar {width:min(300px,85vw);padding-top:24px;box-shadow:12px 0 48px #13322930}
+  .sidebar .brand {padding-right:32px}
+  .nav-close {display:grid;place-items:center;position:absolute;right:10px;top:14px;color:var(--lime)}
+  .sidebar-bottom {padding-top:24px}
+  .page-heading {display:flex;flex-direction:column;align-items:stretch;gap:16px;margin-bottom:24px}
+  .page-heading>.button {margin:0;align-self:flex-start}
+  .page-heading h1,html[lang=bn] .page-heading h1 {font-size:32px}
+  .page-heading p {font-size:14px}
+  .hero-panel {display:flex;flex-direction:column;min-height:0;border-radius:18px}
+  .hero-copy {padding:28px 24px}
+  .hero-copy h2,html[lang=bn] .hero-copy h2 {font-size:34px}
+  .hero-copy h2 br {display:revert}
+  .hero-copy p {font-size:15px;max-width:100%}
+  .hero-panel>.farm-landscape {height:230px;min-height:230px}
+  .hero-panel .farm-landscape>svg {height:100%}
+  .hero-note {font-size:12px;align-items:flex-start}
+  .feature-strip {grid-template-columns:1fr;gap:24px;margin-top:28px}
+  .feature-strip article+article {border-left:0;padding:0}
+  .feature-strip p br {display:none}
+  .feature-strip h3 {font-size:16px}
+  .demo-entry {align-items:flex-start}
+  .demo-entry small {margin:0;width:100%}
+  .home-bottom-grid {grid-template-columns:1fr}
+  .section-heading {flex-wrap:wrap;gap:12px}
+  .section-heading h2 {font-size:27px}
+  .panel,.form-section,.science-note {padding:24px 20px}
+  .form-grid {grid-template-columns:minmax(0,1fr);gap:20px}
+  .form-grid .span-2 {grid-column:auto}
+  .form-field input:not([type=checkbox]):not([type=radio]),.form-field select,.form-field textarea {font-size:16px;min-height:48px}
+  .form-actions>.button {flex:1 1 auto}
+  .section-step {gap:12px;align-items:flex-start}
+  .section-step h2,html[lang=bn] .section-step h2 {font-size:23px}
+  .page-footer {padding:24px 16px 88px;flex-direction:column;align-items:flex-start;gap:12px}
+  .button,.text-link,.page-footer a,summary,.chat-clear-button {min-height:44px}
+  .chat-header {padding:16px;flex-wrap:wrap}
+  .chat-clear-form {margin-left:auto}
+  .chat-scroll {padding:20px 16px}
+  .chat-launcher {margin:0 16px 24px auto}
+}
+@media (prefers-reduced-motion:reduce) {
+  .loading-spinner {animation:none;border-style:dotted}
+}

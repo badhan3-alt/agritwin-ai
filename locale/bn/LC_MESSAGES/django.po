@@ -166,7 +166,7 @@ msgid "Adjust priorities ↗"
 msgstr "অগ্রাধিকার বদলান ↗"
 
 msgid "AgriTwin"
-msgstr "AgriTwin"
+msgstr "এগ্রিটুইন"
 
 msgid "AgriTwin AI farm report"
 msgstr "AgriTwin AI খামারের প্রতিবেদন"
@@ -178,7 +178,7 @@ msgid "AgriTwin AI · A better season starts here"
 msgstr "AgriTwin AI · ভালো ফলনের পরিকল্পনা শুরু হোক এখানেই"
 
 msgid "AgriTwin requests monthly climatology from the NASA POWER point API for your coordinates. It uses temperature and precipitation to describe seasonal conditions and screen candidate rotations."
-msgstr "AgriTwin আপনার বেছে নেওয়া অবস্থানের জন্য NASA POWER থেকে দীর্ঘমেয়াদি মাসিক জলবায়ুর তথ্য আনে। তাপমাত্রা ও বৃষ্টিপাত দিয়ে মৌসুমের অবস্থা এবং সম্ভাব্য ফসলের পর্যায়ক্রম যাচাই করা হয়।"
+msgstr "এগ্রিটুইন আপনার বেছে নেওয়া অবস্থানের জন্য NASA POWER থেকে দীর্ঘমেয়াদি মাসিক জলবায়ুর তথ্য আনে। তাপমাত্রা ও বৃষ্টিপাত দিয়ে মৌসুমের অবস্থা এবং সম্ভাব্য ফসলের পর্যায়ক্রম যাচাই করা হয়।"
 
 msgid "All 64 districts, grouped by the 8 divisions. Presets mark approximate district headquarters or city locations; adjust coordinates for your actual field."
 msgstr "৮টি বিভাগের অধীনে দেশের ৬৪টি জেলা রয়েছে। জেলা বেছে নিলে জেলা সদর বা শহরের আনুমানিক অবস্থান দেখাবে। আপনার জমির সঠিক অবস্থান অনুযায়ী স্থানাঙ্ক ঠিক করুন।"
@@ -592,7 +592,7 @@ msgid "From space to soil, one informed step at a time."
 msgstr "মহাকাশের তথ্য থেকে জমির কাজে, প্রতিটি ধাপে বুঝে সিদ্ধান্ত।"
 
 msgid "GROW WITH PERSPECTIVE"
-msgstr "GROW WITH PERSPECTIVE"
+msgstr "দূরদৃষ্টি নিয়ে চাষ করুন"
 
 msgid "Generated"
 msgstr "তৈরির সময়"
@@ -634,7 +634,7 @@ msgid "Honest when data is unavailable"
 msgstr "তথ্য না পেলে তা স্পষ্ট জানাই"
 
 msgid "How AgriTwin helps"
-msgstr "AgriTwin যেভাবে সাহায্য করে"
+msgstr "এগ্রিটুইন যেভাবে সাহায্য করে"
 
 msgid "How we use Earth data"
 msgstr "পৃথিবীর তথ্য কীভাবে কাজে লাগে"
@@ -724,7 +724,7 @@ msgid "Know your land. Plan your future."
 msgstr "জমিকে জানুন। আগামীর পরিকল্পনা করুন।"
 
 msgid "LAB"
-msgstr "LAB"
+msgstr "গবেষণা"
 
 msgid "LET’S FIND OUR WAY BACK"
 msgstr "সঠিক পাতায় ফিরে যাই"
@@ -1952,3 +1952,36 @@ msgstr "আপনার ফসল, মাটি, পানি বা খাম�
 
 msgid "Use my selected farm information in this chat"
 msgstr "এই আলাপে আমার বেছে দেওয়া খামারের তথ্য ব্যবহার করুন"
+
+msgid "Close navigation"
+msgstr "নেভিগেশন বন্ধ করুন"
+
+msgid "Saved farm location"
+msgstr "সংরক্ষিত খামারের অবস্থান"
+
+msgid "Open in OpenStreetMap"
+msgstr "OpenStreetMap-এ দেখুন"
+
+msgid "Map of %(name)s"
+msgstr "%(name)s-এর মানচিত্র"
+
+msgid "Zoom in"
+msgstr "বড় করুন"
+
+msgid "Zoom out"
+msgstr "ছোট করুন"
+
+msgid "Selected farm"
+msgstr "নির্বাচিত খামার"
+
+msgid "Select a farm first"
+msgstr "আগে একটি খামার বেছে নিন"
+
+msgid "Select farm"
+msgstr "খামার নির্বাচন করুন"
+
+msgid "Select a farm to open its climate insights, rotations, scenarios, report, and assistant."
+msgstr "জলবায়ু তথ্য, ফসলের পর্যায়ক্রম, পরিস্থিতি পরীক্ষা, প্রতিবেদন ও কৃষি সহকারী খুলতে একটি খামার নির্বাচন করুন।"
+
+msgid "Select the farm you want to use for this option."
+msgstr "এই অপশনের জন্য যে খামারটি ব্যবহার করতে চান সেটি নির্বাচন করুন।"

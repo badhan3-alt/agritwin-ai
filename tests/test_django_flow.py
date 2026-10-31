@@ -61,6 +61,26 @@ class FarmJourneyTests(TestCase):
         self.assertIn("PRECTOTCORR", request_parameters["parameters"])
         self.assertIn("T2M", request_parameters["parameters"])
 
+    def test_new_farm_defaults_can_be_submitted_unchanged(self):
+        response = self.client.get(reverse("farms:create"))
+        form = response.context["form"]
+        self.assertEqual(form["current_crops"].value(), ["aman_rice", "boro_rice"])
+        self.assertIn('checked', str(form["current_crops"]))
+        data = {name: form[name].value() for name in form.fields}
+        data = {name: value for name, value in data.items() if value is not None}
+        response = self.client.post(reverse("farms:create"), data)
+        self.assertEqual(response.status_code, 302, response.context and response.context["form"].errors)
+        farm = Farm.objects.exclude(pk=self.farm.pk).get()
+        self.assertRedirects(response, reverse("farms:detail", args=[farm.pk]))
+        self.assertEqual(farm.current_crops, ["aman_rice", "boro_rice"])
+
+    def test_invalid_new_farm_shows_linked_error_summary(self):
+        before = Farm.objects.count()
+        response = self.client.post(reverse("farms:create"), self.form_data(current_crops=[]))
+        self.assertEqual(Farm.objects.count(), before)
+        self.assertContains(response, 'href="#id_current_crops"')
+        self.assertContains(response, 'id="farm-form-errors"')
+
     def test_first_crop_changes_saved_baseline_sequence(self):
         self.client.post(reverse("farms:create"), self.form_data(first_crop="boro_rice"))
         farm = Farm.objects.get(name="North field")
@@ -116,6 +136,65 @@ class FarmJourneyTests(TestCase):
                 response = outsider.post(reverse(route, kwargs={"pk": self.farm.pk}), self.form_data())
                 self.assertEqual(response.status_code, 404)
         self.assertTrue(Farm.objects.filter(pk=self.farm.pk).exists())
+
+    def test_farm_cards_map_each_owned_location_with_machine_readable_coordinates(self):
+        another = Farm.objects.create(owner_session=self.farm.owner_session, **{
+            **Farm.example_defaults(), "name": "South field", "latitude": 22.35, "longitude": 91.8,
+        })
+        Farm.objects.create(owner_session="other-owner", **{**Farm.example_defaults(), "name": "Private field", "latitude": 25.1})
+        response = self.client.get(reverse("farms:list"))
+        self.assertContains(response, 'data-farm-map', count=2)
+        self.assertContains(response, 'data-lat="24.3745"')
+        self.assertContains(response, 'data-lat="22.35"')
+        self.assertContains(response, 'data-lon="91.8"')
+        self.assertContains(response, reverse("farms:detail", args=[another.pk]))
+        self.assertContains(response, "openstreetmap.org/?mlat=")
+        self.assertNotContains(response, "Private field")
+        self.assertNotContains(response, 'data-lat="25.1"')
+
+    def test_sidebar_requires_explicit_farm_selection(self):
+        response = self.client.get(reverse("core:home"))
+        self.assertIsNone(response.context["current_farm"])
+        self.assertNotContains(response, 'class="farm-navigation"')
+        for route in ["climate:dashboard", "rotations:explorer", "simulator:workbench", "reports:detail"]:
+            self.assertNotContains(response, f'href="{reverse(route, args=[self.farm.pk])}"')
+
+    def test_selected_farm_has_nested_direct_tool_links(self):
+        second = Farm.objects.create(owner_session=self.farm.owner_session, **{**Farm.example_defaults(), "name": "Second farm"})
+        tools = {"climate": "climate:dashboard", "rotations": "rotations:explorer", "simulator": "simulator:workbench", "reports": "reports:detail", "chatbot": "chatbot:index"}
+        for farm in [self.farm, second]:
+            response = self.client.get(reverse("farms:detail", args=[farm.pk]))
+            self.assertContains(response, 'class="farm-navigation"')
+            self.assertContains(response, 'class="farm-tool-links"')
+            self.assertEqual(response.context["current_farm"], farm)
+            for tool, route in tools.items():
+                target = reverse(route) + f"?farm={farm.pk}" if tool == "chatbot" else reverse(route, args=[farm.pk])
+                self.assertContains(response, f'href="{target}"')
+                self.assertNotContains(response, f'?tool={tool}')
+                page = self.client.get(target)
+                self.assertEqual(page.context["selected_farm" if tool == "chatbot" else "farm"], farm)
+
+    def test_overview_and_farm_list_keep_only_the_top_level_menu_after_selection(self):
+        self.client.get(reverse("farms:detail", args=[self.farm.pk]))
+        for route in ["core:home", "farms:list"]:
+            response = self.client.get(reverse(route))
+            self.assertNotContains(response, 'class="farm-navigation"')
+            self.assertNotContains(response, 'class="farm-tool-links"')
+            self.assertContains(response, f'href="{reverse("core:home")}"')
+            self.assertContains(response, f'href="{reverse("farms:list")}"')
+
+    def test_foreign_or_deleted_selection_cannot_populate_sidebar(self):
+        for pk in [999999, Farm.objects.create(owner_session="foreign", **Farm.example_defaults()).pk]:
+            session = self.client.session
+            session["current_farm_id"] = pk
+            session.save()
+            self.assertIsNone(self.client.get(reverse("core:home")).context["current_farm"])
+
+    def test_deleting_another_farm_preserves_selection(self):
+        other = Farm.objects.create(owner_session=self.farm.owner_session, **Farm.example_defaults())
+        self.client.get(reverse("farms:detail", args=[self.farm.pk]))
+        self.client.post(reverse("farms:delete", args=[other.pk]))
+        self.assertEqual(self.client.session["current_farm_id"], self.farm.pk)
 
     def test_delete_and_refresh_reject_get(self):
         for route in ["farms:delete", "climate:refresh"]:

@@ -53,6 +53,8 @@ District presets provide approximate headquarters/city coordinates; update the c
 
 Bangla translations are maintained in `locale/bn/LC_MESSAGES/django.po`, with a compiled `django.mo` included for normal setup. After editing translations, run `python manage.py compilemessages --locale bn --ignore .venv --ignore frontend`. That maintenance command requires GNU gettext; running the app with the included translations does not. Generated advice is translated at presentation time, so changing languages cannot change the saved NASA evidence or suitability scores.
 
+Farm cards display an interactive OpenStreetMap centered on each saved farm location, with a coordinate marker, zoom controls, and a durable offline fallback. Card maps use the bundled Leaflet 1.9.4 library; its license is included in `static/vendor/leaflet/LICENSE`. These are location maps, not satellite photographs or surveyed field boundaries.
+
 The optional Leaflet map uses OpenStreetMap's canonical HTTPS tile endpoint. Tile images explicitly send an origin-only referrer to meet the [OpenStreetMap tile policy](https://operations.osmfoundation.org/policies/tiles/) while keeping Django's default policy on other resources. If tiles fail or time out, the form restores coordinate-entry guidance and preserves the entered values.
 
 ## First farm walkthrough

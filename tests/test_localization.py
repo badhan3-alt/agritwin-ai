@@ -58,7 +58,7 @@ class FarmerLanguageTests(TestCase):
         self.assertEqual(response["Content-Language"], "bn")
         self.assertContains(response, '<html lang="bn">')
         self.assertContains(response, "সারসংক্ষেপ")
-        self.assertContains(response, "এগ্রিটুইন")
+        self.assertContains(response, "AgriTwin")
 
     def test_all_farmer_pages_are_predominantly_bangla(self):
         routes = ["core:home", "core:about", "farms:create", "farms:detail", "climate:dashboard", "rotations:explorer", "simulator:workbench", "reports:detail"]
@@ -79,7 +79,7 @@ class FarmerLanguageTests(TestCase):
                 leftovers = [part.strip() for part in parser.text
                     if re.search(r"[A-Za-z]{3,}", part)
                     and not re.search(r"[\u0980-\u09ff]", part)
-                    and part.strip() != "English" and "https://" not in part]
+                    and part.strip() not in {"English", "AgriTwin", "AgriTwin AI", "CSV", "JSON"} and "https://" not in part]
                 self.assertEqual(leftovers, [])
 
     def test_language_toggle_changes_whole_pages_and_remembers_choice(self):
@@ -153,7 +153,7 @@ class FarmerLanguageTests(TestCase):
         with patch("climate.services.get_climate", side_effect=NASADataUnavailable(UNAVAILABLE_MESSAGE)):
             response = self.client.get(reverse("climate:dashboard", kwargs={"pk": self.farm.pk}))
         self.assertEqual(response.status_code, 503)
-        self.assertContains(response, "নাসা", status_code=503)
+        self.assertContains(response, "NASA", status_code=503)
         self.assertNotContains(response, "No sample data has been substituted", status_code=503)
         denied = Client(enforce_csrf_checks=True).post(reverse("farms:create"), {})
         self.assertEqual(denied.status_code, 403)

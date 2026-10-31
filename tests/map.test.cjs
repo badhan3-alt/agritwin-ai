@@ -104,7 +104,7 @@ function runMap({leaflet = true, language = 'en', translations = {}} = {}) {
     getLatLng() { return markerLocation; },
     on(event, handler) { markerEvents.set(event, handler); return this; },
   };
-  const window = {setTimeout, clearTimeout};
+  const window = {setTimeout, clearTimeout, addEventListener() {}};
   if (leaflet) window.L = {
     map(canvas, options) { calls.mapCanvas = canvas; calls.mapOptions = options; return map; },
     tileLayer(url, options) { calls.tiles.push({url, options}); return layer; },

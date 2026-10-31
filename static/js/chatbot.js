@@ -62,11 +62,19 @@
   const setBusy = (value) => {
     busy = value;
     send.disabled = value;
+    send.setAttribute("aria-busy", String(value));
+    let spinner = send.querySelector(".loading-spinner");
+    if (value && !spinner) {
+      spinner = document.createElement("i");
+      spinner.className = "loading-spinner";
+      spinner.setAttribute("aria-hidden", "true");
+      send.prepend(spinner);
+    } else if (!value && spinner) spinner.remove();
     input.readOnly = value;
     root.querySelector(".chat-main").setAttribute("aria-busy", value ? "true" : "false");
     loading.hidden = !value;
     const label = send.querySelector("span");
-    if (label) label.textContent = value ? root.dataset.sendingLabel : root.dataset.sendLabel;
+    if (label) label.textContent = root.dataset.sendLabel;
     form.querySelectorAll("select, input[type='checkbox']").forEach((field) => { field.disabled = value; });
     if (clearForm) clearForm.querySelector("button").disabled = value;
   };

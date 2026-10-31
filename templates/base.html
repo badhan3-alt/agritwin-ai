@@ -13,22 +13,35 @@
   <link rel="stylesheet" href="{% static 'css/nasa.css' %}">
   <link rel="stylesheet" href="{% static 'css/bangla.css' %}">
   <link rel="stylesheet" href="{% static 'css/chat-launcher.css' %}">
+  <link rel="stylesheet" href="{% static 'css/design-system.css' %}">
   <script src="{% static 'js/app.js' %}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">{% translate "Skip to content" %}</a>
   {% include 'components/icons.html' %}
   <aside class="sidebar" id="navigation">
-    <a class="brand" href="{% url 'core:home' %}" aria-label="{% translate 'AgriTwin AI home' %}"><span class="brand-symbol"><svg><use href="#icon-leaf"/></svg></span><span lang="en" translate="no">AgriTwin<span class="brand-ai">AI</span><small>GROW WITH PERSPECTIVE</small></span></a>
+    <button type="button" class="nav-close icon-button" aria-label="{% translate 'Close navigation' %}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    <a class="brand" href="{% url 'core:home' %}" aria-label="{% translate 'AgriTwin AI home' %}"><span class="brand-symbol"><svg><use href="#icon-leaf"/></svg></span><span><span lang="en" translate="no">AgriTwin</span><span class="brand-ai"><span lang="en" translate="no">AI</span></span><small>{% translate "GROW WITH PERSPECTIVE" %}</small></span></a>
     <div class="nav-label">{% translate "YOUR FIELD COMPANION" %}</div>
     <nav class="primary-nav" aria-label="{% translate 'Main navigation' %}">
+      {% if not farm and not selected_farm %}
       <a class="nav-link {% if active_page == 'home' %}active{% endif %}" href="{% url 'core:home' %}"><svg><use href="#icon-grid"/></svg>{{ ui.home|default:'Overview' }}</a>
       <a class="nav-link {% if active_page == 'farms' %}active{% endif %}" href="{% url 'farms:list' %}"><svg><use href="#icon-field"/></svg>{{ ui.farms|default:'My farms' }}<span class="nav-count">{{ farms_count|default:0|bn_number }}</span></a>
-      <a class="nav-link {% if active_page == 'climate' %}active{% endif %}" href="{% if current_farm %}{% url 'climate:dashboard' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-sun"/></svg>{{ ui.climate|default:'Climate insights' }}</a>
-      <a class="nav-link {% if active_page == 'rotations' %}active{% endif %}" href="{% if current_farm %}{% url 'rotations:explorer' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-rotate"/></svg>{{ ui.rotations|default:'Rotation explorer' }}</a>
-      <a class="nav-link {% if active_page == 'simulator' %}active{% endif %}" href="{% if current_farm %}{% url 'simulator:workbench' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-sliders"/></svg>{{ ui.simulator|default:'Digital twin' }}<span class="tiny-label">{% translate "LAB" %}</span></a>
-      <a class="nav-link {% if active_page == 'reports' %}active{% endif %}" href="{% if current_farm %}{% url 'reports:detail' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-report"/></svg>{{ ui.reports|default:'Farm report' }}</a>
-      <a class="nav-link {% if active_page == 'chatbot' %}active{% endif %}" href="{% url 'chatbot:index' %}"><svg><use href="#icon-leaf"/></svg>{% translate "Farmer assistant" %}</a>
+      {% else %}
+      {% with navigation_farm=farm|default:selected_farm %}
+      <div class="farm-navigation">
+        <a class="nav-farm-heading" href="{% url 'farms:detail' navigation_farm.pk %}"><svg aria-hidden="true"><use href="#icon-field"/></svg><span>{{ navigation_farm.name|localize_text }}</span></a>
+        <div class="farm-tool-links">
+      <a class="nav-link {% if active_page == 'climate' %}active{% endif %}" href="{% url 'climate:dashboard' navigation_farm.pk %}"><svg><use href="#icon-sun"/></svg>{{ ui.climate|default:'Climate insights' }}</a>
+      <a class="nav-link {% if active_page == 'rotations' %}active{% endif %}" href="{% url 'rotations:explorer' navigation_farm.pk %}"><svg><use href="#icon-rotate"/></svg>{{ ui.rotations|default:'Rotation explorer' }}</a>
+      <a class="nav-link {% if active_page == 'simulator' %}active{% endif %}" href="{% url 'simulator:workbench' navigation_farm.pk %}"><svg><use href="#icon-sliders"/></svg>{{ ui.simulator|default:'Digital twin' }}<span class="tiny-label">{% translate "LAB" %}</span></a>
+      <a class="nav-link {% if active_page == 'reports' %}active{% endif %}" href="{% url 'reports:detail' navigation_farm.pk %}"><svg><use href="#icon-report"/></svg>{{ ui.reports|default:'Farm report' }}</a>
+      <a class="nav-link {% if active_page == 'chatbot' %}active{% endif %}" href="{% url 'chatbot:index' %}?farm={{ navigation_farm.pk }}"><svg><use href="#icon-leaf"/></svg>{% translate "Farmer assistant" %}</a>
+        </div>
+      </div>
+      <a class="nav-farm-back" href="{% url 'farms:list' %}"><svg aria-hidden="true"><use href="#icon-arrow"/></svg>{% translate "My farms" %}</a>
+      {% endwith %}
+      {% endif %}
     </nav>
     <div class="sidebar-bottom"><div class="orbital-mark" aria-hidden="true">✳</div><p>{% translate "Big-picture data." %}<br><strong>{% translate "Down-to-earth decisions." %}</strong></p><a href="{% url 'core:about' %}">{{ ui.about|default:'Our science & approach' }} <span>↗</span></a><div class="sidebar-footnote">{% translate "EARTH DATA, HUMAN JUDGMENT" %}</div></div>
   </aside>

@@ -13,6 +13,8 @@
   const sidebar = document.querySelector('.sidebar');
   if (menu && sidebar) {
     const closeMenu = () => { sidebar.classList.remove('is-open'); menu.setAttribute('aria-expanded', 'false'); };
+    const close = sidebar.querySelector('.nav-close');
+    if (close) close.addEventListener('click', () => { closeMenu(); menu.focus(); });
     menu.addEventListener('click', () => {
       const open = sidebar.classList.toggle('is-open');
       menu.setAttribute('aria-expanded', String(open));
@@ -29,10 +31,34 @@
     });
   });
   document.querySelectorAll('[data-print]').forEach(button => button.addEventListener('click', () => window.print()));
-  document.querySelectorAll('[data-loading-form]').forEach(form => form.addEventListener('submit', () => {
-    const button = form.querySelector('button[type="submit"]');
-    if (button) { button.disabled = true; button.setAttribute('aria-busy', 'true'); button.textContent = text('working', 'Working…'); }
+  const pendingButtons = new Map();
+  document.querySelectorAll('[data-loading-form], [data-farm-form], .demo-entry form').forEach(form => form.addEventListener('submit', event => {
+    if (event.defaultPrevented) return;
+    const button = event.submitter || form.querySelector('button[type="submit"]');
+    if (!button || button.disabled) return;
+    pendingButtons.set(button, button.innerHTML);
+    const spinner = document.createElement('span');
+    spinner.className = 'loading-spinner';
+    spinner.setAttribute('aria-hidden', 'true');
+    const status = document.createElement('span');
+    status.className = 'visually-hidden';
+    status.setAttribute('role', 'status');
+    status.textContent = text('working', 'Working…');
+    button.prepend(spinner);
+    button.append(status);
+    button.disabled = true;
+    button.setAttribute('aria-busy', 'true');
   }));
+  window.addEventListener('pageshow', () => {
+    pendingButtons.forEach((markup, button) => {
+      button.innerHTML = markup;
+      button.disabled = false;
+      button.removeAttribute('aria-busy');
+    });
+    pendingButtons.clear();
+  });
+  const errors = document.getElementById('farm-form-errors');
+  if (errors) errors.focus();
   document.querySelectorAll('[data-range-output]').forEach(output => {
     const input = document.getElementById(output.dataset.rangeOutput);
     if (!input) return;

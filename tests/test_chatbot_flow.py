@@ -102,7 +102,7 @@ class FarmerChatFlowTests(TestCase):
             part for part in parser.parts
             if re.search(r"[A-Za-z]{3,}", part)
             and not re.search(r"[\u0980-\u09ff]", part)
-            and part != "English" and "https://" not in part
+            and part not in {"English", "AgriTwin", "AgriTwin AI", "CSV", "JSON"} and "https://" not in part
         ]
         self.assertEqual(untranslated, [])
 

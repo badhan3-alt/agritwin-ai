@@ -9,9 +9,10 @@ def session_key(request):
         request.session.create()
     return request.session.session_key
 
-def owned_farm(request, pk):
+def owned_farm(request, pk, *, select=True):
     farm = get_object_or_404(Farm, pk=pk, owner_session=request.session.session_key) if request.session.session_key else get_object_or_404(Farm.objects.none(), pk=pk)
-    request.session["current_farm_id"] = farm.pk
+    if select:
+        request.session["current_farm_id"] = farm.pk
     return farm
 
 def ensure_analysis(farm, refresh=False):

@@ -211,7 +211,7 @@ def _context_answer(message, context, lang):
     if climate:
         period = _display(climate["provenance"]["period"], lang)
         lines.append(
-            f"\nসংরক্ষিত NASA POWER জলবায়ু গড়ের সময়কাল: {period}।"
+            f"\nসংরক্ষিত নাসা POWER জলবায়ু গড়ের সময়কাল: {period}।"
             if bn else f"\nStored NASA POWER climatology period: {period}."
         )
         summary = climate["annual_summary"]
@@ -237,12 +237,12 @@ def _context_answer(message, context, lang):
             else:
                 lines.append("সংরক্ষিত তুলনায় কোনো বিন্যাসকে উপযুক্ত পাওয়া যায়নি।" if bn else "No rotation is marked eligible in the stored comparison.")
         lines.append(
-            "এগুলো আঞ্চলিক দীর্ঘমেয়াদি গড়; আজকের আবহাওয়া, ভবিষ্যৎ বৃষ্টির পূর্বাভাস বা জমির সরাসরি পরিমাপ নয়। NASA-এর এই তথ্য দিয়ে মাটির pH বা নাইট্রোজেন-ফসফরাস-পটাশ মাপা যায় না।"
+            "এগুলো আঞ্চলিক দীর্ঘমেয়াদি গড়; আজকের আবহাওয়া, ভবিষ্যৎ বৃষ্টির পূর্বাভাস বা জমির সরাসরি পরিমাপ নয়। নাসা-এর এই তথ্য দিয়ে মাটির pH বা নাইট্রোজেন-ফসফরাস-পটাশ মাপা যায় না।"
             if bn else "These are regional historical averages, not current weather, future rainfall forecasts or direct field measurements. This NASA data cannot measure field pH or nitrogen, phosphorus and potassium."
         )
     else:
         lines.append(
-            "এই খামারের যাচাই করা NASA জলবায়ু তথ্য এখন যুক্ত নেই। খামারের বিশ্লেষণ সম্পন্ন করে আবার তথ্য যুক্ত করুন। কোনো বৃষ্টি বা তাপমাত্রার মান অনুমান করছি না।"
+            "এই খামারের যাচাই করা নাসা জলবায়ু তথ্য এখন যুক্ত নেই। খামারের বিশ্লেষণ সম্পন্ন করে আবার তথ্য যুক্ত করুন। কোনো বৃষ্টি বা তাপমাত্রার মান অনুমান করছি না।"
             if bn else "No verified NASA climate summary is attached for this farm. Complete the farm analysis and attach the context again. No rainfall or temperature values have been assumed."
         )
     source = knowledge_answer("", lang, topic="nasa")["sources"]

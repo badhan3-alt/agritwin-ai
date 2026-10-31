@@ -1,0 +1,11 @@
+.farm-card-map {height:260px;position:relative;background:var(--sand);isolation:isolate;border-bottom:1px solid var(--line)}
+.farm-map-canvas {height:100%;width:100%;z-index:1}
+.farm-map-fallback {position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:24px;text-align:center;color:var(--pine)}
+.farm-map-fallback strong,.farm-map-fallback span {font-size:14px;line-height:1.8}
+.farm-map-fallback[hidden],.farm-map-canvas[hidden] {display:none!important}
+.farm-card-map .leaflet-control-zoom a {width:44px;height:44px;line-height:44px;color:var(--pine)}
+.farm-card-map .leaflet-control-attribution {font:11px/1.5 Arial,sans-serif;background:#fffffff2;padding:2px 6px}
+.farm-card-map .leaflet-control-attribution a {text-decoration:underline}
+.farm-card-map .leaflet-pane svg {width:auto;height:auto;max-width:none}
+.farm-card-map .leaflet-container {font-family:var(--body-font)}
+@media(max-width:760px) {.farm-card-map {height:230px}}

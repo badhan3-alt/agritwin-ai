@@ -57,8 +57,9 @@ def edit(request, pk):
 
 @require_POST
 def delete(request, pk):
-    farm = owned_farm(request, pk)
+    farm = owned_farm(request, pk, select=False)
     farm.delete()
-    request.session.pop("current_farm_id", None)
+    if request.session.get("current_farm_id") == pk:
+        request.session.pop("current_farm_id", None)
     messages.success(request, _("Farm and its saved analysis deleted."))
     return redirect("farms:list")

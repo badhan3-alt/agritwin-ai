@@ -29,6 +29,7 @@ class FarmForm(forms.ModelForm):
         if not self.instance.pk and not self.is_bound:
             self.initial["name"] = _("My farm")
             self.initial["location_name"] = _("Rajshahi, Bangladesh")
+            self.initial["current_crops"] = self.instance.current_crops
         if self.instance.pk and not self.is_bound:
             self.fields["first_crop"].initial = self.instance.current_crops[0]
             matched_region = next((region for region in REGIONS if region["name"] == self.instance.location_name and region["lat"] == self.instance.latitude and region["lon"] == self.instance.longitude), None)

@@ -46,6 +46,7 @@ def _page(request, *, conversation=None, form=None, status=200):
         selected = farms.filter(pk=conversation.farm_id).first()
     elif request.GET.get("farm"):
         selected = get_object_or_404(farms, pk=_positive_pk(request.GET["farm"]))
+        request.session["current_farm_id"] = selected.pk
     else:
         selected = farms.filter(pk=request.session.get("current_farm_id")).first()
     if form is None:
