@@ -1,0 +1,9 @@
+{% load static i18n %}
+<figure class="hero-satellite">
+  <img src="{% static 'images/bangladesh-landsat.jpg' %}" alt="{% translate 'Landsat 9 satellite image of the Bangladesh coast, showing rivers, farmland, and the Sundarbans.' %}" width="1336" height="752" fetchpriority="high" decoding="async">
+  <span class="satellite-label">{% translate "Bangladesh from space" %}</span>
+  <figcaption>
+    <span>{% translate "Landsat 9 · 8 February 2022" %}</span>
+    <a href="https://www.usgs.gov/media/images/landsat-9-image-bangladesh-coast" target="_blank" rel="noopener noreferrer">{% translate "Image credit:" %} USGS · Michelle A. Bouchard <span aria-hidden="true">↗</span></a>
+  </figcaption>
+</figure>

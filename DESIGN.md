@@ -4,7 +4,7 @@ Read this file before changing UI. Audience: Bangladeshi farmers using Bangla or
 
 ## Direction
 
-A field notebook with the clarity of a planning workspace. Preserve the original agricultural landscape artwork and forest-green identity. Use typography, deliberate alignment, and whitespace for hierarchy. Avoid decorative gradients, emoji tiles, and unnecessary animation.
+A field notebook with the clarity of a planning workspace. Preserve the forest-green identity and agricultural artwork where used. The homepage hero uses the credited historical USGS Landsat image in `static/images/bangladesh-landsat.jpg`; retain its source and capture date. Use typography, deliberate alignment, and whitespace for hierarchy. Avoid decorative gradients, emoji tiles, and unnecessary animation.
 
 ## Tokens
 

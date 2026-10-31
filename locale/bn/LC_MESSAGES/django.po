@@ -1985,3 +1985,15 @@ msgstr "জলবায়ু তথ্য, ফসলের পর্যায�
 
 msgid "Select the farm you want to use for this option."
 msgstr "এই অপশনের জন্য যে খামারটি ব্যবহার করতে চান সেটি নির্বাচন করুন।"
+
+msgid "Bangladesh from space"
+msgstr "মহাকাশ থেকে বাংলাদেশ"
+
+msgid "Landsat 9 · 8 February 2022"
+msgstr "Landsat 9 · ৮ ফেব্রুয়ারি ২০২২"
+
+msgid "Landsat 9 satellite image of the Bangladesh coast, showing rivers, farmland, and the Sundarbans."
+msgstr "Landsat 9-এ তোলা বাংলাদেশের উপকূলের উপগ্রহ ছবিতে নদী, কৃষিজমি ও সুন্দরবন।"
+
+msgid "Image credit:"
+msgstr "ছবির সূত্র:"
