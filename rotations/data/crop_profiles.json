@@ -1,0 +1,296 @@
+{
+  "crops": {
+    "aman_rice": {
+      "id": "aman_rice",
+      "name": "T. Aman Rice",
+      "name_bn": "রোপা আমন ধান",
+      "scientific_name": "Oryza sativa (Rainfed/Monsoon)",
+      "category": "cereal",
+      "season": "kharif_2",
+      "planting_months": [
+        7,
+        8
+      ],
+      "harvest_months": [
+        11,
+        12
+      ],
+      "duration_days": 135,
+      "water_demand_mm": 1100,
+      "water_demand_level": "high",
+      "irrigation_need": "supplementary",
+      "drought_tolerance": "moderate",
+      "heat_tolerance": "high",
+      "preferred_soils": [
+        "clay_loam",
+        "silt_loam",
+        "clay"
+      ],
+      "ph_min": 5.0,
+      "ph_max": 7.5,
+      "nitrogen_fixing": false,
+      "soil_health_score": 50,
+      "economic_margin_score": 65,
+      "market_demand_score": 95,
+      "management_complexity": "low",
+      "description": "Illustrative monsoon rice profile. Confirm cultivar duration, planting date, rainfall timing and local harvest window.",
+      "data_status": "Prototype agronomic assumptions; local verification required"
+    },
+    "boro_rice": {
+      "id": "boro_rice",
+      "name": "Boro Rice",
+      "name_bn": "বোরো ধান",
+      "scientific_name": "Oryza sativa (Dry-season Irrigated)",
+      "category": "cereal",
+      "season": "rabi",
+      "planting_months": [
+        1,
+        2
+      ],
+      "harvest_months": [
+        4,
+        5
+      ],
+      "duration_days": 145,
+      "water_demand_mm": 1350,
+      "water_demand_level": "very_high",
+      "irrigation_need": "intensive_groundwater",
+      "drought_tolerance": "low",
+      "heat_tolerance": "moderate",
+      "preferred_soils": [
+        "clay_loam",
+        "clay"
+      ],
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "nitrogen_fixing": false,
+      "soil_health_score": 35,
+      "economic_margin_score": 70,
+      "market_demand_score": 98,
+      "management_complexity": "moderate",
+      "description": "Illustrative irrigated dry-season rice profile. Confirm irrigation capacity and local planting/harvest dates.",
+      "data_status": "Prototype agronomic assumptions; local verification required"
+    },
+    "lentil": {
+      "id": "lentil",
+      "name": "Lentil (Masur)",
+      "name_bn": "মসুর ডাল",
+      "scientific_name": "Lens culinaris",
+      "category": "legume",
+      "season": "rabi",
+      "planting_months": [
+        10,
+        11
+      ],
+      "harvest_months": [
+        2,
+        3
+      ],
+      "duration_days": 105,
+      "water_demand_mm": 250,
+      "water_demand_level": "very_low",
+      "irrigation_need": "minimal_or_rainfed",
+      "drought_tolerance": "high",
+      "heat_tolerance": "moderate",
+      "preferred_soils": [
+        "silt_loam",
+        "loam",
+        "clay_loam"
+      ],
+      "ph_min": 6.0,
+      "ph_max": 7.8,
+      "nitrogen_fixing": true,
+      "soil_health_score": 88,
+      "economic_margin_score": 82,
+      "market_demand_score": 90,
+      "management_complexity": "low",
+      "description": "Illustrative cool-season legume profile. Drainage, timely sowing and local soil conditions determine suitability. Biological nitrogen contribution is not quantified for this field.",
+      "data_status": "Prototype agronomic assumptions; local verification required"
+    },
+    "mustard": {
+      "id": "mustard",
+      "name": "Mustard (Sarisha)",
+      "name_bn": "সরিষা",
+      "scientific_name": "Brassica juncea / napus",
+      "category": "oilseed",
+      "season": "rabi_early",
+      "planting_months": [
+        10,
+        11
+      ],
+      "harvest_months": [
+        1,
+        2
+      ],
+      "duration_days": 75,
+      "water_demand_mm": 220,
+      "water_demand_level": "low",
+      "irrigation_need": "low",
+      "drought_tolerance": "moderate",
+      "heat_tolerance": "moderate",
+      "preferred_soils": [
+        "loam",
+        "sandy_loam",
+        "silt_loam",
+        "clay_loam"
+      ],
+      "ph_min": 5.8,
+      "ph_max": 7.5,
+      "nitrogen_fixing": false,
+      "soil_health_score": 68,
+      "economic_margin_score": 85,
+      "market_demand_score": 92,
+      "management_complexity": "low",
+      "description": "Illustrative short-duration winter oilseed profile. The crop must fit after the actual Aman harvest and before the following crop.",
+      "data_status": "Prototype agronomic assumptions; local verification required"
+    },
+    "mung_bean": {
+      "id": "mung_bean",
+      "name": "Mung Bean (Moog)",
+      "name_bn": "মুগ ডাল",
+      "scientific_name": "Vigna radiata",
+      "category": "legume",
+      "season": "kharif_1",
+      "planting_months": [
+        2,
+        3
+      ],
+      "harvest_months": [
+        4,
+        5
+      ],
+      "duration_days": 65,
+      "water_demand_mm": 280,
+      "water_demand_level": "low",
+      "irrigation_need": "low",
+      "drought_tolerance": "high",
+      "heat_tolerance": "high",
+      "preferred_soils": [
+        "sandy_loam",
+        "loam",
+        "silt_loam"
+      ],
+      "ph_min": 6.2,
+      "ph_max": 7.5,
+      "nitrogen_fixing": true,
+      "soil_health_score": 92,
+      "economic_margin_score": 80,
+      "market_demand_score": 88,
+      "management_complexity": "moderate",
+      "description": "Illustrative summer pulse profile. Verify drainage, growing window and cultivar locally. Biological nitrogen contribution is not quantified for this field.",
+      "data_status": "Prototype agronomic assumptions; local verification required"
+    },
+    "maize": {
+      "id": "maize",
+      "name": "Winter Maize (Bhutta)",
+      "name_bn": "ভুট্টা",
+      "scientific_name": "Zea mays",
+      "category": "cereal",
+      "season": "rabi",
+      "planting_months": [
+        11,
+        12
+      ],
+      "harvest_months": [
+        4,
+        5
+      ],
+      "duration_days": 140,
+      "water_demand_mm": 550,
+      "water_demand_level": "moderate",
+      "irrigation_need": "moderate",
+      "drought_tolerance": "moderate",
+      "heat_tolerance": "moderate",
+      "preferred_soils": [
+        "loam",
+        "sandy_loam",
+        "silt_loam"
+      ],
+      "ph_min": 5.8,
+      "ph_max": 7.2,
+      "nitrogen_fixing": false,
+      "soil_health_score": 58,
+      "economic_margin_score": 84,
+      "market_demand_score": 85,
+      "management_complexity": "moderate",
+      "description": "Illustrative winter cereal profile. Confirm local water requirements, planting window and market access.",
+      "data_status": "Prototype agronomic assumptions; local verification required"
+    },
+    "wheat": {
+      "id": "wheat",
+      "name": "Wheat (Gom)",
+      "name_bn": "গম",
+      "scientific_name": "Triticum aestivum",
+      "category": "cereal",
+      "season": "rabi",
+      "planting_months": [
+        11,
+        12
+      ],
+      "harvest_months": [
+        3,
+        4
+      ],
+      "duration_days": 110,
+      "water_demand_mm": 380,
+      "water_demand_level": "moderate",
+      "irrigation_need": "moderate",
+      "drought_tolerance": "moderate",
+      "heat_tolerance": "low",
+      "preferred_soils": [
+        "clay_loam",
+        "silt_loam",
+        "loam"
+      ],
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "nitrogen_fixing": false,
+      "soil_health_score": 55,
+      "economic_margin_score": 68,
+      "market_demand_score": 85,
+      "management_complexity": "low",
+      "description": "Illustrative cool-season cereal profile. Confirm planting time and local heat exposure around flowering.",
+      "data_status": "Prototype agronomic assumptions; local verification required"
+    }
+  },
+  "prototype_metadata": {
+    "status": "Illustrative prototype assumptions; not field-calibrated",
+    "scope": "Bangladesh crop-calendar screening only",
+    "calendar_reference": "https://www.bamis.gov.bd/en/calendar",
+    "limitations": "Durations and planting/harvest windows vary with region and cultivar. Water-demand, soil-health and economic values are provisional screening assumptions, not NASA-derived crop measurements or validated field estimates.",
+    "source_references": [
+      {
+        "url": "https://www.bamis.gov.bd/en/calendar",
+        "description": "Official Bangladesh crop-weather calendars for local verification; numerical profiles below remain uncalibrated assumptions."
+      },
+      {
+        "url": "https://www.bamis.gov.bd/en/thresholds/1/all/58/",
+        "description": "Official lentil weather guidance: heat-sensitive reproductive stages."
+      },
+      {
+        "url": "https://www.bamis.gov.bd/en/crops/view/57/",
+        "description": "Official mung bean crop guidance: waterlogging risk."
+      },
+      {
+        "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+        "description": "Climate API request documentation; does not validate the agronomic scoring constants."
+      },
+      {
+        "url": "https://power.larc.nasa.gov/docs/methodology/data/sources_meteorology/",
+        "description": "POWER meteorology/reanalysis source documentation."
+      }
+    ],
+    "unvalidated_constants": [
+      "all crop profile water-demand numbers",
+      "duration and planting/harvest window combinations",
+      "soil-health scores",
+      "economic scores and budget penalties",
+      "preferred-soil and pH gating ranges",
+      "65% effective-rain assumption",
+      "irrigation allowances: 100/450/900 mm",
+      "thermal upper-mean thresholds and 8-point penalty slope",
+      "seven-day crop turnaround minimum",
+      "priority weights"
+    ]
+  }
+}

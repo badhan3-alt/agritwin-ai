@@ -1,0 +1,47 @@
+{% load static i18n bangla %}
+<!doctype html>
+<html lang="{{ language|default:'bn' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d32">
+  <meta name="description" content="{% translate 'Understand your land, compare crop rotations, and explore changing climate conditions with AgriTwin AI.' %}">
+  <title>{% block title %}{% translate "AgriTwin AI · A better season starts here" %}{% endblock %}</title>
+  {% block extra_head %}{% endblock %}
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+  <link rel="stylesheet" href="{% static 'css/readability.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nasa.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bangla.css' %}">
+  <link rel="stylesheet" href="{% static 'css/chat-launcher.css' %}">
+  <script src="{% static 'js/app.js' %}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">{% translate "Skip to content" %}</a>
+  {% include 'components/icons.html' %}
+  <aside class="sidebar" id="navigation">
+    <a class="brand" href="{% url 'core:home' %}" aria-label="{% translate 'AgriTwin AI home' %}"><span class="brand-symbol"><svg><use href="#icon-leaf"/></svg></span><span lang="en" translate="no">AgriTwin<span class="brand-ai">AI</span><small>GROW WITH PERSPECTIVE</small></span></a>
+    <div class="nav-label">{% translate "YOUR FIELD COMPANION" %}</div>
+    <nav class="primary-nav" aria-label="{% translate 'Main navigation' %}">
+      <a class="nav-link {% if active_page == 'home' %}active{% endif %}" href="{% url 'core:home' %}"><svg><use href="#icon-grid"/></svg>{{ ui.home|default:'Overview' }}</a>
+      <a class="nav-link {% if active_page == 'farms' %}active{% endif %}" href="{% url 'farms:list' %}"><svg><use href="#icon-field"/></svg>{{ ui.farms|default:'My farms' }}<span class="nav-count">{{ farms_count|default:0|bn_number }}</span></a>
+      <a class="nav-link {% if active_page == 'climate' %}active{% endif %}" href="{% if current_farm %}{% url 'climate:dashboard' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-sun"/></svg>{{ ui.climate|default:'Climate insights' }}</a>
+      <a class="nav-link {% if active_page == 'rotations' %}active{% endif %}" href="{% if current_farm %}{% url 'rotations:explorer' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-rotate"/></svg>{{ ui.rotations|default:'Rotation explorer' }}</a>
+      <a class="nav-link {% if active_page == 'simulator' %}active{% endif %}" href="{% if current_farm %}{% url 'simulator:workbench' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-sliders"/></svg>{{ ui.simulator|default:'Digital twin' }}<span class="tiny-label">{% translate "LAB" %}</span></a>
+      <a class="nav-link {% if active_page == 'reports' %}active{% endif %}" href="{% if current_farm %}{% url 'reports:detail' current_farm.pk %}{% else %}{% url 'farms:list' %}{% endif %}"><svg><use href="#icon-report"/></svg>{{ ui.reports|default:'Farm report' }}</a>
+      <a class="nav-link {% if active_page == 'chatbot' %}active{% endif %}" href="{% url 'chatbot:index' %}"><svg><use href="#icon-leaf"/></svg>{% translate "Farmer assistant" %}</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="orbital-mark" aria-hidden="true">✳</div><p>{% translate "Big-picture data." %}<br><strong>{% translate "Down-to-earth decisions." %}</strong></p><a href="{% url 'core:about' %}">{{ ui.about|default:'Our science & approach' }} <span>↗</span></a><div class="sidebar-footnote">{% translate "EARTH DATA, HUMAN JUDGMENT" %}</div></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="topbar-left"><button class="menu-toggle icon-button" aria-label="{% translate 'Open navigation' %}" aria-controls="navigation" aria-expanded="false"><svg><use href="#icon-menu"/></svg></button><span class="breadcrumb">{% translate "Workspace" %} <span>/</span> {% block breadcrumb %}{% translate "Overview" %}{% endblock %}</span></div><div class="topbar-right"><span class="earth-tag"><span class="status-dot"></span>{% translate "NASA POWER · Earth data" %}</span><form class="language-form" action="{% url 'core:language' %}" method="post">{% csrf_token %}<input type="hidden" name="next" value="{{ request.path }}"><input type="hidden" name="language" value="{% if language == 'bn' %}en{% else %}bn{% endif %}"><button type="submit" title="{% translate 'Switch app language' %}" aria-label="{% if language == 'bn' %}Switch app to English{% else %}বাংলায় দেখুন{% endif %}">{% if language == 'bn' %}English{% else %}বাংলা{% endif %}</button></form><a class="profile-avatar" href="{% url 'farms:list' %}" aria-label="{% translate 'My farm workspace' %}">{% translate "AT" %}</a></div></header>
+    <main id="main-content" class="main-content">
+      {% if messages %}<div class="messages" aria-live="polite">{% for message in messages %}<div class="notice {{ message.tags }}">{{ message|stringformat:"s"|localize_text }}</div>{% endfor %}</div>{% endif %}
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="page-footer"><span><span lang="en" translate="no">AgriTwin AI</span> <span class="footer-dot">·</span> {% translate "Know your land. Plan your future." %}</span><a href="{% url 'core:about' %}">{% translate "Data sources & limitations" %} <svg><use href="#icon-arrow"/></svg></a></footer>
+  </div>
+  {{ js_translations|json_script:'app-translations' }}
+  {% if active_page != 'chatbot' %}<a class="chat-launcher" href="{% url 'chatbot:index' %}" aria-label="{% translate 'Ask the farmer assistant' %}"><svg aria-hidden="true"><use href="#icon-leaf"/></svg><span>{% translate "Ask a question" %}</span></a>{% endif %}
+  {% block scripts %}{% endblock %}
+</body>
+</html>

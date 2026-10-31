@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static i18n bangla %}
+{% block title %}{% translate "Farmer help" %} · {% translate "AgriTwin AI" %}{% endblock %}
+{% block breadcrumb %}{% translate "Farmer help" %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{% static 'css/chatbot.css' %}">{% endblock %}
+
+{% block content %}
+<section class="farmer-chat" data-farmer-chat
+  data-user-label="{% translate 'You' %}"
+  data-assistant-label="{% translate 'Farm companion' %}"
+  data-knowledge-label="{% translate 'Prepared farming information' %}"
+  data-local-label="{% translate 'Local farming assistant' %}"
+  data-ai-label="{% translate 'AI assistance' %}"
+  data-source-label="{% translate 'Learn more' %}"
+  data-sending-label="{% translate 'Preparing a reply…' %}"
+  data-send-label="{% translate 'Send question' %}"
+  data-error-label="{% translate 'The reply could not be loaded. Your question is still here. Please try again.' %}"
+  data-confirm-clear="{% translate 'Delete all messages in this conversation? This cannot be undone.' %}"
+  data-length-label="{% translate 'Please keep your question within 2,000 characters.' %}"
+  data-empty-label="{% translate 'Write a question before sending.' %}"
+  data-new-label="{% translate 'New conversation' %}"
+  data-history-label="{% translate 'Open conversation' %}">
+  <div class="chat-page-heading">
+    <div>
+      <div class="eyebrow"><svg aria-hidden="true"><use href="#icon-leaf"/></svg>{% translate "YOUR FARMING COMPANION" %}</div>
+      <h1>{% translate "A little help for your next step." %}</h1>
+      <p>{% translate "Ask in your own words about crops, soil, water, or your farm plan." %}</p>
+    </div>
+    <a class="button button-outline chat-new-mobile" href="{% url 'chatbot:index' %}"><svg aria-hidden="true"><use href="#icon-plus"/></svg>{% translate "New conversation" %}</a>
+  </div>
+
+  <div class="chat-workspace">
+    <aside class="chat-history" aria-label="{% translate 'Conversation history' %}">
+      <a class="button button-primary chat-new" href="{% url 'chatbot:index' %}"><svg aria-hidden="true"><use href="#icon-plus"/></svg>{% translate "New conversation" %}</a>
+      <details class="chat-history-disclosure" open>
+        <summary><svg aria-hidden="true"><use href="#icon-clock"/></svg>{% translate "Your conversations" %}</summary>
+        <nav class="chat-history-list" data-chat-history aria-label="{% translate 'Your conversations' %}">
+          {% for item in conversations %}
+          <a href="{% url 'chatbot:index' %}?conversation={{ item.pk }}" data-conversation-id="{{ item.pk }}" class="chat-history-item{% if conversation.pk == item.pk %} is-active{% endif %}"{% if conversation.pk == item.pk %} aria-current="page"{% endif %}>
+            <svg aria-hidden="true"><use href="#icon-leaf"/></svg><span>{{ item.title }}</span><svg class="chat-history-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+          {% empty %}
+          <p class="chat-history-empty" data-chat-history-empty>{% translate "Your conversations will appear here." %}</p>
+          {% endfor %}
+        </nav>
+      </details>
+      <div class="chat-history-note"><svg aria-hidden="true"><use href="#icon-info"/></svg><p>{% translate "Your conversations belong to this browser session. Do not share personal or sensitive information." %}</p></div>
+    </aside>
+
+    <div class="chat-main">
+      <header class="chat-header">
+        <span class="chat-avatar chat-avatar-large" aria-hidden="true"><svg><use href="#icon-leaf"/></svg></span>
+        <div class="chat-header-copy"><h2>{% translate "Farm companion" %}</h2><span class="chat-mode"><i aria-hidden="true"></i>{% translate "Local farming assistant" %}</span></div>
+        <form action="{% if conversation %}{% url 'chatbot:clear' conversation.pk %}{% endif %}" method="post" class="chat-clear-form" data-chat-clear{% if not conversation %} hidden{% endif %}>
+          {% csrf_token %}<button class="chat-clear-button" type="submit">{% translate "Clear chat" %}</button>
+        </form>
+      </header>
+
+      <div class="chat-scroll" data-chat-scroll>
+        <div class="chat-welcome" data-chat-welcome{% if chat_messages %} hidden{% endif %}>
+          <span class="chat-welcome-mark" aria-hidden="true"><svg><use href="#icon-leaf"/></svg><span></span><span></span></span>
+          <div class="eyebrow">{% translate "LET’S GROW TOGETHER" %}</div>
+          <h2>{% translate "What would you like to know?" %}</h2>
+          <p>{% translate "Tell me your crop, location, and what you are noticing. A few details help me guide you." %}</p>
+          <p>{% translate "Answers come from this app's farming library. No API key or internet connection is needed to reply." %}</p>
+          <div class="chat-prompts" aria-label="{% translate 'Example questions' %}">
+            <button type="button" data-chat-prompt>{% translate "Why are my rice leaves turning yellow?" %}<svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-chat-prompt>{% translate "When should I water my vegetables?" %}<svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-chat-prompt>{% translate "How can I improve my soil?" %}<svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-chat-prompt>{% translate "What can I plant after rice?" %}<svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-chat-prompt>{% translate "Where can I find the latest weather warning?" %}<svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-chat-prompt>{% translate "How do I use my farm’s NASA information?" %}<svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+          </div>
+        </div>
+
+        <div class="chat-transcript" data-chat-transcript role="log" aria-live="polite" aria-relevant="additions" aria-label="{% translate 'Messages with your farm companion' %}">
+          {% for message in chat_messages %}
+          <article class="chat-message chat-message-{{ message.role }}">
+            <span class="chat-avatar" aria-hidden="true">{% if message.role == 'assistant' %}<svg><use href="#icon-leaf"/></svg>{% else %}<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg>{% endif %}</span>
+            <div class="chat-message-content">
+              <div class="chat-message-meta"><strong>{% if message.role == 'user' %}{% translate "You" %}{% else %}{% translate "Farm companion" %}{% endif %}</strong>{% if message.role == 'assistant' %}<span class="chat-message-mode">{% if message.mode == 'local' %}{% translate "Local farming assistant" %}{% elif message.mode == 'ai' %}{% translate "AI assistance" %}{% else %}{% translate "Prepared farming information" %}{% endif %}</span>{% endif %}</div>
+              <div class="chat-bubble">{{ message.body|linebreaksbr }}</div>
+              {% if message.notice %}<p class="chat-message-notice">{{ message.notice }}</p>{% endif %}
+              {% if message.sources %}<div class="chat-sources"><span>{% translate "Learn more" %}</span>{% for source in message.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }} <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>{% endfor %}</div>{% endif %}
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+        <div class="chat-loading" data-chat-loading role="status" hidden><span aria-hidden="true"><i></i><i></i><i></i></span>{% translate "Preparing a reply…" %}</div>
+      </div>
+
+      <div class="chat-composer-area">
+        <div class="chat-request-error" data-chat-error role="alert" tabindex="-1" hidden></div>
+        <form action="{% url 'chatbot:send' %}" method="post" class="chat-composer" data-chat-form>
+          {% csrf_token %}{{ form.conversation }}
+          {% if form.non_field_errors %}<div class="chat-server-error">{{ form.non_field_errors }}</div>{% endif %}
+          <details class="chat-farm-context"{% if form.include_farm.value or form.farm.errors or form.include_farm.errors %} open{% endif %}>
+            <summary><svg aria-hidden="true"><use href="#icon-pin"/></svg>{% translate "Add context from your farm" %}<span aria-hidden="true">+</span></summary>
+            <div class="chat-farm-fields">
+              <label class="chat-farm-checkbox" for="{{ form.include_farm.id_for_label }}">{{ form.include_farm }}<span>{% translate "Include farm information" %}</span></label>
+              <label class="chat-farm-select-label" for="{{ form.farm.id_for_label }}">{% translate "Choose your farm" %}</label>
+              {{ form.farm }}
+              <p>{% translate "When checked, your selected farm’s crops, soil, and available NASA climate summary help answer your question." %}</p>
+              <p>{% translate "Your selected information is used only inside this app to answer this question." %}</p>
+              <p>{% translate "NASA climate history helps with planning; it is not a forecast for tomorrow." %}</p>
+              {{ form.farm.errors }}{{ form.include_farm.errors }}
+            </div>
+          </details>
+          <label class="chat-question-label" for="{{ form.message.id_for_label }}">{% translate "Your question" %}</label>
+          <div class="chat-input-shell">{{ form.message }}<button class="chat-send button button-primary" type="submit" data-chat-send><span>{% translate "Send question" %}</span><svg aria-hidden="true"><use href="#icon-arrow"/></svg></button></div>
+          {{ form.message.errors }}{{ form.conversation.errors }}
+          <div class="chat-composer-footer"><span>{% translate "Up to 2,000 characters" %}</span><output data-chat-count aria-live="off">0 / 2000</output></div>
+        </form>
+        <p class="chat-disclaimer"><svg aria-hidden="true"><use href="#icon-info"/></svg><span>{% translate "This local assistant uses saved farming guidance, not live weather or prices. For urgent crop problems, speak with a local agriculture officer." %}</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}{{ chat_js|json_script:'chat-translations' }}<script src="{% static 'js/chatbot.js' %}" defer></script>{% endblock %}

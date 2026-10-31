@@ -1,0 +1,3 @@
+/* Keep the Leaflet canvas separate from the durable coordinate-entry fallback. */
+.location-map > .map-canvas { height: 100%; width: 100%; }
+.location-map > .map-fallback { padding: 24px; text-align: center; }

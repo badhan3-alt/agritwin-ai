@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600&display=swap');
+
+/* Local Bengali fonts remain available when the optional webfonts cannot load. */
+html[lang="bn"] {
+  --body-font: 'Noto Sans Bengali', 'Nirmala UI', Vrinda, sans-serif;
+  --heading-font: 'Noto Serif Bengali', 'Nirmala UI', Vrinda, serif;
+}
+html[lang="bn"] body { font-family: var(--body-font); line-height: 1.85; }
+html[lang="bn"] h1,
+html[lang="bn"] h2,
+html[lang="bn"] h3 { line-height: 1.5; letter-spacing: 0; }
+html[lang="bn"] h1 { font-size: clamp(30px, 3vw, 43px); }
+html[lang="bn"] h2 { font-size: 27px; }
+html[lang="bn"] .eyebrow,
+html[lang="bn"] .nav-label,
+html[lang="bn"] .sidebar-footnote,
+html[lang="bn"] .note-foot { letter-spacing: 0; line-height: 1.8; }
+html[lang="bn"] .nav-link { font-size: 14px; min-height: 51px; }
+html[lang="bn"] .button { line-height: 1.7; white-space: normal; }
+html[lang="bn"] .hero-copy h2 { font-size: clamp(31px, 3vw, 43px); line-height: 1.55; }
+html[lang="bn"] .hero-copy p { line-height: 1.95; }
+html[lang="bn"] .brand,
+html[lang="bn"] .brand-ai { font-family: 'DM Sans', Arial, sans-serif; }
+html[lang="bn"] .brand small { font-family: var(--body-font); font-size: 9px; letter-spacing: 0; line-height: 1.8; }
+html[lang="bn"] .topbar { min-height: 78px; height: auto; padding-top: 12px; padding-bottom: 12px; }
+html[lang="bn"] .breadcrumb { line-height: 1.7; }
+html[lang="bn"] .profile-list dd,
+html[lang="bn"] .report-profile dd { line-height: 1.85; }
+html[lang="bn"] .farm-landscape text { font-family: var(--body-font); letter-spacing: 0; }
+html[lang="bn"] .landscape-coordinate { letter-spacing: 0; font-size: 10px; }
+html[lang="bn"] .farm-tabs { gap: 21px; }
+html[lang="bn"] .farm-tabs a { line-height: 1.85; white-space: nowrap; }
+html[lang="bn"] .strategy-card h3 { font-size: 24px; }
+html[lang="bn"] .mini-metrics strong,
+html[lang="bn"] .strategy-points li { line-height: 1.9; }
+html[lang="bn"] .score-row > span { line-height: 1.9; }
+html[lang="bn"] .section-step h2 { font-size: 24px; }
+html[lang="bn"] .form-field label,
+html[lang="bn"] .form-field legend { line-height: 1.85; }
+html[lang="bn"] .form-field select { text-overflow: ellipsis; }
+html[lang="bn"] .metric-label { line-height: 1.8; }
+html[lang="bn"] .metric-card p { line-height: 1.85; }
+html[lang="bn"] .twin-dot { line-height: 1.7; }
+html[lang="bn"] .report-strategy-heading h4 { font-size: 23px; line-height: 1.7; }
+@media screen and (max-width: 760px) {
+  html[lang="bn"] .page-heading h1 { font-size: 31px; }
+  html[lang="bn"] .hero-copy h2 { font-size: 36px; }
+  html[lang="bn"] .main-content p { line-height: 1.95; }
+  html[lang="bn"] .button { font-size: 14px; }
+  html[lang="bn"] .form-field input:not([type="checkbox"]):not([type="radio"]),
+  html[lang="bn"] .form-field select { font-size: 16px; min-height: 49px; }
+  html[lang="bn"] .page-footer { align-items: flex-start; }
+}
+@media print {
+  html[lang="bn"] body { font-family: var(--body-font); line-height: 1.8; }
+  html[lang="bn"] .report-header h2 { font-size: 25pt; }
+  html[lang="bn"] .report-strategy-heading h4 { font-size: 16pt; }
+  html[lang="bn"] .report-source p { overflow-wrap: anywhere; }
+}
+
+html[lang="bn"] .brand,html[lang="bn"] .brand-ai{font-family:var(--body-font);letter-spacing:0}
+html[lang="bn"] .brand{font-size:22px}
+html[lang="bn"] .profile-avatar{font-family:var(--body-font);width:38px;height:38px}

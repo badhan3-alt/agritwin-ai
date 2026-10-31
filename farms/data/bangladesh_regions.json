@@ -1,0 +1,652 @@
+{
+  "metadata": {
+    "description": "Approximate district headquarters/city reference points, not field locations or district boundary centroids.",
+    "administrative_reference": "https://bangladesh.gov.bd/views/district-list/District-List/",
+    "coordinate_source": "https://github.com/nuhil/bangladesh-geocode",
+    "license": "MIT; see BANGLADESH_GEOCODE_LICENSE.txt",
+    "retrieved_on": "2026-10-31",
+    "modifications": "Current English spellings normalized and coordinates rounded to four decimals. Five existing city reference points retained for backward compatibility: Rajshahi, Rangpur, Jashore, Mymensingh, Barishal."
+  },
+  "regions": [
+    {
+      "id": "barguna",
+      "district": "Barguna",
+      "district_bn": "বরগুনা",
+      "division": "Barishal",
+      "division_bn": "বরিশাল",
+      "name": "Barguna, Barishal Division, Bangladesh",
+      "lat": 22.1592,
+      "lon": 90.1256
+    },
+    {
+      "id": "barishal",
+      "district": "Barishal",
+      "district_bn": "বরিশাল",
+      "division": "Barishal",
+      "division_bn": "বরিশাল",
+      "name": "Barishal, Barishal Division, Bangladesh",
+      "lat": 22.701,
+      "lon": 90.3535
+    },
+    {
+      "id": "bhola",
+      "district": "Bhola",
+      "district_bn": "ভোলা",
+      "division": "Barishal",
+      "division_bn": "বরিশাল",
+      "name": "Bhola, Barishal Division, Bangladesh",
+      "lat": 22.6859,
+      "lon": 90.6482
+    },
+    {
+      "id": "jhalokathi",
+      "district": "Jhalokathi",
+      "district_bn": "ঝালকাঠি",
+      "division": "Barishal",
+      "division_bn": "বরিশাল",
+      "name": "Jhalokathi, Barishal Division, Bangladesh",
+      "lat": 22.6423,
+      "lon": 90.2004
+    },
+    {
+      "id": "patuakhali",
+      "district": "Patuakhali",
+      "district_bn": "পটুয়াখালী",
+      "division": "Barishal",
+      "division_bn": "বরিশাল",
+      "name": "Patuakhali, Barishal Division, Bangladesh",
+      "lat": 22.3596,
+      "lon": 90.3299
+    },
+    {
+      "id": "pirojpur",
+      "district": "Pirojpur",
+      "district_bn": "পিরোজপুর",
+      "division": "Barishal",
+      "division_bn": "বরিশাল",
+      "name": "Pirojpur, Barishal Division, Bangladesh",
+      "lat": 22.5781,
+      "lon": 89.9984
+    },
+    {
+      "id": "bandarban",
+      "district": "Bandarban",
+      "district_bn": "বান্দরবান",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Bandarban, Chattogram Division, Bangladesh",
+      "lat": 22.1953,
+      "lon": 92.2184
+    },
+    {
+      "id": "brahmanbaria",
+      "district": "Brahmanbaria",
+      "district_bn": "ব্রাহ্মণবাড়িয়া",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Brahmanbaria, Chattogram Division, Bangladesh",
+      "lat": 23.9571,
+      "lon": 91.1119
+    },
+    {
+      "id": "chandpur",
+      "district": "Chandpur",
+      "district_bn": "চাঁদপুর",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Chandpur, Chattogram Division, Bangladesh",
+      "lat": 23.2333,
+      "lon": 90.6713
+    },
+    {
+      "id": "chattogram",
+      "district": "Chattogram",
+      "district_bn": "চট্টগ্রাম",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Chattogram, Chattogram Division, Bangladesh",
+      "lat": 22.3351,
+      "lon": 91.8341
+    },
+    {
+      "id": "coxs_bazar",
+      "district": "Cox's Bazar",
+      "district_bn": "কক্সবাজার",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Cox's Bazar, Chattogram Division, Bangladesh",
+      "lat": 21.4432,
+      "lon": 91.9738
+    },
+    {
+      "id": "cumilla",
+      "district": "Cumilla",
+      "district_bn": "কুমিল্লা",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Cumilla, Chattogram Division, Bangladesh",
+      "lat": 23.4683,
+      "lon": 91.1788
+    },
+    {
+      "id": "feni",
+      "district": "Feni",
+      "district_bn": "ফেনী",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Feni, Chattogram Division, Bangladesh",
+      "lat": 23.0232,
+      "lon": 91.3841
+    },
+    {
+      "id": "khagrachhari",
+      "district": "Khagrachhari",
+      "district_bn": "খাগড়াছড়ি",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Khagrachhari, Chattogram Division, Bangladesh",
+      "lat": 23.1193,
+      "lon": 91.9847
+    },
+    {
+      "id": "lakshmipur",
+      "district": "Lakshmipur",
+      "district_bn": "লক্ষ্মীপুর",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Lakshmipur, Chattogram Division, Bangladesh",
+      "lat": 22.9425,
+      "lon": 90.8412
+    },
+    {
+      "id": "noakhali",
+      "district": "Noakhali",
+      "district_bn": "নোয়াখালী",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Noakhali, Chattogram Division, Bangladesh",
+      "lat": 22.8696,
+      "lon": 91.0994
+    },
+    {
+      "id": "rangamati",
+      "district": "Rangamati",
+      "district_bn": "রাঙ্গামাটি",
+      "division": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name": "Rangamati, Chattogram Division, Bangladesh",
+      "lat": 22.6556,
+      "lon": 92.1754
+    },
+    {
+      "id": "dhaka",
+      "district": "Dhaka",
+      "district_bn": "ঢাকা",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Dhaka, Dhaka Division, Bangladesh",
+      "lat": 23.7115,
+      "lon": 90.4111
+    },
+    {
+      "id": "faridpur",
+      "district": "Faridpur",
+      "district_bn": "ফরিদপুর",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Faridpur, Dhaka Division, Bangladesh",
+      "lat": 23.6071,
+      "lon": 89.8429
+    },
+    {
+      "id": "gazipur",
+      "district": "Gazipur",
+      "district_bn": "গাজীপুর",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Gazipur, Dhaka Division, Bangladesh",
+      "lat": 24.0023,
+      "lon": 90.4264
+    },
+    {
+      "id": "gopalganj",
+      "district": "Gopalganj",
+      "district_bn": "গোপালগঞ্জ",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Gopalganj, Dhaka Division, Bangladesh",
+      "lat": 23.0051,
+      "lon": 89.8266
+    },
+    {
+      "id": "kishoreganj",
+      "district": "Kishoreganj",
+      "district_bn": "কিশোরগঞ্জ",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Kishoreganj, Dhaka Division, Bangladesh",
+      "lat": 24.4449,
+      "lon": 90.7766
+    },
+    {
+      "id": "madaripur",
+      "district": "Madaripur",
+      "district_bn": "মাদারীপুর",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Madaripur, Dhaka Division, Bangladesh",
+      "lat": 23.1641,
+      "lon": 90.1897
+    },
+    {
+      "id": "manikganj",
+      "district": "Manikganj",
+      "district_bn": "মানিকগঞ্জ",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Manikganj, Dhaka Division, Bangladesh",
+      "lat": 23.8602,
+      "lon": 90.0018
+    },
+    {
+      "id": "munshiganj",
+      "district": "Munshiganj",
+      "district_bn": "মুন্সিগঞ্জ",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Munshiganj, Dhaka Division, Bangladesh",
+      "lat": 23.5436,
+      "lon": 90.5354
+    },
+    {
+      "id": "narayanganj",
+      "district": "Narayanganj",
+      "district_bn": "নারায়ণগঞ্জ",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Narayanganj, Dhaka Division, Bangladesh",
+      "lat": 23.6337,
+      "lon": 90.4965
+    },
+    {
+      "id": "narsingdi",
+      "district": "Narsingdi",
+      "district_bn": "নরসিংদী",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Narsingdi, Dhaka Division, Bangladesh",
+      "lat": 23.9322,
+      "lon": 90.7154
+    },
+    {
+      "id": "rajbari",
+      "district": "Rajbari",
+      "district_bn": "রাজবাড়ী",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Rajbari, Dhaka Division, Bangladesh",
+      "lat": 23.7574,
+      "lon": 89.6445
+    },
+    {
+      "id": "shariatpur",
+      "district": "Shariatpur",
+      "district_bn": "শরীয়তপুর",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Shariatpur, Dhaka Division, Bangladesh",
+      "lat": 23.206,
+      "lon": 90.3478
+    },
+    {
+      "id": "tangail",
+      "district": "Tangail",
+      "district_bn": "টাঙ্গাইল",
+      "division": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name": "Tangail, Dhaka Division, Bangladesh",
+      "lat": 24.2641,
+      "lon": 89.918
+    },
+    {
+      "id": "bagerhat",
+      "district": "Bagerhat",
+      "district_bn": "বাগেরহাট",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Bagerhat, Khulna Division, Bangladesh",
+      "lat": 22.6516,
+      "lon": 89.7859
+    },
+    {
+      "id": "chuadanga",
+      "district": "Chuadanga",
+      "district_bn": "চুয়াডাঙ্গা",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Chuadanga, Khulna Division, Bangladesh",
+      "lat": 23.6402,
+      "lon": 88.8418
+    },
+    {
+      "id": "jashore",
+      "district": "Jashore",
+      "district_bn": "যশোর",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Jashore, Khulna Division, Bangladesh",
+      "lat": 23.1664,
+      "lon": 89.2081
+    },
+    {
+      "id": "jhenaidah",
+      "district": "Jhenaidah",
+      "district_bn": "ঝিনাইদহ",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Jhenaidah, Khulna Division, Bangladesh",
+      "lat": 23.5448,
+      "lon": 89.1539
+    },
+    {
+      "id": "khulna",
+      "district": "Khulna",
+      "district_bn": "খুলনা",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Khulna, Khulna Division, Bangladesh",
+      "lat": 22.8158,
+      "lon": 89.5687
+    },
+    {
+      "id": "kushtia",
+      "district": "Kushtia",
+      "district_bn": "কুষ্টিয়া",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Kushtia, Khulna Division, Bangladesh",
+      "lat": 23.9013,
+      "lon": 89.1205
+    },
+    {
+      "id": "magura",
+      "district": "Magura",
+      "district_bn": "মাগুরা",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Magura, Khulna Division, Bangladesh",
+      "lat": 23.4873,
+      "lon": 89.42
+    },
+    {
+      "id": "meherpur",
+      "district": "Meherpur",
+      "district_bn": "মেহেরপুর",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Meherpur, Khulna Division, Bangladesh",
+      "lat": 23.7622,
+      "lon": 88.6318
+    },
+    {
+      "id": "narail",
+      "district": "Narail",
+      "district_bn": "নড়াইল",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Narail, Khulna Division, Bangladesh",
+      "lat": 23.1725,
+      "lon": 89.5127
+    },
+    {
+      "id": "satkhira",
+      "district": "Satkhira",
+      "district_bn": "সাতক্ষীরা",
+      "division": "Khulna",
+      "division_bn": "খুলনা",
+      "name": "Satkhira, Khulna Division, Bangladesh",
+      "lat": 22.7181,
+      "lon": 89.0687
+    },
+    {
+      "id": "jamalpur",
+      "district": "Jamalpur",
+      "district_bn": "জামালপুর",
+      "division": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name": "Jamalpur, Mymensingh Division, Bangladesh",
+      "lat": 24.9375,
+      "lon": 89.9378
+    },
+    {
+      "id": "mymensingh",
+      "district": "Mymensingh",
+      "district_bn": "ময়মনসিংহ",
+      "division": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name": "Mymensingh, Mymensingh Division, Bangladesh",
+      "lat": 24.7471,
+      "lon": 90.4203
+    },
+    {
+      "id": "netrokona",
+      "district": "Netrokona",
+      "district_bn": "নেত্রকোণা",
+      "division": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name": "Netrokona, Mymensingh Division, Bangladesh",
+      "lat": 24.871,
+      "lon": 90.7279
+    },
+    {
+      "id": "sherpur",
+      "district": "Sherpur",
+      "district_bn": "শেরপুর",
+      "division": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name": "Sherpur, Mymensingh Division, Bangladesh",
+      "lat": 25.0205,
+      "lon": 90.0153
+    },
+    {
+      "id": "bogura",
+      "district": "Bogura",
+      "district_bn": "বগুড়া",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Bogura, Rajshahi Division, Bangladesh",
+      "lat": 24.8465,
+      "lon": 89.3778
+    },
+    {
+      "id": "chapainawabganj",
+      "district": "Chapainawabganj",
+      "district_bn": "চাঁপাইনবাবগঞ্জ",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Chapainawabganj, Rajshahi Division, Bangladesh",
+      "lat": 24.5965,
+      "lon": 88.2775
+    },
+    {
+      "id": "joypurhat",
+      "district": "Joypurhat",
+      "district_bn": "জয়পুরহাট",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Joypurhat, Rajshahi Division, Bangladesh",
+      "lat": 25.0964,
+      "lon": 89.04
+    },
+    {
+      "id": "naogaon",
+      "district": "Naogaon",
+      "district_bn": "নওগাঁ",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Naogaon, Rajshahi Division, Bangladesh",
+      "lat": 24.8326,
+      "lon": 88.9249
+    },
+    {
+      "id": "natore",
+      "district": "Natore",
+      "district_bn": "নাটোর",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Natore, Rajshahi Division, Bangladesh",
+      "lat": 24.4206,
+      "lon": 89.0003
+    },
+    {
+      "id": "pabna",
+      "district": "Pabna",
+      "district_bn": "পাবনা",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Pabna, Rajshahi Division, Bangladesh",
+      "lat": 23.9985,
+      "lon": 89.2336
+    },
+    {
+      "id": "rajshahi",
+      "district": "Rajshahi",
+      "district_bn": "রাজশাহী",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Rajshahi, Rajshahi Division, Bangladesh",
+      "lat": 24.3745,
+      "lon": 88.6042
+    },
+    {
+      "id": "sirajganj",
+      "district": "Sirajganj",
+      "district_bn": "সিরাজগঞ্জ",
+      "division": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name": "Sirajganj, Rajshahi Division, Bangladesh",
+      "lat": 24.4534,
+      "lon": 89.7007
+    },
+    {
+      "id": "dinajpur",
+      "district": "Dinajpur",
+      "district_bn": "দিনাজপুর",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Dinajpur, Rangpur Division, Bangladesh",
+      "lat": 25.6217,
+      "lon": 88.6355
+    },
+    {
+      "id": "gaibandha",
+      "district": "Gaibandha",
+      "district_bn": "গাইবান্ধা",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Gaibandha, Rangpur Division, Bangladesh",
+      "lat": 25.3288,
+      "lon": 89.5281
+    },
+    {
+      "id": "kurigram",
+      "district": "Kurigram",
+      "district_bn": "কুড়িগ্রাম",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Kurigram, Rangpur Division, Bangladesh",
+      "lat": 25.8054,
+      "lon": 89.6362
+    },
+    {
+      "id": "lalmonirhat",
+      "district": "Lalmonirhat",
+      "district_bn": "লালমনিরহাট",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Lalmonirhat, Rangpur Division, Bangladesh",
+      "lat": 25.9165,
+      "lon": 89.4532
+    },
+    {
+      "id": "nilphamari",
+      "district": "Nilphamari",
+      "district_bn": "নীলফামারী",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Nilphamari, Rangpur Division, Bangladesh",
+      "lat": 25.9318,
+      "lon": 88.856
+    },
+    {
+      "id": "panchagarh",
+      "district": "Panchagarh",
+      "district_bn": "পঞ্চগড়",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Panchagarh, Rangpur Division, Bangladesh",
+      "lat": 26.3411,
+      "lon": 88.5542
+    },
+    {
+      "id": "rangpur",
+      "district": "Rangpur",
+      "district_bn": "রংপুর",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Rangpur, Rangpur Division, Bangladesh",
+      "lat": 25.7439,
+      "lon": 89.2752
+    },
+    {
+      "id": "thakurgaon",
+      "district": "Thakurgaon",
+      "district_bn": "ঠাকুরগাঁও",
+      "division": "Rangpur",
+      "division_bn": "রংপুর",
+      "name": "Thakurgaon, Rangpur Division, Bangladesh",
+      "lat": 26.0337,
+      "lon": 88.4617
+    },
+    {
+      "id": "habiganj",
+      "district": "Habiganj",
+      "district_bn": "হবিগঞ্জ",
+      "division": "Sylhet",
+      "division_bn": "সিলেট",
+      "name": "Habiganj, Sylhet Division, Bangladesh",
+      "lat": 24.3749,
+      "lon": 91.4155
+    },
+    {
+      "id": "moulvibazar",
+      "district": "Moulvibazar",
+      "district_bn": "মৌলভীবাজার",
+      "division": "Sylhet",
+      "division_bn": "সিলেট",
+      "name": "Moulvibazar, Sylhet Division, Bangladesh",
+      "lat": 24.4829,
+      "lon": 91.7774
+    },
+    {
+      "id": "sunamganj",
+      "district": "Sunamganj",
+      "district_bn": "সুনামগঞ্জ",
+      "division": "Sylhet",
+      "division_bn": "সিলেট",
+      "name": "Sunamganj, Sylhet Division, Bangladesh",
+      "lat": 25.0658,
+      "lon": 91.395
+    },
+    {
+      "id": "sylhet",
+      "district": "Sylhet",
+      "district_bn": "সিলেট",
+      "division": "Sylhet",
+      "division_bn": "সিলেট",
+      "name": "Sylhet, Sylhet Division, Bangladesh",
+      "lat": 24.8898,
+      "lon": 91.8698
+    }
+  ]
+}

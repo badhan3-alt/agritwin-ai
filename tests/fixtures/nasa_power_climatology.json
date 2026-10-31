@@ -1,0 +1,133 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      88.604,
+      24.375,
+      19.46
+    ]
+  },
+  "properties": {
+    "parameter": {
+      "GWETROOT": {
+        "JAN": 0.53,
+        "FEB": 0.48,
+        "MAR": 0.43,
+        "APR": 0.44,
+        "MAY": 0.48,
+        "JUN": 0.59,
+        "JUL": 0.73,
+        "AUG": 0.79,
+        "SEP": 0.82,
+        "OCT": 0.82,
+        "NOV": 0.7,
+        "DEC": 0.6,
+        "ANN": 0.62
+      },
+      "PRECTOTCORR": {
+        "JAN": 0.25,
+        "FEB": 0.41,
+        "MAR": 0.85,
+        "APR": 2.67,
+        "MAY": 5.09,
+        "JUN": 7.46,
+        "JUL": 9.21,
+        "AUG": 7.45,
+        "SEP": 7.37,
+        "OCT": 4.41,
+        "NOV": 0.3,
+        "DEC": 0.2,
+        "ANN": 3.82
+      },
+      "T2M": {
+        "JAN": 16.59,
+        "FEB": 21.1,
+        "MAR": 26.78,
+        "APR": 30.91,
+        "MAY": 31.57,
+        "JUN": 30.37,
+        "JUL": 28.99,
+        "AUG": 28.65,
+        "SEP": 27.88,
+        "OCT": 25.81,
+        "NOV": 21.63,
+        "DEC": 17.59,
+        "ANN": 25.67
+      },
+      "T2M_MAX": {
+        "JAN": 29.83,
+        "FEB": 36.87,
+        "MAR": 41.9,
+        "APR": 44.93,
+        "MAY": 45.33,
+        "JUN": 45.07,
+        "JUL": 36.87,
+        "AUG": 35.08,
+        "SEP": 33.78,
+        "OCT": 33.34,
+        "NOV": 31.66,
+        "DEC": 29.6,
+        "ANN": 45.33
+      },
+      "T2M_MIN": {
+        "JAN": 2.32,
+        "FEB": 6.7,
+        "MAR": 10.92,
+        "APR": 18.05,
+        "MAY": 20.7,
+        "JUN": 23.85,
+        "JUL": 24.42,
+        "AUG": 23.31,
+        "SEP": 22.2,
+        "OCT": 13.85,
+        "NOV": 8.57,
+        "DEC": 4.35,
+        "ANN": 2.32
+      }
+    }
+  },
+  "header": {
+    "title": "NASA/POWER Source Native Resolution Climatology Climatologies",
+    "api": {
+      "version": "v2.10.1",
+      "name": "POWER Climatology API"
+    },
+    "sources": [
+      "MERRA2",
+      "POWER"
+    ],
+    "fill_value": -999.0,
+    "time_standard": "LST",
+    "range": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)"
+  },
+  "messages": [
+    "The requested parameters are retrieved from a pre-computed climatological period (January 2001 - December 2025)"
+  ],
+  "parameters": {
+    "GWETROOT": {
+      "units": "1",
+      "longname": "Root Zone Soil Wetness"
+    },
+    "PRECTOTCORR": {
+      "units": "mm/day",
+      "longname": "Precipitation Corrected"
+    },
+    "T2M": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters"
+    },
+    "T2M_MAX": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Maximum"
+    },
+    "T2M_MIN": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Minimum"
+    }
+  },
+  "times": {
+    "data": 0.209,
+    "process": 0.04
+  }
+}

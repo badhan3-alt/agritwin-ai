@@ -1,0 +1,1954 @@
+# Bangla farmer interface for AgriTwin AI.
+msgid ""
+msgstr "Project-Id-Version: AgriTwin AI 2.0\nLanguage: bn\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, python-format
+msgid "%(component)s %(change)s"
+msgstr "%(component)s: %(change)s"
+
+#, python-format
+msgid "%(crop)s: entered pH is outside the profile range %(minimum)s–%(maximum)s."
+msgstr "%(crop)s: আপনার দেওয়া pH ফসলটির জন্য ধরা %(minimum)s–%(maximum)s সীমার বাইরে।"
+
+#, python-format
+msgid "%(crop)s: entered soil texture is outside this prototype profile's preferred soils; verify drainage and suitability locally."
+msgstr "%(crop)s: আপনার দেওয়া মাটির ধরন এই প্রাথমিক মডেলে ফসলটির জন্য পছন্দের মাটির তালিকায় নেই। পানি নিষ্কাশন ও চাষের উপযোগিতা স্থানীয়ভাবে যাচাই করুন।"
+
+#, python-format
+msgid "%(day)s %(month)s"
+msgstr "%(day)s %(month)s"
+
+#, python-format
+msgid "%(delta)s score points: %(explanation)s."
+msgstr "স্কোরের পরিবর্তন %(delta)s পয়েন্ট: %(explanation)s।"
+
+#, python-format
+msgid "%(strategy)s has the highest eligible relative score under these assumptions."
+msgstr "এই শর্তগুলো অনুযায়ী উপযোগী বিকল্পগুলোর মধ্যে ‘%(strategy)s’-এর তুলনামূলক স্কোর সবচেয়ে বেশি।"
+
+#, python-format
+msgid "%(years)s-year Meteorological and Solar Monthly & Annual Climatologies (%(start_month)s %(start_year)s - %(end_month)s %(end_year)s)"
+msgstr "%(years)s বছরের আবহাওয়া ও সৌর তথ্যের মাসিক ও বার্ষিক গড় (%(start_month)s %(start_year)s – %(end_month)s %(end_year)s)"
+
+msgid "+50% · Wetter"
+msgstr "+৫০% · বেশি বৃষ্টি"
+
+msgid "+5°C · Warmer"
+msgstr "+৫°সে. · বেশি গরম"
+
+msgid "01 / Your field profile"
+msgstr "০১ / আপনার জমির পরিচিতি"
+
+msgid "02 / Regional climate context"
+msgstr "০২ / এলাকার জলবায়ুর চিত্র"
+
+msgid "03 / Crop rotation comparison"
+msgstr "০৩ / ফসলের পর্যায়ক্রমের তুলনা"
+
+msgid "04 / Before you decide"
+msgstr "০৪ / সিদ্ধান্ত নেওয়ার আগে"
+
+msgid "A DIVERSIFIED ALTERNATIVE"
+msgstr "বিভিন্ন ফসলের একটি বিকল্প"
+
+msgid "A FRESH START FOR YOUR NEXT SEASON"
+msgstr "আগামী মৌসুমের নতুন পরিকল্পনা"
+
+msgid "A LEGUME ALTERNATIVE"
+msgstr "ডালশস্যের একটি বিকল্প"
+
+msgid "A LITTLE PERSPECTIVE GOES A LONG WAY"
+msgstr "তথ্য বুঝে পরিকল্পনা করুন"
+
+msgid "A SMALL EXPERIMENT IN YOUR NEXT SEASON"
+msgstr "আগামী মৌসুমের একটি সহজ পরীক্ষা"
+
+msgid "A THOUGHTFUL APPROACH"
+msgstr "বিবেচনা করে সিদ্ধান্ত"
+
+msgid "A WIDER PERSPECTIVE"
+msgstr "বিস্তৃত তথ্য, সহজ সিদ্ধান্ত"
+
+msgid "A better season"
+msgstr "ভালো মৌসুমের পরিকল্পনা"
+
+msgid "A clearer path to your next harvest."
+msgstr "পরের ফসলের পরিকল্পনা হোক আরও পরিষ্কার।"
+
+msgid "A clearer view to take with you."
+msgstr "পরিকল্পনার প্রতিবেদন নিজের কাছে রাখুন।"
+
+msgid "A closer look at heat"
+msgstr "তাপমাত্রার ঝুঁকি বুঝে নিন"
+
+msgid "A different season. A new perspective."
+msgstr "ভিন্ন মৌসুমে পরিকল্পনা কেমন বদলায়।"
+
+msgid "A few details help make the comparison relevant."
+msgstr "কিছু তথ্য দিলে তুলনাটি আপনার জমির সঙ্গে মিলিয়ে করা যাবে।"
+
+msgid "A legume can contribute biological nitrogen fixation and crop diversity when well managed."
+msgstr "সঠিক পরিচর্যা করলে ডাল ফসল বাতাসের নাইট্রোজেন মাটিতে যুক্ত করতে এবং ফসলের বৈচিত্র্য বাড়াতে সহায়তা করতে পারে।"
+
+msgid "A little field update."
+msgstr "জমির তথ্য হালনাগাদ করুন।"
+
+msgid "A little off the beaten path."
+msgstr "আপনি যে পাতাটি খুঁজছেন, সেটি নেই।"
+
+msgid "A new perspective"
+msgstr "নতুনভাবে দেখুন"
+
+msgid "A note on scope"
+msgstr "কোথায় ব্যবহার করা যাবে"
+
+msgid "A season in perspective."
+msgstr "মৌসুমের জলবায়ু বুঝে নিন।"
+
+msgid "A sensitivity experiment, not a climate forecast or calibrated crop-growth model."
+msgstr "এটি শর্ত বদলানোর প্রভাব দেখার পরীক্ষা; জলবায়ু বা ফসলের বৃদ্ধির পূর্বাভাস নয়।"
+
+msgid "A sensitivity test of a simplified rule-based model, not a validated future climate, yield, profit or soil-moisture forecast. Regional wetness is held at baseline."
+msgstr "এটি সহজ কিছু নিয়মের ভিত্তিতে শর্ত বদলে ফলাফলের পরিবর্তন দেখার পরীক্ষা। এটি ভবিষ্যৎ জলবায়ু, ফলন, লাভ বা মাটির আর্দ্রতার যাচাই করা পূর্বাভাস নয়। আঞ্চলিক আর্দ্রতা ভিত্তি-তথ্যের মতোই রাখা হয়েছে।"
+
+msgid "A simplified digital twin"
+msgstr "সহজভাবে ভিন্ন পরিস্থিতি পরীক্ষা"
+
+msgid "A starting point for a conversation in the field."
+msgstr "জমিতে আলোচনা করে সিদ্ধান্ত নেওয়ার একটি শুরু।"
+
+msgid "A valid NASA POWER baseline is required before running a scenario."
+msgstr "পরিস্থিতি পরীক্ষা চালানোর আগে NASA POWER-এর সঠিক ভিত্তি-তথ্য দরকার।"
+
+msgid "A validated NASA POWER baseline is required to compare rotations."
+msgstr "ফসলের পর্যায়ক্রম তুলনা করতে NASA POWER-এর যাচাই করা ভিত্তি-তথ্য দরকার।"
+
+msgid "A validated NASA POWER response is required before analysis can run. Retry the NASA connection."
+msgstr "বিশ্লেষণ চালাতে NASA POWER থেকে যাচাই করা তথ্য দরকার। আবার NASA-এর সঙ্গে সংযোগের চেষ্টা করুন।"
+
+msgid "A wider perspective."
+msgstr "সঙ্গে এলাকার বিস্তৃত তথ্য।"
+
+msgid "A world of"
+msgstr "সামনে রয়েছে"
+
+msgid "AGRITWIN AI · FIELD ADVISORY SUMMARY"
+msgstr "AGRITWIN AI · জমির পরিকল্পনার সারসংক্ষেপ"
+
+msgid "AI"
+msgstr "AI"
+
+msgid "AT"
+msgstr "AT"
+
+msgid "AT A GLANCE"
+msgstr "এক নজরে"
+
+msgid "Abundant"
+msgstr "পর্যাপ্ত"
+
+msgid "Add a farm"
+msgstr "খামার যোগ করুন"
+
+msgid "Add a few details about your land to explore climate patterns,"
+msgstr "জমির কিছু তথ্য দিয়ে এলাকার জলবায়ু জানুন,"
+
+msgid "Add your farm"
+msgstr "আপনার খামার যোগ করুন"
+
+msgid "Add your first farm"
+msgstr "প্রথম খামার যোগ করুন"
+
+msgid "Added"
+msgstr "যোগ হয়েছে"
+
+msgid "Adjust priorities ↗"
+msgstr "অগ্রাধিকার বদলান ↗"
+
+msgid "AgriTwin"
+msgstr "AgriTwin"
+
+msgid "AgriTwin AI farm report"
+msgstr "AgriTwin AI খামারের প্রতিবেদন"
+
+msgid "AgriTwin AI home"
+msgstr "AgriTwin AI-এর প্রথম পাতা"
+
+msgid "AgriTwin AI · A better season starts here"
+msgstr "AgriTwin AI · ভালো ফলনের পরিকল্পনা শুরু হোক এখানেই"
+
+msgid "AgriTwin requests monthly climatology from the NASA POWER point API for your coordinates. It uses temperature and precipitation to describe seasonal conditions and screen candidate rotations."
+msgstr "AgriTwin আপনার বেছে নেওয়া অবস্থানের জন্য NASA POWER থেকে দীর্ঘমেয়াদি মাসিক জলবায়ুর তথ্য আনে। তাপমাত্রা ও বৃষ্টিপাত দিয়ে মৌসুমের অবস্থা এবং সম্ভাব্য ফসলের পর্যায়ক্রম যাচাই করা হয়।"
+
+msgid "All 64 districts, grouped by the 8 divisions. Presets mark approximate district headquarters or city locations; adjust coordinates for your actual field."
+msgstr "৮টি বিভাগের অধীনে দেশের ৬৪টি জেলা রয়েছে। জেলা বেছে নিলে জেলা সদর বা শহরের আনুমানিক অবস্থান দেখাবে। আপনার জমির সঠিক অবস্থান অনুযায়ী স্থানাঙ্ক ঠিক করুন।"
+
+msgid "Analyzed"
+msgstr "বিশ্লেষণের সময়"
+
+msgid "Analyzed:"
+msgstr "বিশ্লেষণ করা হয়েছে:"
+
+msgid "Annual precipitation"
+msgstr "বার্ষিক বৃষ্টিপাত"
+
+msgid "Apply changes to the same historical baseline for"
+msgstr "একই দীর্ঘমেয়াদি জলবায়ুর তথ্যের ওপর শর্ত বদলে দেখুন:"
+
+msgid "Apr"
+msgstr "এপ্রি"
+
+msgid "April"
+msgstr "এপ্রিল"
+
+msgid "Aug"
+msgstr "আগ"
+
+msgid "August"
+msgstr "আগস্ট"
+
+msgid "Average across the monthly baseline"
+msgstr "দীর্ঘমেয়াদি মাসিক তথ্য থেকে গড়"
+
+msgid "Back to farm"
+msgstr "খামারে ফিরে যান"
+
+msgid "Back to my farms"
+msgstr "আমার খামারে ফিরে যান"
+
+msgid "Bangladesh bounding coordinates provide a coarse planning envelope, not a verified national boundary or field polygon."
+msgstr "বাংলাদেশের জন্য ব্যবহৃত স্থানাঙ্কের সীমা একটি আনুমানিক পরিকল্পনা এলাকা। এটি যাচাই করা দেশের সীমানা বা আপনার জমির সীমানা নয়।"
+
+msgid "Baseline suitability"
+msgstr "মূল অবস্থায় উপযোগিতা"
+
+msgid "Big-picture data."
+msgstr "বিস্তৃত জলবায়ুর তথ্য।"
+
+msgid "Boro Rice"
+msgstr "বোরো ধান"
+
+msgid "Boro rice"
+msgstr "বোরো ধান"
+
+msgid "Bring your farms into focus and pick up where you left off."
+msgstr "খামারগুলোর তথ্য দেখুন এবং আগের পরিকল্পনা থেকে আবার শুরু করুন।"
+
+msgid "Budget"
+msgstr "বাজেট"
+
+msgid "Build climate resilience"
+msgstr "জলবায়ুর পরিবর্তন মোকাবিলা"
+
+msgid "CSV"
+msgstr "CSV"
+
+msgid "Calendar"
+msgstr "চাষের সময়সূচি"
+
+msgid "Calendar screening"
+msgstr "চাষের সময়সূচি যাচাই"
+
+msgid "Calendar:"
+msgstr "চাষের সময়সূচি:"
+
+msgid "Cancel"
+msgstr "বাতিল করুন"
+
+msgid "Candidate calendar"
+msgstr "সম্ভাব্য চাষের সময়সূচি"
+
+msgid "Change rainfall, heat, or irrigation assumptions and compare the response."
+msgstr "বৃষ্টি, তাপমাত্রা বা সেচের শর্ত বদলে ফলের তুলনা করুন।"
+
+msgid "Change the assumptions. See what shifts. Understand why."
+msgstr "শর্ত বদলান। কী পরিবর্তন হয় দেখুন। কারণ বুঝে নিন।"
+
+msgid "Check the water supply available through the dry season."
+msgstr "পুরো শুষ্ক মৌসুমে কতটা পানি পাওয়া যাবে, তা যাচাই করুন।"
+
+msgid "Choose a district or set coordinates"
+msgstr "জেলা বেছে নিন অথবা স্থানাঙ্ক লিখুন"
+
+msgid "Choose a location, crops, and available water."
+msgstr "অবস্থান, বর্তমান ফসল ও পানির ব্যবস্থা জানান।"
+
+msgid "Choose a region above or enter coordinates. The map loads when an internet connection is available."
+msgstr "উপরে জেলা বেছে নিন অথবা অক্ষাংশ ও দ্রাঘিমাংশ লিখুন। ইন্টারনেট থাকলে মানচিত্র দেখা যাবে।"
+
+msgid "Choose a region above or enter latitude and longitude. You can save and analyze your farm without the map."
+msgstr "উপরের তালিকা থেকে জেলা বেছে নিন অথবা অক্ষাংশ ও দ্রাঘিমাংশ লিখুন। মানচিত্র ছাড়াও খামারের তথ্য সংরক্ষণ ও বিশ্লেষণ করা যাবে।"
+
+msgid "Choose at least one supported crop."
+msgstr "তালিকা থেকে অন্তত একটি ফসল বেছে নিন।"
+
+msgid "Choose farm coordinates on a map"
+msgstr "মানচিত্রে জমির অবস্থান বেছে নিন"
+
+msgid "Choose from all 64 districts or enter your farm’s coordinates."
+msgstr "৬৪ জেলার যেকোনোটি বেছে নিন অথবা জমির অক্ষাংশ ও দ্রাঘিমাংশ লিখুন।"
+
+msgid "Choose the crops in your current annual cycle. For a custom order, select the first crop below."
+msgstr "সারা বছরে যেসব ফসল চাষ করেন সেগুলো বেছে নিন। ফসলের ক্রম ঠিক করতে নিচে প্রথম ফসলটি নির্বাচন করুন।"
+
+msgid "Choose up to three crops for this annual planning prototype."
+msgstr "এই প্রাথমিক পরিকল্পনায় বছরে সর্বোচ্চ তিনটি ফসল বেছে নিন।"
+
+msgid "Clay"
+msgstr "এঁটেল"
+
+msgid "Clay loam"
+msgstr "এঁটেল দোআঁশ"
+
+msgid "Click the map to update coordinates. Basemaps © OpenStreetMap contributors."
+msgstr "অবস্থান বদলাতে মানচিত্রে চাপ দিন। মূল মানচিত্র © OpenStreetMap contributors।"
+
+msgid "Climate"
+msgstr "জলবায়ু"
+
+msgid "Climate insights"
+msgstr "জলবায়ুর তথ্য"
+
+msgid "Climate insights ·"
+msgstr "জলবায়ুর তথ্য ·"
+
+msgid "Climate results, rotation scores, simulations, and reports are available only after a valid NASA baseline has been retrieved. Your field information and chosen coordinates are preserved."
+msgstr "সঠিক NASA তথ্য পাওয়ার পরই জলবায়ু বিশ্লেষণ, ফসলের তুলনা, পরিস্থিতি পরীক্ষা ও প্রতিবেদন দেখা যাবে। আপনার জমির তথ্য ও বেছে নেওয়া অবস্থান সংরক্ষিত আছে।"
+
+msgid "Climate suitability"
+msgstr "জলবায়ুর দিক থেকে উপযোগিতা"
+
+msgid "Climatological period not supplied by API"
+msgstr "API থেকে দীর্ঘমেয়াদি গড়ের সময়কাল পাওয়া যায়নি"
+
+msgid "Compare candidate rotations, understand the trade-offs, and choose what to explore next."
+msgstr "সম্ভাব্য চাষচক্রগুলোর তুলনা করুন, সুবিধা ও সীমাবদ্ধতা বুঝুন, তারপর পরের পরিকল্পনা বেছে নিন।"
+
+msgid "Compare crop rotations"
+msgstr "ফসলের পর্যায়ক্রম তুলনা করুন"
+
+msgid "Compare each candidate against its baseline score."
+msgstr "প্রতিটি বিকল্পের মূল নম্বরের সঙ্গে নতুন নম্বর তুলনা করুন।"
+
+msgid "Compare your options"
+msgstr "চাষের বিকল্প তুলনা করুন"
+
+msgid "Composite suitability"
+msgstr "সামগ্রিক উপযোগিতা"
+
+msgid "Confirm soil pH, drainage, and any salinity concerns locally."
+msgstr "জমির pH, পানি নিষ্কাশন ও লবণাক্ততা স্থানীয়ভাবে যাচাই করুন।"
+
+msgid "Conserve water"
+msgstr "পানি সাশ্রয়"
+
+msgid "Constraint check"
+msgstr "শর্ত যাচাই"
+
+msgid "Constraint check: excluded from ranking"
+msgstr "শর্ত পূরণ হয়নি: সুপারিশের তালিকায় নেই"
+
+msgid "Coordinates connect you to regional climate."
+msgstr "অবস্থান অনুযায়ী এলাকার জলবায়ুর তথ্য পাওয়া যায়।"
+
+msgid "Create my farm"
+msgstr "আমার খামার তৈরি করুন"
+
+msgid "Crop calendars and alternative rotations are designed for this Bangladesh prototype. Other locations need local crop and calendar validation."
+msgstr "এই প্রাথমিক ব্যবস্থার চাষের সময়সূচি ও বিকল্পগুলো বাংলাদেশের জন্য তৈরি। অন্য এলাকায় স্থানীয় ফসল ও সময়সূচি যাচাই করতে হবে।"
+
+msgid "Crop durations, water demand, and economics are illustrative screening assumptions for Bangladesh. Check variety, planting dates, irrigation, and local markets with an agricultural adviser before acting."
+msgstr "ফসলের মেয়াদ, পানির চাহিদা ও অর্থনৈতিক ধারণাগুলো বাংলাদেশের জন্য প্রাথমিক তুলনার অনুমান। চাষের আগে স্থানীয় কৃষি কর্মকর্তার সঙ্গে জাত, বপনের সময়, সেচ ও বাজার যাচাই করুন।"
+
+msgid "Crop durations, water demands, soil scores and economic scores are prototype assumptions requiring local agronomic validation."
+msgstr "ফসলের মেয়াদ, পানির চাহিদা, মাটির স্কোর ও আর্থিক স্কোর এই প্রাথমিক মডেলের অনুমান। স্থানীয় কৃষি বিশেষজ্ঞের মাধ্যমে এগুলো যাচাই করা দরকার।"
+
+msgid "Crop planting/harvest windows do not fit a repeating annual sequence."
+msgstr "বপন ও ফসল তোলার সময় অনুযায়ী পর্যায়ক্রমটি প্রতি বছর একইভাবে করা সম্ভব হচ্ছে না।"
+
+msgid "Crop rotation strategy comparison"
+msgstr "ফসলের পর্যায়ক্রমের তুলনা"
+
+msgid "Crop rotations"
+msgstr "ফসলের পর্যায়ক্রম"
+
+msgid "Crop sequence"
+msgstr "ফসলের ক্রম"
+
+msgid "Crop water demand assumption"
+msgstr "ফসলের পানির চাহিদার অনুমান"
+
+msgid "Current crops"
+msgstr "বর্তমান ফসল"
+
+msgid "Current rotation"
+msgstr "বর্তমান ফসলের পর্যায়ক্রম"
+
+msgid "DESIGNED FOR BANGLADESH · BUILT FOR UNDERSTANDING"
+msgstr "বাংলাদেশের জন্য · সহজে বোঝার জন্য"
+
+msgid "Data mode"
+msgstr "তথ্যের ধরন"
+
+msgid "Data period"
+msgstr "তথ্যের সময়কাল"
+
+msgid "Data provenance & scientific boundaries"
+msgstr "তথ্যের উৎস ও বৈজ্ঞানিক সীমাবদ্ধতা"
+
+msgid "Data sources & limitations"
+msgstr "তথ্যের উৎস ও সীমাবদ্ধতা"
+
+msgid "Dec"
+msgstr "ডিসে"
+
+msgid "December"
+msgstr "ডিসেম্বর"
+
+msgid "Decision support · Bangladesh prototype"
+msgstr "সিদ্ধান্তে সহায়তা · বাংলাদেশের প্রাথমিক সংস্করণ"
+
+msgid "Delete farm"
+msgstr "খামার মুছুন"
+
+msgid "Delete this farm and its saved analysis? This cannot be undone."
+msgstr "এই খামার ও সংরক্ষিত বিশ্লেষণ মুছে ফেলবেন? মুছে ফেলার পর ফেরত আনা যাবে না।"
+
+msgid "Digital twin"
+msgstr "পরিস্থিতি বদলে দেখুন"
+
+msgid "Digital twin ·"
+msgstr "পরিস্থিতি পরীক্ষা ·"
+
+msgid "Disclaimer"
+msgstr "ব্যবহারের সীমা"
+
+msgid "District / region"
+msgstr "জেলা / অঞ্চল"
+
+msgid "Diversify across seasons"
+msgstr "বিভিন্ন মৌসুমে ভিন্ন ফসল চাষ"
+
+msgid "Down-to-earth decisions."
+msgstr "আপনার জমির জন্য বাস্তব সিদ্ধান্ত।"
+
+msgid "Download NASA response"
+msgstr "NASA-এর তথ্য ডাউনলোড করুন"
+
+msgid "Download original NASA response"
+msgstr "NASA-এর মূল তথ্য ডাউনলোড করুন"
+
+msgid "Drainage"
+msgstr "পানি নিষ্কাশন"
+
+msgid "Dry-season rainfall"
+msgstr "শুষ্ক মৌসুমের বৃষ্টিপাত"
+
+msgid "EARTH DATA, HUMAN JUDGMENT"
+msgstr "পৃথিবীর তথ্য, কৃষকের বিবেচনা"
+
+msgid "EARTH OBSERVATIONS. LOCAL DECISIONS."
+msgstr "পৃথিবীর তথ্য। আপনার জমির সিদ্ধান্ত।"
+
+msgid "EARTH TO FIELD"
+msgstr "পৃথিবীর তথ্য থেকে জমির পরিকল্পনা"
+
+msgid "Earth observations cannot measure your field’s pH or nutrients. Leave pH empty if you haven’t tested it."
+msgstr "এলাকাভিত্তিক তথ্য থেকে আপনার জমির pH বা পুষ্টি জানা যায় না। পরীক্ষা না করলে pH-এর ঘর খালি রাখুন।"
+
+msgid "Economic"
+msgstr "অর্থনৈতিক দিক"
+
+msgid "Economic proxy"
+msgstr "অর্থনৈতিক সম্ভাবনার প্রাথমিক সূচক"
+
+msgid "Edit"
+msgstr "তথ্য বদলান"
+
+msgid "Edit farm"
+msgstr "খামারের তথ্য বদলান"
+
+msgid "Edit field"
+msgstr "জমির তথ্য বদলান"
+
+msgid "Elevated heat months"
+msgstr "বেশি তাপমাত্রার মাস"
+
+msgid "Eligible"
+msgstr "তুলনার উপযুক্ত"
+
+msgid "Eligible for comparison"
+msgstr "বিবেচনার শর্ত পূরণ করে"
+
+msgid "Every climate analysis uses NASA POWER data. If a request fails, AgriTwin keeps any previously saved valid NASA analysis with its retrieval date. Without a valid NASA baseline, it shows an unavailable message and generates no climate results, crop scores, simulations, or reports. SMAP retrieval is not implemented; we do not present modeled POWER wetness or fabricated volumetric moisture as a SMAP observation. Your farm profiles are stored for this browser session; deleting browser session cookies removes access to this workspace."
+msgstr "প্রতিটি জলবায়ু বিশ্লেষণে NASA POWER-এর তথ্য ব্যবহৃত হয়। নতুন তথ্য আনা না গেলে আগের সঠিক NASA তথ্য তার সংগ্রহের সময়সহ রাখা হয়। সঠিক NASA তথ্য না থাকলে কোনো বিশ্লেষণ, ফসলের নম্বর, পরিস্থিতি পরীক্ষা বা প্রতিবেদন তৈরি হয় না। SMAP এখন যুক্ত নেই; POWER-এর আর্দ্রতা বা বানানো মানকে SMAP-এর পর্যবেক্ষণ বলা হয় না। খামারের তথ্য এই ব্রাউজার সেশনের সঙ্গে যুক্ত; সেশনের কুকি মুছে ফেললে এই খাতায় প্রবেশের সুযোগ হারাবেন।"
+
+msgid "Every field has a story."
+msgstr "প্রতিটি জমির আলাদা বৈশিষ্ট্য আছে।"
+
+msgid "Every option has a trade-off."
+msgstr "প্রতিটি বিকল্পের সুবিধা ও সীমাবদ্ধতা আছে।"
+
+msgid "Excluded from ranking"
+msgstr "সুপারিশের তালিকায় নেই"
+
+msgid "Excluded from ranking:"
+msgstr "সুপারিশের তালিকায় নেই:"
+
+msgid "Excluded · review reasons"
+msgstr "তালিকায় নেই · কারণ দেখুন"
+
+msgid "Explainable rotation screening"
+msgstr "ফসলের তুলনার কারণ বুঝে নিন"
+
+msgid "Explore Aman rice followed by lentil, with the remaining season fallow."
+msgstr "আমন ধানের পর মসুর ডাল চাষের বিকল্প দেখুন। বাকি মৌসুমে জমি পতিত থাকবে।"
+
+msgid "Explore NASA example farm"
+msgstr "NASA-এর তথ্য দিয়ে নমুনা খামার দেখুন"
+
+msgid "Explore NASA example farm →"
+msgstr "NASA তথ্যসহ নমুনা খামার দেখুন →"
+
+msgid "Explore climate"
+msgstr "জলবায়ুর তথ্য দেখুন"
+
+msgid "Explore economic potential"
+msgstr "আয়ের সম্ভাবনা যাচাই"
+
+msgid "Explore field"
+msgstr "জমির তথ্য দেখুন"
+
+msgid "Explore regional climate and rotation suitability."
+msgstr "এলাকার জলবায়ু ও চাষচক্রের উপযোগিতা দেখুন।"
+
+msgid "Explore rice, a short-duration oilseed and a summer pulse in one annual cycle."
+msgstr "এক বছরে ধান, স্বল্পমেয়াদি তেল ফসল ও গ্রীষ্মকালীন ডাল ফসল চাষের বিকল্প দেখুন।"
+
+msgid "Explore “what if”"
+msgstr "শর্ত বদলে পরীক্ষা করুন"
+
+msgid "Farm analysis"
+msgstr "খামারের বিশ্লেষণ"
+
+msgid "Farm and its saved analysis deleted."
+msgstr "খামার ও তার সংরক্ষিত বিশ্লেষণ মুছে ফেলা হয়েছে।"
+
+msgid "Farm area"
+msgstr "জমির আয়তন"
+
+msgid "Farm area (acres)"
+msgstr "খামারের আয়তন (একর)"
+
+msgid "Farm name"
+msgstr "খামারের নাম"
+
+msgid "Farm report"
+msgstr "খামারের প্রতিবেদন"
+
+msgid "Farm report ·"
+msgstr "খামারের প্রতিবেদন ·"
+
+msgid "Farm setup"
+msgstr "খামারের তথ্য"
+
+msgid "Farm size (acres)"
+msgstr "জমির পরিমাণ (একর)"
+
+msgid "Farm updated. Climate analysis and rotation scores were recalculated using NASA POWER data."
+msgstr "খামারের তথ্য হালনাগাদ হয়েছে। NASA POWER-এর তথ্য দিয়ে জলবায়ু বিশ্লেষণ ও ফসলের উপযোগিতা আবার হিসাব করা হয়েছে।"
+
+msgid "Farm updated. NASA POWER is unavailable; retry the NASA connection to calculate an analysis for these new inputs."
+msgstr "খামারের তথ্য হালনাগাদ হয়েছে। এই মুহূর্তে NASA POWER-এর সঙ্গে সংযোগ হচ্ছে না। নতুন তথ্যের বিশ্লেষণ পেতে আবার NASA সংযোগের চেষ্টা করুন।"
+
+msgid "Feb"
+msgstr "ফেব্রু"
+
+msgid "February"
+msgstr "ফেব্রুয়ারি"
+
+msgid "Field drainage"
+msgstr "জমির পানি নিষ্কাশন"
+
+msgid "Field drainage unknown: verify waterlogging risk before planting pulses or oilseeds; satellite regional wetness cannot establish field drainage."
+msgstr "জমির পানি নিষ্কাশনের অবস্থা জানা নেই। ডাল বা তেল ফসল বপনের আগে জলাবদ্ধতার ঝুঁকি যাচাই করুন। উপগ্রহভিত্তিক আঞ্চলিক আর্দ্রতার তথ্য দিয়ে জমির পানি নিষ্কাশন বোঝা যায় না।"
+
+msgid "Field overview"
+msgstr "জমির সারসংক্ষেপ"
+
+msgid "Find your field"
+msgstr "জমির অবস্থান বেছে নিন"
+
+msgid "First crop in your rotation"
+msgstr "ফসলের পর্যায়ক্রমে প্রথম ফসল"
+
+msgid "Fits candidate windows"
+msgstr "নমুনা সময়সূচিতে মেলে"
+
+msgid "From field notes to possibilities."
+msgstr "জমির তথ্য থেকে চাষের নতুন সম্ভাবনা।"
+
+msgid "From space to soil, one informed step at a time."
+msgstr "মহাকাশের তথ্য থেকে জমির কাজে, প্রতিটি ধাপে বুঝে সিদ্ধান্ত।"
+
+msgid "GROW WITH PERSPECTIVE"
+msgstr "GROW WITH PERSPECTIVE"
+
+msgid "Generated"
+msgstr "তৈরির সময়"
+
+msgid "Get to know your soil"
+msgstr "মাটির অবস্থা জানান"
+
+msgid "Good decisions start"
+msgstr "ভালো সিদ্ধান্তের শুরু"
+
+msgid "Grounded in transparency."
+msgstr "তথ্য ও সীমাবদ্ধতা স্পষ্ট রাখি।"
+
+msgid "Growing-period mean temperatures exceed at least one prototype crop threshold; review planting time and variety."
+msgstr "ফসলের বৃদ্ধিকালে গড় তাপমাত্রা অন্তত একটি ফসলের জন্য এই মডেলে ধরা সীমার বেশি। বপনের সময় ও জাত নির্বাচন আবার যাচাই করুন।"
+
+msgid "Harvest:"
+msgstr "ফসল সংগ্রহ:"
+
+msgid "Here’s where the information comes from, how we compare options,"
+msgstr "তথ্য কোথা থেকে আসে, কীভাবে ফসলের তুলনা করা হয়,"
+
+msgid "High"
+msgstr "বেশি"
+
+msgid "Highest ranked"
+msgstr "তুলনায় এগিয়ে"
+
+msgid "Historical baseline"
+msgstr "মূল জলবায়ুর ভিত্তিতে"
+
+msgid "Historical monthly averages provide context for seasonal planning. They do not describe current weather."
+msgstr "দীর্ঘমেয়াদি মাসিক গড় মৌসুমি পরিকল্পনায় সাহায্য করে। এগুলো আজকের আবহাওয়ার তথ্য নয়।"
+
+msgid "Historical rainfall, temperature,"
+msgstr "দীর্ঘমেয়াদি বৃষ্টিপাত, তাপমাত্রা"
+
+msgid "Honest when data is unavailable"
+msgstr "তথ্য না পেলে তা স্পষ্ট জানাই"
+
+msgid "How AgriTwin helps"
+msgstr "AgriTwin যেভাবে সাহায্য করে"
+
+msgid "How we use Earth data"
+msgstr "পৃথিবীর তথ্য কীভাবে কাজে লাগে"
+
+msgid "ILLUSTRATIVE FIELD VIEW"
+msgstr "জমির প্রতীকী ছবি"
+
+msgid "Illustrated aerial view of agricultural fields"
+msgstr "উপর থেকে দেখা কৃষিজমির প্রতীকী ছবি"
+
+msgid "Illustrated field · not satellite imagery"
+msgstr "জমির প্রতীকী ছবি · স্যাটেলাইটের ছবি নয়"
+
+msgid "Illustrative cool-season cereal profile. Confirm planting time and local heat exposure around flowering."
+msgstr "শীতকালীন দানাশস্য সম্পর্কে প্রাথমিক ধারণা। বপনের সময় এবং ফুল আসার সময় এলাকার তাপমাত্রার ঝুঁকি যাচাই করুন।"
+
+msgid "Illustrative cool-season legume profile. Drainage, timely sowing and local soil conditions determine suitability. Biological nitrogen contribution is not quantified for this field."
+msgstr "শীতকালীন ডাল ফসল সম্পর্কে প্রাথমিক ধারণা। পানি নিষ্কাশন, সময়মতো বপন ও স্থানীয় মাটির অবস্থার ওপর উপযোগিতা নির্ভর করে। এই জমিতে প্রাকৃতিকভাবে যোগ হওয়া নাইট্রোজেনের পরিমাণ হিসাব করা হয়নি।"
+
+msgid "Illustrative crop water demand"
+msgstr "ফসলের পানির চাহিদার আনুমানিক ধারণা"
+
+msgid "Illustrative irrigated dry-season rice profile. Confirm irrigation capacity and local planting/harvest dates."
+msgstr "শুষ্ক মৌসুমের সেচনির্ভর ধান সম্পর্কে প্রাথমিক ধারণা। সেচের সক্ষমতা এবং স্থানীয় বপন ও ফসল তোলার তারিখ যাচাই করুন।"
+
+msgid "Illustrative monsoon rice profile. Confirm cultivar duration, planting date, rainfall timing and local harvest window."
+msgstr "বর্ষাকালীন ধান সম্পর্কে প্রাথমিক ধারণা। জাতের মেয়াদ, বপনের তারিখ, বৃষ্টির সময় ও স্থানীয়ভাবে ধান কাটার সময় যাচাই করুন।"
+
+msgid "Illustrative short-duration winter oilseed profile. The crop must fit after the actual Aman harvest and before the following crop."
+msgstr "স্বল্পমেয়াদি শীতকালীন তেল ফসল সম্পর্কে প্রাথমিক ধারণা। আমন কাটার প্রকৃত সময়ের পর এবং পরের ফসলের আগে এই ফসলের জন্য সময় থাকতে হবে।"
+
+msgid "Illustrative summer pulse profile. Verify drainage, growing window and cultivar locally. Biological nitrogen contribution is not quantified for this field."
+msgstr "গ্রীষ্মকালীন ডাল ফসল সম্পর্কে প্রাথমিক ধারণা। পানি নিষ্কাশন, চাষের সময় ও জাত স্থানীয়ভাবে যাচাই করুন। এই জমিতে প্রাকৃতিকভাবে যোগ হওয়া নাইট্রোজেনের পরিমাণ হিসাব করা হয়নি।"
+
+msgid "Illustrative water demand mm"
+msgstr "আনুমানিক পানির চাহিদা (মিমি)"
+
+msgid "Illustrative winter cereal profile. Confirm local water requirements, planting window and market access."
+msgstr "শীতকালীন দানাশস্য সম্পর্কে প্রাথমিক ধারণা। স্থানীয় পানির চাহিদা, বপনের সময় ও বাজারে বিক্রির সুযোগ যাচাই করুন।"
+
+msgid "Improve soil health"
+msgstr "মাটির স্বাস্থ্য উন্নয়ন"
+
+msgid "Includes cereal, oilseed and pulse crops across the year."
+msgstr "এক বছরের মধ্যে দানাশস্য, তেল ফসল ও ডাল ফসল রয়েছে।"
+
+msgid "Information gaps"
+msgstr "যে তথ্যগুলো জানা দরকার"
+
+msgid "Introduce a legume"
+msgstr "ডাল ফসল যুক্ত করুন"
+
+msgid "Irrigation"
+msgstr "সেচ"
+
+msgid "Irrigation access"
+msgstr "সেচের সুবিধা"
+
+msgid "JSON"
+msgstr "JSON"
+
+msgid "Jan"
+msgstr "জানু"
+
+msgid "January"
+msgstr "জানুয়ারি"
+
+msgid "Jul"
+msgstr "জুলা"
+
+msgid "July"
+msgstr "জুলাই"
+
+msgid "Jun"
+msgstr "জুন"
+
+msgid "June"
+msgstr "জুন"
+
+msgid "Keep the comparison close. Share it with your local agricultural adviser."
+msgstr "তুলনার প্রতিবেদন সংরক্ষণ করুন। স্থানীয় কৃষি কর্মকর্তার সঙ্গে আলোচনা করতে এটি দেখান।"
+
+msgid "Keeps the crop sequence you entered and familiar management practices."
+msgstr "আপনার দেওয়া বর্তমান ফসলের পর্যায়ক্রম ও পরিচিত চাষাবাদ পদ্ধতি বজায় থাকে।"
+
+msgid "Know your land. Plan your future."
+msgstr "জমিকে জানুন। আগামীর পরিকল্পনা করুন।"
+
+msgid "LAB"
+msgstr "LAB"
+
+msgid "LET’S FIND OUR WAY BACK"
+msgstr "সঠিক পাতায় ফিরে যাই"
+
+msgid "LET’S RECONNECT"
+msgstr "আবার চেষ্টা করুন"
+
+msgid "LET’S START AT GROUND LEVEL"
+msgstr "শুরু করি আপনার জমি থেকে"
+
+msgid "Latitude"
+msgstr "অক্ষাংশ"
+
+msgid "Leave blank if unknown"
+msgstr "জানা না থাকলে খালি রাখুন"
+
+msgid "Legume contribution"
+msgstr "ডালশস্যের সম্ভাব্য ভূমিকা"
+
+msgid "Lentil"
+msgstr "মসুর ডাল"
+
+msgid "Lentil (Masur)"
+msgstr "মসুর ডাল"
+
+msgid "Less rain? More heat?"
+msgstr "বৃষ্টি কমলে? গরম বাড়লে?"
+
+msgid "Let the data add perspective"
+msgstr "তথ্য মিলিয়ে বুঝে নিন"
+
+msgid "Let's explore your land"
+msgstr "আপনার জমি দিয়ে শুরু করি"
+
+msgid "Limited"
+msgstr "সীমিত"
+
+msgid "Loam"
+msgstr "দোআঁশ"
+
+msgid "Local knowledge."
+msgstr "আপনার অভিজ্ঞতা।"
+
+msgid "Location"
+msgstr "অবস্থান"
+
+msgid "Longitude"
+msgstr "দ্রাঘিমাংশ"
+
+msgid "Low"
+msgstr "কম"
+
+msgid "Low dry-season rainfall; supplemental water may be needed"
+msgstr "শুষ্ক মৌসুমে বৃষ্টি কম; বাড়তি সেচের প্রয়োজন হতে পারে"
+
+msgid "Lower assumed total crop-water demand than your current sequence."
+msgstr "এই মডেলের হিসাবে আপনার বর্তমান পর্যায়ক্রমের তুলনায় ফসলগুলোর মোট পানির চাহিদা কম।"
+
+msgid "Main navigation"
+msgstr "প্রধান মেনু"
+
+msgid "Maize"
+msgstr "ভুট্টা"
+
+msgid "Make your next crop decision with confidence."
+msgstr "পরের ফসল বেছে নিন আরও তথ্য জেনে।"
+
+msgid "Mar"
+msgstr "মার্চ"
+
+msgid "March"
+msgstr "মার্চ"
+
+msgid "Maximum (°C)"
+msgstr "সর্বোচ্চ (°C)"
+
+msgid "May"
+msgstr "মে"
+
+msgid "Mean (°C)"
+msgstr "গড় (°C)"
+
+msgid "Mean temperature"
+msgstr "গড় তাপমাত্রা"
+
+msgid "Mean temperature (°C)"
+msgstr "গড় তাপমাত্রা (°C)"
+
+msgid "Medium"
+msgstr "মাঝারি"
+
+msgid "Meet the science"
+msgstr "বৈজ্ঞানিক ভিত্তি জানুন"
+
+msgid "Minimum (°C)"
+msgstr "সর্বনিম্ন (°C)"
+
+msgid "Missing or unsupported crops prevent calendar verification."
+msgstr "কোনো ফসলের তথ্য নেই বা সেটি এই মডেলে নেই। তাই সময়সূচি যাচাই করা যায়নি।"
+
+msgid "Moderate"
+msgstr "মাঝারি"
+
+msgid "Month"
+msgstr "মাস"
+
+msgid "Monthly climate values"
+msgstr "মাসিক জলবায়ুর তথ্য"
+
+msgid "Monthly maximum-temperature screening"
+msgstr "মাসিক সর্বোচ্চ তাপমাত্রার প্রাথমিক যাচাই"
+
+msgid "Monthly precipitation and mean temperature chart"
+msgstr "মাসভিত্তিক বৃষ্টিপাত ও গড় তাপমাত্রার লেখচিত্র"
+
+msgid "Monthly precipitation bars and mean temperature line. The full values appear in the data table below."
+msgstr "মাসভিত্তিক বৃষ্টিপাতের স্তম্ভচিত্র ও গড় তাপমাত্রার রেখাচিত্র। নিচের সারণিতে সব তথ্য দেখুন।"
+
+msgid "Monthly precipitation totals are calculated using the parameter’s documented units. A climatology describes average historical conditions; it cannot tell you whether next Tuesday will be dry."
+msgstr "NASA-এর দেওয়া একক অনুসারে মাসিক মোট বৃষ্টিপাত হিসাব করা হয়। দীর্ঘমেয়াদি জলবায়ুর তথ্য অতীতের গড় অবস্থা বোঝায়; নির্দিষ্ট কোনো দিনে বৃষ্টি হবে কি না, তা বলে না।"
+
+msgid "Monthly rainfall and mean temperature"
+msgstr "মাসভিত্তিক বৃষ্টিপাত ও গড় তাপমাত্রা"
+
+msgid "Monthly temperature indicators cannot count daily heatwaves or predict crop damage. Variety and growth stage affect the real risk."
+msgstr "মাসিক তাপমাত্রা থেকে প্রতিদিনের তাপপ্রবাহ গোনা বা ফসলের ক্ষতি বলা যায় না। ফসলের জাত ও বৃদ্ধির ধাপের ওপর প্রকৃত ঝুঁকি নির্ভর করে।"
+
+msgid "Months with climatological maximum temperature at or above 34°C. This is screening, not heatwave frequency or crop-stage damage prediction."
+msgstr "যেসব মাসে দীর্ঘমেয়াদি সর্বোচ্চ তাপমাত্রার সূচক 34°C বা বেশি। এটি প্রাথমিক যাচাই; তাপপ্রবাহের সংখ্যা বা ফসলের নির্দিষ্ট পর্যায়ে ক্ষতির পূর্বাভাস নয়।"
+
+msgid "More than one way to grow."
+msgstr "চাষের একাধিক বিকল্প দেখুন।"
+
+msgid "Mung Bean (Moog)"
+msgstr "মুগ ডাল"
+
+msgid "Mung bean"
+msgstr "মুগ ডাল"
+
+msgid "Mustard"
+msgstr "সরিষা"
+
+msgid "Mustard (Sarisha)"
+msgstr "সরিষা"
+
+msgid "My farm"
+msgstr "আমার খামার"
+
+msgid "My farm workspace"
+msgstr "আমার খামারের খাতা"
+
+msgid "My farms"
+msgstr "আমার খামার"
+
+msgid "My farms · AgriTwin AI"
+msgstr "আমার খামার · AgriTwin AI"
+
+msgid "N"
+msgstr "উত্তর"
+
+msgid "NASA Langley Research Center POWER Project / MERRA-2 reanalysis"
+msgstr "NASA Langley Research Center-এর POWER প্রকল্প / MERRA-2 পুনর্বিশ্লেষণ"
+
+msgid "NASA POWER CONNECTION"
+msgstr "NASA POWER-এর সঙ্গে সংযোগ"
+
+msgid "NASA POWER climate data"
+msgstr "NASA POWER-এর জলবায়ুর তথ্য"
+
+msgid "NASA POWER climatology API"
+msgstr "NASA POWER-এর দীর্ঘমেয়াদি জলবায়ুর তথ্য"
+
+msgid "NASA POWER could not be reached or returned incomplete climate data. Please try again shortly."
+msgstr "NASA POWER-এর সঙ্গে সংযোগ হয়নি অথবা অসম্পূর্ণ তথ্য এসেছে। কিছুক্ষণ পর আবার চেষ্টা করুন।"
+
+msgid "NASA POWER data"
+msgstr "NASA POWER-এর তথ্য"
+
+msgid "NASA POWER data could not be retrieved or validated for this location. No sample data has been substituted. Your farm details are saved; retry the NASA request shortly."
+msgstr "এই স্থানের NASA POWER তথ্য আনা বা যাচাই করা যায়নি। এর বদলে কোনো নমুনা তথ্য দেখানো হয়নি। আপনার খামারের তথ্য সংরক্ষিত আছে; কিছুক্ষণ পর আবার NASA-এর তথ্য আনার চেষ্টা করুন।"
+
+msgid "NASA POWER data refreshed. Rotation scores were recalculated from the same NASA observations."
+msgstr "NASA POWER-এর তথ্য হালনাগাদ হয়েছে। একই NASA তথ্য দিয়ে ফসলের উপযোগিতা আবার হিসাব করা হয়েছে।"
+
+msgid "NASA POWER documentation ↗"
+msgstr "NASA POWER-এর বিস্তারিত তথ্য ↗"
+
+msgid "NASA POWER root-zone relative wetness"
+msgstr "NASA POWER-এর শিকড় অঞ্চলের আপেক্ষিক আর্দ্রতা"
+
+msgid "NASA POWER supplies regional historical climatology. Availability of the external service can vary."
+msgstr "NASA POWER এলাকাভিত্তিক দীর্ঘমেয়াদি জলবায়ুর তথ্য দেয়। বাইরের এই সেবাটি কখনো সাময়িকভাবে বন্ধ থাকতে পারে।"
+
+msgid "NASA POWER · Earth data"
+msgstr "NASA POWER · পৃথিবীর তথ্য"
+
+msgid "NASA baseline"
+msgstr "NASA-এর মূল তথ্য"
+
+msgid "NASA climate data source"
+msgstr "NASA জলবায়ুর তথ্যের উৎস"
+
+msgid "NASA data"
+msgstr "NASA-এর তথ্য"
+
+msgid "NASA data connection"
+msgstr "NASA-এর তথ্য সংযোগ"
+
+#, python-format
+msgid "NASA data could not be refreshed. %(error)s If a valid NASA analysis was saved before, it is retained with its original retrieval time."
+msgstr "NASA-এর তথ্য হালনাগাদ করা যায়নি। %(error)s আগে বৈধ NASA বিশ্লেষণ সংরক্ষিত থাকলে সেটি তথ্য সংগ্রহের আগের সময়সহ রাখা হয়েছে।"
+
+msgid "NASA data is unavailable."
+msgstr "NASA-এর তথ্য এখন পাওয়া যাচ্ছে না।"
+
+msgid "NASA data unavailable ·"
+msgstr "NASA-এর তথ্য পাওয়া যাচ্ছে না ·"
+
+msgid "NASA parameters:"
+msgstr "NASA-এর পরিমাপক:"
+
+msgid "NASA request URL"
+msgstr "NASA থেকে তথ্য আনার লিংক"
+
+msgid "NASA retrieved at"
+msgstr "NASA-এর তথ্য আনার সময়"
+
+msgid "NASA retrieved:"
+msgstr "NASA তথ্য আনা হয়েছে:"
+
+msgid "Needs revision"
+msgstr "সময়সূচি বদলানো দরকার"
+
+msgid "New field"
+msgstr "নতুন জমি"
+
+msgid "No"
+msgstr "না"
+
+msgid "No candidate passes the supplied field and calendar constraints. Review local conditions before choosing a rotation."
+msgstr "দেওয়া জমির অবস্থা ও ফসলের সময়সূচির সব শর্ত কোনো বিকল্পই পূরণ করছে না। ফসলের পর্যায়ক্রম বেছে নেওয়ার আগে স্থানীয় অবস্থা যাচাই করুন।"
+
+msgid "No local crop prices, production costs, field drainage or salinity measurements are available; economic scores do not predict profit."
+msgstr "স্থানীয় ফসলের দাম, উৎপাদন খরচ, জমির পানি নিষ্কাশন বা লবণাক্ততার পরিমাপ নেই। তাই আর্থিক স্কোর লাভের পূর্বাভাস দেয় না।"
+
+msgid "No months cross the selected heat-screening threshold."
+msgstr "কোনো মাসের তাপমাত্রা এই প্রাথমিক যাচাইয়ের নির্ধারিত সীমা ছাড়ায়নি।"
+
+msgid "No nitrogen-fixing legume in this sequence."
+msgstr "এই পর্যায়ক্রমে নাইট্রোজেন যোগ করতে পারে এমন কোনো ডাল ফসল নেই।"
+
+msgid "No sequential schedule fits the prototype planting/harvest windows with seven-day turnarounds within a repeating year."
+msgstr "এই প্রাথমিক মডেলের বপন ও ফসল তোলার সময়সীমা অনুযায়ী এক বছরে পর্যায়ক্রমটি মেলেনি। প্রতিটি ফসলের মাঝে জমি তৈরির জন্য অন্তত সাত দিন ধরা হয়েছে।"
+
+msgid "None passes all selected constraints. Review the blocked reasons, edit your farm details, or consult a local adviser before considering a rotation."
+msgstr "কোনো বিকল্পই সব শর্ত পূরণ করছে না। কারণগুলো দেখুন, খামারের তথ্য ঠিক করুন অথবা কোনো চাষচক্র বেছে নেওয়ার আগে স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।"
+
+msgid "Not available"
+msgstr "তথ্য পাওয়া যায়নি"
+
+msgid "Not yet tested"
+msgstr "এখনো পরীক্ষা করা হয়নি"
+
+msgid "Nov"
+msgstr "নভে"
+
+msgid "November"
+msgstr "নভেম্বর"
+
+msgid "Oct"
+msgstr "অক্টো"
+
+msgid "October"
+msgstr "অক্টোবর"
+
+#, python-format
+msgid "Open %(name)s"
+msgstr "%(name)s খুলুন"
+
+msgid "Open digital twin"
+msgstr "পরিস্থিতি পরীক্ষা খুলুন"
+
+msgid "Open my farm workspace"
+msgstr "আমার খামারের খাতা খুলুন"
+
+msgid "Open navigation"
+msgstr "মেনু খুলুন"
+
+msgid "Our approach"
+msgstr "আমাদের পদ্ধতি"
+
+msgid "Our science & approach · AgriTwin AI"
+msgstr "বিজ্ঞান ও পদ্ধতি · AgriTwin AI"
+
+msgid "Overview"
+msgstr "সারসংক্ষেপ"
+
+msgid "POWER GWETROOT: dimensionless regional root-zone relative wetness from reanalysis (0–1), averaged across November–March. This is not volumetric soil moisture and is not a SMAP retrieval. Field drainage, pH and nutrients require local assessment."
+msgstr "POWER GWETROOT হলো পুনর্বিশ্লেষণ থেকে পাওয়া আঞ্চলিক শিকড়-স্তরের আপেক্ষিক আর্দ্রতা (0–1)। এখানে নভেম্বর থেকে মার্চের গড় দেখানো হয়েছে। এটি মাটিতে পানির আয়তনভিত্তিক পরিমাণ বা SMAP-এর তথ্য নয়। জমির পানি নিষ্কাশন, pH ও পুষ্টি স্থানীয়ভাবে পরীক্ষা করতে হবে।"
+
+#, python-format
+msgid "POWER PRECTOTCORR (%(unit)s) converted to monthly mm using average month length; February is 28.25 days."
+msgstr "POWER PRECTOTCORR-এর %(unit)s হারকে মাসের গড় দিনসংখ্যা দিয়ে মাসিক মিলিমিটারে রূপান্তর করা হয়েছে। ফেব্রুয়ারি 28.25 দিন ধরা হয়েছে।"
+
+msgid "POWER metadata reports monthly precipitation in mm; no daily conversion applied."
+msgstr "POWER-এর তথ্য অনুযায়ী মাসিক বৃষ্টিপাতের একক মিলিমিটার। তাই দৈনিক হার থেকে আর কোনো রূপান্তর করা হয়নি।"
+
+msgid "PREPARED"
+msgstr "তৈরি হয়েছে"
+
+msgid "Page not found"
+msgstr "পাতাটি পাওয়া যায়নি"
+
+msgid "Page not found · AgriTwin AI"
+msgstr "পাতাটি পাওয়া যায়নি · AgriTwin AI"
+
+msgid "Plan a more resilient season"
+msgstr "ঝুঁকি সামলে মৌসুমের পরিকল্পনা করুন"
+
+msgid "Plant:"
+msgstr "বপন বা রোপণ:"
+
+msgid "Please return to your workspace and open the form again. Your session may have changed since the page was loaded."
+msgstr "আপনার খামারের পাতায় ফিরে ফর্মটি আবার খুলুন। এই পাতা খোলার পর আপনার ব্রাউজার সেশন বদলে যেতে পারে।"
+
+msgid "Poor / waterlogging occurs"
+msgstr "পানি জমে থাকে"
+
+msgid "Potential benefits"
+msgstr "সম্ভাব্য উপকার"
+
+msgid "Potential biological nitrogen contribution from a legume; not measured or quantified for this field."
+msgstr "ডাল ফসল থেকে প্রাকৃতিকভাবে নাইট্রোজেন যোগ হওয়ার সম্ভাবনা আছে। এই জমিতে এর পরিমাণ মাপা বা হিসাব করা হয়নি।"
+
+msgid "Potential soil contribution"
+msgstr "মাটির সম্ভাব্য উপকার"
+
+msgid "Powered by real NASA data"
+msgstr "প্রকৃত NASA তথ্য দিয়ে বিশ্লেষণ"
+
+msgid "Print / Save PDF"
+msgstr "ছাপান / PDF রাখুন"
+
+msgid "Priority"
+msgstr "প্রধান লক্ষ্য"
+
+msgid "Priority weights"
+msgstr "অগ্রাধিকার অনুযায়ী গুরুত্ব"
+
+msgid "Prototype agronomic assumptions; local verification required"
+msgstr "প্রাথমিক কৃষিবিষয়ক অনুমান; স্থানীয়ভাবে যাচাই করা দরকার"
+
+msgid "Prototype planting and harvest windows fit a repeating year with at least seven days between crops. Confirm variety, drainage and actual Aman harvest date locally."
+msgstr "প্রাথমিক মডেলের বপন ও ফসল তোলার সময়সীমা অনুযায়ী পর্যায়ক্রমটি এক বছরে মেলে। প্রতিটি ফসলের মাঝে অন্তত সাত দিন আছে। জাত, পানি নিষ্কাশন ও আমন কাটার প্রকৃত তারিখ স্থানীয়ভাবে মিলিয়ে নিন।"
+
+msgid "Prototype screening only. Scores are relative comparisons, not success probabilities, yield predictions, or financial forecasts. Confirm crop calendars, soil tests, drainage, irrigation and markets with a local agricultural advisor."
+msgstr "এটি প্রাথমিক তুলনার সহায়ক ব্যবস্থা। নম্বর দিয়ে ফসল সফল হওয়ার সম্ভাবনা, ফলন বা লাভের পূর্বাভাস বোঝানো হয় না। চাষের সময়সূচি, মাটি, পানি নিষ্কাশন, সেচ ও বাজার সম্পর্কে স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।"
+
+msgid "Provider"
+msgstr "তথ্য সরবরাহকারী"
+
+msgid "Pulses are vulnerable to waterlogging; verify field drainage before planting."
+msgstr "ডাল ফসল জলাবদ্ধতায় ক্ষতিগ্রস্ত হতে পারে। বপনের আগে জমির পানি নিষ্কাশন ব্যবস্থা যাচাই করুন।"
+
+msgid "Put this in rotation context"
+msgstr "ফসলের পর্যায়ক্রমের সঙ্গে মিলিয়ে দেখুন"
+
+msgid "ROOM TO EXPLORE"
+msgstr "আগে পরীক্ষা করে দেখুন"
+
+msgid "ROOTED IN YOUR REALITY"
+msgstr "আপনার জমির বাস্তবতা অনুযায়ী"
+
+msgid "Rabi precipitation"
+msgstr "রবি মৌসুমের বৃষ্টিপাত"
+
+msgid "Rabi season · November–March"
+msgstr "রবি মৌসুম · নভেম্বর–মার্চ"
+
+msgid "Rainfall & temperature, month by month"
+msgstr "মাসভিত্তিক বৃষ্টিপাত ও তাপমাত্রা"
+
+msgid "Rainfall (mm)"
+msgstr "বৃষ্টিপাত (মিমি)"
+
+msgid "Rainfall change"
+msgstr "বৃষ্টিপাতের পরিবর্তন"
+
+msgid "Rainfall change (%)"
+msgstr "বৃষ্টিপাতের পরিবর্তন (%)"
+
+msgid "Rajshahi example farm"
+msgstr "রাজশাহীর নমুনা খামার"
+
+msgid "Rajshahi, Bangladesh"
+msgstr "রাজশাহী, বাংলাদেশ"
+
+msgid "Read the change, then check the assumptions."
+msgstr "পরিবর্তন দেখুন, তারপর হিসাবের শর্ত যাচাই করুন।"
+
+msgid "Read the rhythms of your regional climate before planning what comes next."
+msgstr "পরের ফসলের পরিকল্পনার আগে আপনার এলাকার বৃষ্টি ও তাপমাত্রার ধরন জেনে নিন।"
+
+msgid "Read your climate"
+msgstr "আপনার এলাকার জলবায়ু জানুন"
+
+msgid "Ready to understand your land?"
+msgstr "আপনার জমি সম্পর্কে জানতে চান?"
+
+msgid "Real NASA POWER climatology for Rajshahi. Internet required."
+msgstr "রাজশাহীর প্রকৃত NASA POWER জলবায়ুর তথ্য। ইন্টারনেট প্রয়োজন।"
+
+msgid "Reasons behind every score."
+msgstr "প্রতিটি নম্বরের কারণ জানুন।"
+
+msgid "Reference period"
+msgstr "তথ্যের সময়কাল"
+
+msgid "Refresh climate data"
+msgstr "জলবায়ুর তথ্য আবার আনুন"
+
+msgid "Regional MERRA-2 meteorology, native grid approximately 0.5° × 0.625°"
+msgstr "MERRA-2-এর আঞ্চলিক আবহাওয়ার তথ্য; মূল গ্রিডের আকার প্রায় 0.5° × 0.625°"
+
+msgid "Regional climatological screening, not a field measurement, seasonal forecast, or soil test. Temperature maxima describe climatological extremes, not heatwave counts."
+msgstr "এই আঞ্চলিক জলবায়ুর তথ্য প্রাথমিক তুলনার জন্য। এটি জমিতে সরাসরি মাপা তথ্য, মৌসুমের পূর্বাভাস বা মাটি পরীক্ষা নয়। সর্বোচ্চ তাপমাত্রার মান দীর্ঘমেয়াদি তথ্যের সূচক; তাপপ্রবাহের সংখ্যা নয়।"
+
+msgid "Regional gridded observations cannot measure your field’s nutrients, pH, drainage, salinity, or planting readiness. Unknown inputs remain unknown and appear as information gaps."
+msgstr "এলাকাভিত্তিক তথ্য দিয়ে আপনার জমির পুষ্টি, pH, পানি নিষ্কাশন, লবণাক্ততা বা চাষের প্রস্তুতি নির্ণয় করা যায় না। অজানা তথ্য অজানাই রাখা হয় এবং আলাদা করে দেখানো হয়।"
+
+msgid "Regional index from 0 to 1; November-March mean"
+msgstr "এলাকাভিত্তিক ০ থেকে ১ সূচক; নভেম্বর–মার্চের গড়"
+
+msgid "Regional soil-wetness data is unavailable; no field moisture value is inferred."
+msgstr "আঞ্চলিক মাটির আর্দ্রতার তথ্য পাওয়া যায়নি। আপনার জমির আর্দ্রতার কোনো মান অনুমান করে দেখানো হয়নি।"
+
+msgid "Relative score /100"
+msgstr "তুলনামূলক নম্বর /১০০"
+
+msgid "Relative scores · 0–100"
+msgstr "তুলনামূলক নম্বর · ০–১০০"
+
+msgid "Relative suitability"
+msgstr "তুলনামূলক উপযোগিতা"
+
+msgid "Relative suitability scores are transparent comparison indices, not probabilities of crop success. Water demand and economic parameters are illustrative assumptions. This report does not predict yield, income, fertilizer needs, or future weather."
+msgstr "উপযোগিতার নম্বর শুধু তুলনা করার সূচক; ফসল সফল হওয়ার সম্ভাবনা নয়। পানির চাহিদা ও অর্থনৈতিক মানগুলো প্রাথমিক অনুমান। এই প্রতিবেদন ফলন, আয়, সারের চাহিদা বা ভবিষ্যৎ আবহাওয়ার পূর্বাভাস দেয় না।"
+
+msgid "Report"
+msgstr "প্রতিবেদন"
+
+msgid "Reported poor drainage or waterlogging conflicts with the pulse/oilseed crop profile. Resolve drainage and obtain local agronomic advice before considering this sequence."
+msgstr "দেওয়া তথ্য অনুযায়ী জমিতে পানি নিষ্কাশনের সমস্যা বা জলাবদ্ধতা আছে। এটি ডাল বা তেল ফসলের জন্য অনুপযোগী হতে পারে। এই পর্যায়ক্রম বিবেচনার আগে পানি নিষ্কাশনের ব্যবস্থা করুন এবং স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।"
+
+msgid "Request could not be completed · AgriTwin AI"
+msgstr "অনুরোধটি সম্পন্ন হয়নি · AgriTwin AI"
+
+msgid "Request unavailable"
+msgstr "অনুরোধটি করা যাচ্ছে না"
+
+msgid "Reset assumptions"
+msgstr "শর্তগুলো আগের অবস্থায় নিন"
+
+msgid "Retrieved"
+msgstr "তথ্য আনার সময়"
+
+msgid "Retrieved:"
+msgstr "তথ্য আনা হয়েছে:"
+
+msgid "Retry NASA connection"
+msgstr "NASA-এর সঙ্গে আবার সংযোগ করুন"
+
+msgid "Review coordinates"
+msgstr "জমির অবস্থান যাচাই করুন"
+
+msgid "Review irrigation access alongside the dry-season rainfall total. Annual rainfall can hide the water gap between monsoon and winter."
+msgstr "শুষ্ক মৌসুমের বৃষ্টির পাশাপাশি সেচের ব্যবস্থা বিবেচনা করুন। সারা বছরের মোট বৃষ্টিতে বর্ষা ও শীতের পানির ঘাটতি বোঝা নাও যেতে পারে।"
+
+msgid "Review rainfall timing alongside crop water demand"
+msgstr "ফসলের পানির চাহিদার পাশাপাশি কখন বৃষ্টি হয় তা বিবেচনা করুন"
+
+msgid "Review seed, labor, costs, and market access with a local adviser."
+msgstr "স্থানীয় কৃষি কর্মকর্তার সঙ্গে বীজ, শ্রমিক, খরচ ও বাজারের সুযোগ নিয়ে আলোচনা করুন।"
+
+msgid "Risks & checks"
+msgstr "ঝুঁকি ও যাচাইয়ের বিষয়"
+
+msgid "Risks and uncertainties"
+msgstr "ঝুঁকি ও অজানা তথ্য"
+
+msgid "Rotation explorer"
+msgstr "ফসলের তুলনা"
+
+msgid "Rotation explorer ·"
+msgstr "ফসলের তুলনা ·"
+
+msgid "Run this scenario"
+msgstr "এই পরিস্থিতি পরীক্ষা করুন"
+
+msgid "SCENARIO RESULTS"
+msgstr "পরীক্ষার ফল"
+
+msgid "SENSITIVITY LAB"
+msgstr "শর্ত বদলে পরীক্ষা"
+
+msgid "SIDE BY SIDE"
+msgstr "পাশাপাশি তুলনা"
+
+msgid "Sandy loam"
+msgstr "বেলে দোআঁশ"
+
+msgid "Save field changes"
+msgstr "পরিবর্তন সংরক্ষণ করুন"
+
+msgid "Saved in this browser’s workspace · Added"
+msgstr "এই ব্রাউজারের খাতায় সংরক্ষিত · যোগ হয়েছে"
+
+msgid "Saved with this farm analysis"
+msgstr "এই খামারের বিশ্লেষণের সঙ্গে সংরক্ষিত"
+
+msgid "Saving your farm requests NASA POWER climatology for these coordinates. Internet is required for the first analysis. Your data source and retrieval time remain visible throughout the comparison."
+msgstr "খামারের তথ্য সংরক্ষণ করলে এই অবস্থানের জন্য NASA POWER-এর জলবায়ুর তথ্য আনা হবে। প্রথম বিশ্লেষণে ইন্টারনেট প্রয়োজন। তুলনার সঙ্গে তথ্যের উৎস ও সংগ্রহের সময় দেখা যাবে।"
+
+msgid "Scenario irrigation access"
+msgstr "পরীক্ষামূলক পরিস্থিতিতে সেচের সুবিধা"
+
+msgid "Scenario priority"
+msgstr "পরীক্ষার প্রধান লক্ষ্য"
+
+msgid "Scores are not success probabilities, water savings forecasts, or income predictions. Crop-water assumptions describe illustrative whole rotations, not irrigation measurements. Calendar screening uses generic planting windows; local varieties, harvest dates, drainage, and market access still need verification."
+msgstr "এই নম্বর সফলতা, পানি সাশ্রয় বা আয়ের পূর্বাভাস নয়। পানির হিসাব পুরো চাষচক্রের একটি ধারণা; মাপা সেচের পরিমাণ নয়। সময়সূচিতে সাধারণ চাষের সময় ধরা হয়েছে; স্থানীয় জাত, ফসল সংগ্রহের সময়, পানি নিষ্কাশন ও বাজারের সুযোগ যাচাই করতে হবে।"
+
+msgid "Scores combine water, climate, potential soil contribution, and an illustrative economic proxy. A higher score means a stronger relative fit under these assumptions."
+msgstr "পানি, জলবায়ু, মাটির সম্ভাব্য উপকার ও অর্থনৈতিক ধারণা মিলিয়ে নম্বর দেওয়া হয়। এই শর্তগুলোতে নম্বর বেশি মানে তুলনায় বেশি উপযোগী।"
+
+msgid "See how your options respond."
+msgstr "চাষের পরিকল্পনায় কী বদলায় দেখুন।"
+
+msgid "See seasonal rainfall, temperature, and the source behind the observations."
+msgstr "মৌসুমি বৃষ্টিপাত, তাপমাত্রা ও তথ্যের উৎস দেখুন।"
+
+msgid "See the evidence & assumptions"
+msgstr "তথ্য ও হিসাবের ভিত্তি দেখুন"
+
+msgid "See your options"
+msgstr "চাষের বিকল্প দেখুন"
+
+msgid "Select the crop that starts your current annual rotation."
+msgstr "বছরে যে ফসল দিয়ে আপনার চাষের পর্যায়ক্রম শুরু হয় সেটি বেছে নিন।"
+
+msgid "Sensitivity test, not a climate forecast. Regional soil wetness is held at baseline; this prototype does not model soil-water dynamics."
+msgstr "শর্ত বদলে পরিবর্তন দেখার পরীক্ষা, জলবায়ুর পূর্বাভাস নয়। আঞ্চলিক মাটির আর্দ্রতা ভিত্তি-তথ্যের মতো রাখা হয়েছে। এই প্রাথমিক মডেলে মাটির পানির চলাচল ও পরিবর্তন হিসাব করা হয় না।"
+
+msgid "Sep"
+msgstr "সেপ"
+
+msgid "September"
+msgstr "সেপ্টেম্বর"
+
+msgid "Set a rainfall and temperature change, choose your available irrigation, and run the scenario to see how the three candidate rotations respond."
+msgstr "বৃষ্টি ও তাপমাত্রা কতটা বদলাবে এবং সেচের কী ব্যবস্থা থাকবে তা বেছে নিন। তারপর তিনটি চাষচক্রের ফল কীভাবে বদলায় পরীক্ষা করুন।"
+
+msgid "Share what you grow"
+msgstr "আপনি কী কী চাষ করেন জানান"
+
+msgid "Silt loam"
+msgstr "পলি দোআঁশ"
+
+msgid "Simple screening allowance only; farm size does not change the per-area demand indicator. Not an irrigation prescription."
+msgstr "এটি শুধু প্রাথমিক তুলনার জন্য ধরা সেচের পরিমাণ। খামারের আকার বদলালে প্রতি একক এলাকার চাহিদার সূচক বদলায় না। এটি সেচ দেওয়ার নির্দেশনা নয়।"
+
+msgid "Skip to content"
+msgstr "মূল অংশে যান"
+
+msgid "Small details can lead to"
+msgstr "জমির ছোট ছোট তথ্যও সাহায্য করে"
+
+msgid "Soil"
+msgstr "মাটি"
+
+msgid "Soil pH"
+msgstr "মাটির অম্লত্ব (pH)"
+
+msgid "Soil pH (optional)"
+msgstr "মাটির pH (জানা থাকলে)"
+
+msgid "Soil pH unverified: NASA data cannot replace a local soil test."
+msgstr "মাটির pH পরীক্ষা করা হয়নি। NASA-এর তথ্য স্থানীয় মাটি পরীক্ষার বিকল্প নয়।"
+
+msgid "Soil texture"
+msgstr "মাটির ধরন"
+
+msgid "Soil texture unknown: verify drainage and texture locally before deciding."
+msgstr "মাটির ধরন জানা নেই। সিদ্ধান্ত নেওয়ার আগে স্থানীয়ভাবে মাটির ধরন ও পানি নিষ্কাশন ব্যবস্থা যাচাই করুন।"
+
+msgid "Soil type"
+msgstr "মাটির ধরন"
+
+msgid "Source"
+msgstr "তথ্যের উৎস"
+
+msgid "Source & provenance"
+msgstr "তথ্যের উৎস ও বিবরণ"
+
+msgid "Source limitations"
+msgstr "তথ্যের সীমাবদ্ধতা"
+
+msgid "Spatial scale"
+msgstr "তথ্যের ভৌগোলিক পরিসর"
+
+msgid "Start with what you know. You can update your farm details as you learn more."
+msgstr "যা জানেন তা দিয়েই শুরু করুন। পরে নতুন তথ্য জানলে খামারের তথ্য বদলাতে পারবেন।"
+
+msgid "Start with your field"
+msgstr "জমির তথ্য দিয়ে শুরু করুন"
+
+msgid "Strategy"
+msgstr "ফসল পরিকল্পনা"
+
+msgid "Suitability is a relative rule-based score, not a probability of success or a yield forecast."
+msgstr "উপযোগিতার স্কোর নিয়মভিত্তিক তুলনার একটি সূচক। এটি সফল হওয়ার সম্ভাবনা বা ফলনের পূর্বাভাস নয়।"
+
+msgid "Sum of monthly climatology totals"
+msgstr "দীর্ঘমেয়াদি মাসিক বৃষ্টিপাতের যোগফল"
+
+msgid "Switch app language"
+msgstr "অ্যাপের ভাষা বদলান"
+
+msgid "Switch navigation language"
+msgstr "অ্যাপের ভাষা বদলান"
+
+msgid "Switch navigation to English"
+msgstr "Switch app to English"
+
+msgid "T. Aman Rice"
+msgstr "রোপা আমন ধান"
+
+msgid "T. Aman rice"
+msgstr "রোপা আমন ধান"
+
+msgid "T2M, T2M_MAX, T2M_MIN, PRECTOTCORR and GWETROOT when available."
+msgstr "T2M, T2M_MAX, T2M_MIN, PRECTOTCORR এবং পাওয়া গেলে GWETROOT।"
+
+msgid "THE BIGGER PICTURE"
+msgstr "পুরো বছরের চিত্র"
+
+msgid "THE THINKING BEHIND YOUR NEXT SEASON"
+msgstr "আগামী মৌসুমের পরিকল্পনার ভিত্তি"
+
+msgid "Tell us about your land."
+msgstr "আপনার জমি সম্পর্কে জানান।"
+
+msgid "Temperature change"
+msgstr "তাপমাত্রার পরিবর্তন"
+
+msgid "Temperature change (°C)"
+msgstr "তাপমাত্রার পরিবর্তন (°সে.)"
+
+msgid "Test a scenario"
+msgstr "পরিস্থিতি পরীক্ষা করুন"
+
+msgid "Test a scenario and take your report with you."
+msgstr "শর্ত বদলে পরীক্ষা করুন এবং প্রতিবেদন রাখুন।"
+
+msgid "The basemap is unavailable right now."
+msgstr "এখন মানচিত্র দেখা যাচ্ছে না।"
+
+msgid "The current rotation contains an unsupported crop; update the farm profile."
+msgstr "বর্তমান পর্যায়ক্রমের একটি ফসল এই মডেলে নেই। খামারের তথ্য সংশোধন করুন।"
+
+msgid "The entered limited irrigation availability does not meet the intensive dry-season irrigation requirement in the Boro rice profile."
+msgstr "আপনার দেওয়া সীমিত সেচের সুবিধা এই মডেলে বোরো ধানের জন্য ধরা শুষ্ক মৌসুমের বেশি সেচের চাহিদা পূরণ করে না।"
+
+msgid "The example farm is saved. NASA POWER could not be reached; retry its climate analysis when connectivity returns."
+msgstr "উদাহরণ খামারের তথ্য সংরক্ষণ করা হয়েছে। NASA POWER-এর সঙ্গে সংযোগ হয়নি। সংযোগ ফিরলে জলবায়ু বিশ্লেষণের জন্য আবার চেষ্টা করুন।"
+
+msgid "The first crop must also be selected in your current crops."
+msgstr "প্রথম ফসলটি বর্তমান ফসলের তালিকাতেও বেছে নিতে হবে।"
+
+msgid "The science"
+msgstr "তথ্য ও পদ্ধতি"
+
+msgid "The screening water-demand indicator exceeds the assumed irrigation allowance; confirm a reliable water supply."
+msgstr "প্রাথমিক হিসাবে পানির চাহিদা ধরা সেচের পরিমাণের বেশি। নির্ভরযোগ্য পানির সরবরাহ আছে কি না নিশ্চিত করুন।"
+
+msgid "The simulator changes rainfall and temperature assumptions on the same climate baseline, then recalculates the comparison. You can also change irrigation access and the priority used for weighting."
+msgstr "একই মূল জলবায়ুর তথ্যের ওপর বৃষ্টি ও তাপমাত্রা কমবেশি ধরে আবার তুলনা করা হয়। সেচের সুযোগ ও আপনার অগ্রাধিকারও বদলে দেখতে পারেন।"
+
+msgid "These are sensitivity experiments. They are not weather predictions, calibrated crop-growth simulations, yield forecasts, or estimates of farm income."
+msgstr "এটি শর্ত বদলালে ফল কতটা বদলায়, তা দেখার পরীক্ষা। এটি আবহাওয়া, ফসলের বৃদ্ধি, ফলন বা খামারের আয়ের পূর্বাভাস নয়।"
+
+msgid "These candidates need local review"
+msgstr "এই বিকল্পগুলো স্থানীয়ভাবে যাচাই করা দরকার"
+
+msgid "This crop-calendar prototype supports Bangladesh only. Choose a location in Bangladesh."
+msgstr "এই প্রাথমিক ফসল পরিকল্পনা শুধু বাংলাদেশের জন্য। বাংলাদেশের ভেতরে একটি অবস্থান বেছে নিন।"
+
+msgid "This example combines an illustrative farm profile with actual NASA POWER climate data for Rajshahi."
+msgstr "এই উদাহরণে একটি নমুনা খামারের তথ্যের সঙ্গে রাজশাহীর প্রকৃত NASA POWER জলবায়ুর তথ্য ব্যবহার করা হয়েছে।"
+
+msgid "This page could not be found. Your farm workspace is a good place to start again."
+msgstr "এই পাতাটি পাওয়া যায়নি। আপনার খামারের পাতা থেকে আবার শুরু করতে পারেন।"
+
+msgid "This prototype crop calendar is for Bangladesh. Coordinates outside the Bangladesh planning envelope cannot be ranked as suitable."
+msgstr "এই প্রাথমিক ফসলের সময়সূচি বাংলাদেশের জন্য তৈরি। নির্ধারিত ভৌগোলিক সীমার বাইরের স্থানকে উপযোগী হিসেবে দেখানো যায় না।"
+
+msgid "Three crop rotation strategies"
+msgstr "তিনটি ফসলের পর্যায়ক্রমের তুলনা"
+
+msgid "Three crops require timely harvests and field preparation; a late Aman harvest may prevent the winter crop."
+msgstr "তিনটি ফসল করতে সময়মতো ফসল তোলা ও জমি তৈরি জরুরি। আমন কাটতে দেরি হলে শীতকালীন ফসল বপনের সময় নাও মিলতে পারে।"
+
+msgid "Three rotations. Clear trade-offs."
+msgstr "তিনটি চাষচক্রের সুবিধা ও সীমাবদ্ধতা।"
+
+msgid "Try a different future"
+msgstr "ভিন্ন পরিস্থিতি পরীক্ষা করুন"
+
+msgid "Turn NASA climate data and what you know about your land into crop rotations you can understand and compare."
+msgstr "NASA-এর জলবায়ুর তথ্য ও আপনার জমি সম্পর্কে জানা তথ্য মিলিয়ে চাষের বিভিন্ন পরিকল্পনা বুঝুন ও তুলনা করুন।"
+
+msgid "Under your selected assumptions"
+msgstr "আপনার দেওয়া তথ্য ও শর্ত অনুযায়ী"
+
+msgid "Understand the climate"
+msgstr "জলবায়ুর অবস্থা বুঝুন"
+
+msgid "Understand three candidate strategies and their benefits, risks, and information gaps."
+msgstr "তিনটি সম্ভাব্য চাষচক্রের উপকার, ঝুঁকি ও অজানা বিষয়গুলো বুঝে নিন।"
+
+msgid "Understand your field. Explore your options."
+msgstr "জমির অবস্থা জানুন। চাষের বিকল্প দেখুন।"
+
+msgid "Understand your land, compare crop rotations, and explore changing climate conditions with AgriTwin AI."
+msgstr "AgriTwin AI দিয়ে জমির অবস্থা জানুন, ফসলের পর্যায়ক্রম তুলনা করুন এবং জলবায়ুর পরিবর্তনের প্রভাব পরীক্ষা করুন।"
+
+msgid "Unknown"
+msgstr "জানা নেই"
+
+msgid "Unknown / not tested"
+msgstr "জানা নেই / পরীক্ষা করা হয়নি"
+
+msgid "Unknown · requires soil test"
+msgstr "জানা নেই · মাটি পরীক্ষা প্রয়োজন"
+
+msgid "Unknown; requires a soil test"
+msgstr "জানা নেই; মাটি পরীক্ষা করা প্রয়োজন"
+
+msgid "Use the order shown above"
+msgstr "ওপরের দেখানো ক্রম ব্যবহার করুন"
+
+msgid "Verify planting and harvest dates for your crop varieties."
+msgstr "আপনার ফসলের জাত অনুযায়ী বপন ও ফসল সংগ্রহের সময় মিলিয়ে নিন।"
+
+msgid "Very low dry-season rainfall; review irrigation capacity"
+msgstr "শুষ্ক মৌসুমে বৃষ্টি খুব কম; সেচের সক্ষমতা যাচাই করুন"
+
+msgid "View NASA API response ↗"
+msgstr "NASA API-এর তথ্য দেখুন ↗"
+
+msgid "View NASA source ↗"
+msgstr "NASA-এর মূল উৎস দেখুন ↗"
+
+msgid "View accessible monthly data table"
+msgstr "মাসিক তথ্যের সারণি দেখুন"
+
+msgid "Want to look around first?"
+msgstr "আগে একটি উদাহরণ দেখতে চান?"
+
+msgid "Water"
+msgstr "পানি"
+
+msgid "Water suitability"
+msgstr "পানির দিক থেকে উপযোগিতা"
+
+msgid "Water, climate, potential soil contribution, and an illustrative economic proxy form a weighted relative score. Your chosen priority changes those weights. A score of 80 is a comparison index, never an 80% success probability."
+msgstr "পানি, জলবায়ু, মাটির সম্ভাব্য উপকার ও অর্থনৈতিক দিক মিলিয়ে তুলনামূলক নম্বর তৈরি হয়। আপনার প্রধান লক্ষ্য অনুযায়ী প্রতিটি বিষয়ের গুরুত্ব বদলায়। ৮০ নম্বর মানে অন্য বিকল্পের সঙ্গে তুলনা; ফসল সফল হওয়ার সম্ভাবনা ৮০ শতাংশ বোঝায় না।"
+
+msgid "Water, climate, potential soil contribution, and an illustrative economic proxy form a weighted relative score. Your chosen priority changes those weights. A score of 80 is a comparison index, never an 80%% success probability."
+msgstr "পানি, জলবায়ু, মাটির সম্ভাব্য উপকার ও অর্থনৈতিক দিক মিলিয়ে তুলনামূলক নম্বর তৈরি হয়। আপনার প্রধান লক্ষ্য অনুযায়ী প্রতিটি বিষয়ের গুরুত্ব বদলায়। ৮০ নম্বর মানে অন্য বিকল্পের সঙ্গে তুলনা; ফসল সফল হওয়ার সম্ভাবনা ৮০ শতাংশ বোঝায় না।"
+
+msgid "We compare your current crops with a legume rotation and a diversified rotation. Each candidate is screened against crop windows, soil inputs, irrigation, and climate indicators."
+msgstr "আপনার বর্তমান ফসলের সঙ্গে ডালশস্যভিত্তিক ও বিভিন্ন ফসলভিত্তিক দুটি বিকল্পের তুলনা করা হয়। চাষের সময়, মাটির তথ্য, সেচ ও জলবায়ুর ভিত্তিতে প্রতিটি বিকল্প যাচাই করা হয়।"
+
+msgid "We couldn’t complete that request."
+msgstr "অনুরোধটি সম্পন্ন করা যায়নি।"
+
+msgid "We make the source and limits of every analysis visible. Regional climate data provides context; your local knowledge and soil testing complete the picture."
+msgstr "প্রতিটি বিশ্লেষণের উৎস ও সীমাবদ্ধতা আমরা জানাই। এলাকার জলবায়ুর তথ্যের সঙ্গে আপনার অভিজ্ঞতা ও মাটি পরীক্ষার ফল মেলালে আরও ভালো ধারণা পাওয়া যায়।"
+
+msgid "We need the NASA baseline."
+msgstr "বিশ্লেষণের জন্য NASA-এর তথ্য প্রয়োজন।"
+
+msgid "Well drained"
+msgstr "পানি ভালোভাবে নেমে যায়"
+
+msgid "What if the season changes?"
+msgstr "মৌসুমের অবস্থা বদলালে কী হবে?"
+
+msgid "What matters"
+msgstr "তুলনার বিষয়"
+
+msgid "What the dry season tells us"
+msgstr "শুষ্ক মৌসুমের তথ্য কী বলছে"
+
+msgid "What the field still needs"
+msgstr "জমিতে যে বিষয়গুলো যাচাই করতে হবে"
+
+msgid "What to check"
+msgstr "কী কী যাচাই করবেন"
+
+msgid "Wheat"
+msgstr "গম"
+
+msgid "Wheat (Gom)"
+msgstr "গম"
+
+msgid "Why consider it"
+msgstr "কেন বিবেচনা করবেন"
+
+msgid "Winter Maize (Bhutta)"
+msgstr "শীতকালীন ভুট্টা"
+
+msgid "Working…"
+msgstr "কাজ চলছে…"
+
+msgid "Workspace"
+msgstr "খামারের খাতা"
+
+msgid "YOUR CURRENT PRACTICE"
+msgstr "আপনার বর্তমান চাষপদ্ধতি"
+
+msgid "YOUR FIELD COMPANION"
+msgstr "আপনার কৃষিকাজের সঙ্গী"
+
+msgid "YOUR FIELD NOTES, BROUGHT TOGETHER"
+msgstr "জমির সব তথ্য একসঙ্গে"
+
+msgid "YOUR NEXT CHAPTER"
+msgstr "এবার পরের পরিকল্পনা"
+
+msgid "YOUR PERSONAL FIELD NOTES"
+msgstr "আপনার নিজের খামারের খাতা"
+
+msgid "YOUR STARTING POINT"
+msgstr "শুরুর অবস্থার তুলনা"
+
+msgid "Yes"
+msgstr "হ্যাঁ"
+
+msgid "You bring the local knowledge. We’ll add the bigger picture."
+msgstr "আপনি জমির তথ্য দিন। আমরা এলাকার জলবায়ুর তথ্য মিলিয়ে দেখাব।"
+
+msgid "You know your land best. Tell us a little about it, and we’ll put the bigger picture in your hands."
+msgstr "আপনার জমি আপনি সবচেয়ে ভালো চেনেন। কিছু তথ্য দিন, আমরা জলবায়ুর তথ্য মিলিয়ে সহজভাবে তুলে ধরব।"
+
+msgid "Your coordinates are preserved. Choose a region or enter coordinates to continue."
+msgstr "আপনার অবস্থানের তথ্য সংরক্ষিত আছে। এগিয়ে যেতে জেলা বেছে নিন অথবা অক্ষাংশ ও দ্রাঘিমাংশ লিখুন।"
+
+msgid "Your crops become the baseline for comparison."
+msgstr "আপনার বর্তমান ফসলের সঙ্গে অন্য চাষচক্রের তুলনা করা হয়।"
+
+msgid "Your current rotation"
+msgstr "আপনার বর্তমান ফসলের পর্যায়ক্রম"
+
+msgid "Your entered crop sequence provides the comparison baseline."
+msgstr "আপনার দেওয়া ফসলের পর্যায়ক্রমকে ভিত্তি ধরে অন্য বিকল্পগুলোর সঙ্গে তুলনা করা হয়েছে।"
+
+msgid "Your farm details are saved. Climate results and crop scores will be available after NASA POWER data can be retrieved."
+msgstr "খামারের তথ্য সংরক্ষিত আছে। NASA POWER-এর তথ্য পাওয়ার পর জলবায়ুর ফল ও ফসলের তুলনা দেখা যাবে।"
+
+msgid "Your farm is ready. Its climate analysis and crop comparison use NASA POWER data."
+msgstr "আপনার খামার প্রস্তুত। জলবায়ু বিশ্লেষণ ও ফসলের তুলনায় NASA POWER-এর তথ্য ব্যবহার করা হয়েছে।"
+
+msgid "Your farm is saved. Its climate analysis needs a valid NASA POWER response."
+msgstr "আপনার খামারের তথ্য সংরক্ষিত আছে। জলবায়ু বিশ্লেষণের জন্য NASA POWER-এর সঠিক তথ্য প্রয়োজন।"
+
+msgid "Your farm is saved. NASA POWER is unavailable, so climate analysis and crop scores will be available after a successful NASA request."
+msgstr "খামারের তথ্য সংরক্ষণ করা হয়েছে। এই মুহূর্তে NASA POWER-এর সঙ্গে সংযোগ হচ্ছে না। NASA থেকে তথ্য পাওয়ার পর জলবায়ু বিশ্লেষণ ও ফসলের উপযোগিতা দেখা যাবে।"
+
+msgid "Your farm profile"
+msgstr "আপনার খামারের পরিচিতি"
+
+msgid "Your farm."
+msgstr "আপনার খামার।"
+
+msgid "Your field profile"
+msgstr "আপনার জমির পরিচিতি"
+
+msgid "Your field, in focus"
+msgstr "আপনার জমির তথ্য এক জায়গায়"
+
+msgid "Your first field belongs here."
+msgstr "এখানে আপনার প্রথম জমি যোগ করুন।"
+
+msgid "Your land, with a little more perspective."
+msgstr "আপনার জমির অবস্থা এবার আরও স্পষ্টভাবে জানুন।"
+
+msgid "Your location, your starting point."
+msgstr "আপনার জমির অবস্থান দিয়েই শুরু।"
+
+msgid "Your main priority"
+msgstr "আপনার প্রধান লক্ষ্য"
+
+msgid "Your priorities shape the relative scores."
+msgstr "আপনার অগ্রাধিকার অনুযায়ী তুলনার গুরুত্ব বদলায়।"
+
+msgid "Your priority"
+msgstr "আপনার অগ্রাধিকার"
+
+msgid "Your priority:"
+msgstr "আপনার অগ্রাধিকার:"
+
+msgid "Your scenario"
+msgstr "আপনার পরীক্ষার পরিস্থিতি"
+
+msgid "Your workspace is linked to this browser session. Download a report to keep an independent copy."
+msgstr "খামারের খাতা এই ব্রাউজার সেশনের সঙ্গে যুক্ত। নিজের কাছে কপি রাখতে প্রতিবেদন ডাউনলোড করুন।"
+
+msgid "acres"
+msgstr "একর"
+
+msgid "and seasonal water patterns."
+msgstr "ও মৌসুমি পানির অবস্থা দেখুন।"
+
+msgid "and what still needs a conversation in the field."
+msgstr "আর কোন বিষয়গুলো স্থানীয়ভাবে যাচাই করা দরকার—জেনে নিন।"
+
+msgid "before you plant it."
+msgstr "চাষ শুরুর আগেই।"
+
+msgid "better-informed decisions."
+msgstr "আরও বুঝে সিদ্ধান্ত নিতে।"
+
+msgid "climate"
+msgstr "জলবায়ুর উপযোগিতা"
+
+msgid "compare rotations, and test a different future."
+msgstr "চাষচক্র তুলনা করুন এবং ভিন্ন পরিস্থিতি পরীক্ষা করুন।"
+
+msgid "component scores unchanged"
+msgstr "আলাদা সূচকের স্কোর অপরিবর্তিত"
+
+msgid "economic"
+msgstr "আর্থিক সম্ভাবনার সূচক"
+
+msgid "irrigation"
+msgstr "সেচ"
+
+msgid "kharif_1"
+msgstr "খরিফ-১ মৌসুম"
+
+msgid "kharif_2"
+msgstr "খরিফ-২ মৌসুম"
+
+msgid "mean temperature"
+msgstr "গড় তাপমাত্রা"
+
+msgid "mm"
+msgstr "মিমি"
+
+msgid "mm / cycle"
+msgstr "মিমি / চাষচক্র"
+
+msgid "months"
+msgstr "মাস"
+
+msgid "possibilities."
+msgstr "নানা সম্ভাবনা।"
+
+msgid "precipitation"
+msgstr "বৃষ্টিপাত"
+
+msgid "priority weights changed"
+msgstr "অগ্রাধিকারের গুরুত্ব বদলেছে"
+
+msgid "pts"
+msgstr "নম্বর"
+
+msgid "rabi"
+msgstr "রবি মৌসুম"
+
+msgid "rabi_early"
+msgstr "আগাম রবি মৌসুম"
+
+msgid "rainfall"
+msgstr "বৃষ্টিপাত"
+
+msgid "required"
+msgstr "অবশ্যই দিতে হবে"
+
+msgid "soil"
+msgstr "মাটির সম্ভাব্য উপকার"
+
+msgid "starts with your land."
+msgstr "শুরু হোক আপনার জমি থেকেই।"
+
+msgid "temperature"
+msgstr "তাপমাত্রা"
+
+msgid "water"
+msgstr "পানির উপযোগিতা"
+
+msgid "with honest information."
+msgstr "সঠিক ও স্পষ্ট তথ্য দিয়ে।"
+
+msgid "° E"
+msgstr "° পূর্ব"
+
+msgid "° N,"
+msgstr "° উত্তর,"
+
+msgid "°C"
+msgstr "°সে."
+
+msgid "· Prepared:"
+msgstr "· প্রতিবেদন তৈরি:"
+
+msgid "“Unknown” is a useful and honest starting point."
+msgstr "জানা না থাকলে “জানা নেই” বেছে নিন।"
+
+msgid "← Back to my farms"
+msgstr "← আমার খামারে ফিরে যান"
+
+msgid "−1°C · Cooler"
+msgstr "−১°সে. · কম গরম"
+
+msgid "−50% · Drier"
+msgstr "−৫০% · কম বৃষ্টি"
+
+msgid "AgriTwin AI"
+msgstr "AgriTwin AI"
+
+msgid "+50%% · Wetter"
+msgstr "+৫০% · বেশি বৃষ্টি"
+
+msgid "Rainfall change (%%)"
+msgstr "বৃষ্টিপাতের পরিবর্তন (%)"
+
+msgid "−50%% · Drier"
+msgstr "−৫০% · কম বৃষ্টি"
+
+msgid "A little help for your next step."
+msgstr "কৃষিকাজের পরের ধাপে পাশে আছি।"
+
+msgid "AI assistance"
+msgstr "AI সহায়তা"
+
+msgid "Add context from your farm"
+msgstr "আপনার খামারের তথ্য যুক্ত করুন"
+
+msgid "Ask a question"
+msgstr "প্রশ্ন করুন"
+
+msgid "Ask in your own words about crops, soil, water, or your farm plan."
+msgstr "ফসল, মাটি, সেচ বা খামারের পরিকল্পনা নিয়ে নিজের ভাষায় প্রশ্ন করুন।"
+
+msgid "Ask the farmer assistant"
+msgstr "কৃষি সহকারীর কাছে প্রশ্ন করুন"
+
+msgid "Bangladesh"
+msgstr "বাংলাদেশ"
+
+msgid "Choose a farm before including its information."
+msgstr "খামারের তথ্য ব্যবহার করতে আগে একটি খামার বেছে নিন।"
+
+msgid "Choose your farm"
+msgstr "আপনার খামার বেছে নিন"
+
+msgid "Clear chat"
+msgstr "আলাপ মুছুন"
+
+msgid "Conversation deleted."
+msgstr "কথোপকথন মুছে ফেলা হয়েছে।"
+
+msgid "Conversation history"
+msgstr "আগের কথোপকথন"
+
+msgid "Delete all messages in this conversation? This cannot be undone."
+msgstr "এই কথোপকথনের সব বার্তা মুছে ফেলবেন? মুছে ফেললে আর ফেরত আনা যাবে না।"
+
+msgid "Example questions"
+msgstr "যেমন প্রশ্ন করতে পারেন"
+
+msgid "Farm companion"
+msgstr "কৃষি সহায়ক"
+
+msgid "Farmer assistant"
+msgstr "কৃষি সহকারী"
+
+msgid "Farmer help"
+msgstr "কৃষকের সহায়তা"
+
+msgid "How can I improve my soil?"
+msgstr "জমির মাটির মান কীভাবে বাড়াব?"
+
+msgid "How do I use my farm’s NASA information?"
+msgstr "আমার খামারের NASA-এর তথ্য কীভাবে কাজে লাগাব?"
+
+msgid "Include farm information"
+msgstr "খামারের তথ্য যুক্ত করুন"
+
+msgid "LET’S GROW TOGETHER"
+msgstr "একসঙ্গে এগিয়ে যাই"
+
+msgid "Messages with your farm companion"
+msgstr "কৃষি সহায়কের সঙ্গে কথোপকথন"
+
+msgid "NASA climate history helps with planning; it is not a forecast for tomorrow."
+msgstr "NASA-এর অতীত জলবায়ুর তথ্য পরিকল্পনায় সাহায্য করে; এটি আগামীকালের পূর্বাভাস নয়।"
+
+msgid "New conversation"
+msgstr "নতুন কথোপকথন"
+
+msgid "No farm selected"
+msgstr "কোনো খামার বেছে নেওয়া হয়নি"
+
+msgid "Open conversation"
+msgstr "কথোপকথন খুলুন"
+
+msgid "Please check your question and farm selection."
+msgstr "আপনার প্রশ্ন ও খামারের নির্বাচন ঠিক আছে কি না দেখুন।"
+
+msgid "Please keep your question within 2,000 characters."
+msgstr "আপনার প্রশ্নটি ২,০০০ অক্ষরের মধ্যে লিখুন।"
+
+msgid "Prepared farming information"
+msgstr "প্রস্তুত কৃষি তথ্য"
+
+msgid "Preparing a reply…"
+msgstr "উত্তর তৈরি হচ্ছে…"
+
+msgid "Read the source"
+msgstr "তথ্যের উৎস দেখুন"
+
+msgid "Replies use prepared farming guidance. For urgent crop problems or decisions about chemicals, speak with a local agriculture officer."
+msgstr "প্রস্তুত কৃষি নির্দেশনা থেকে উত্তর দেওয়া হয়। ফসলের জরুরি সমস্যা বা রাসায়নিক ব্যবহারের সিদ্ধান্তে স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।"
+
+msgid "Send question"
+msgstr "প্রশ্ন পাঠান"
+
+msgid "Tell me your crop, location, and what you are noticing. A few details help me guide you."
+msgstr "আপনার ফসল, এলাকা আর কী সমস্যা দেখছেন তা বলুন। একটু বিস্তারিত জানালে পরামর্শ দিতে সুবিধা হবে।"
+
+msgid "The reply could not be loaded. Your question is still here. Please try again."
+msgstr "উত্তরটি আনা যায়নি। আপনার প্রশ্নটি এখানে আছে। আবার চেষ্টা করুন।"
+
+msgid "This conversation is full. Start a new conversation to continue."
+msgstr "এই আলোচনায় বার্তার সীমা পূর্ণ হয়েছে। আরও প্রশ্ন করতে নতুন আলোচনা শুরু করুন।"
+
+msgid "Up to 2,000 characters"
+msgstr "সর্বোচ্চ ২,০০০ অক্ষর"
+
+msgid "Use my farm's saved information"
+msgstr "আমার খামারের সংরক্ষিত তথ্য ব্যবহার করুন"
+
+msgid "What can I plant after rice?"
+msgstr "ধানের পরে কোন ফসল লাগাতে পারি?"
+
+msgid "What would you like to know?"
+msgstr "কী জানতে চান?"
+
+msgid "When checked, your selected farm’s crops, soil, and available NASA climate summary help answer your question."
+msgstr "এটি বাছলে আপনার নির্বাচিত খামারের ফসল, মাটি ও পাওয়া গেলে NASA-এর জলবায়ু তথ্যের সারাংশ উত্তর দেওয়ার কাজে ব্যবহার হবে।"
+
+msgid "When should I water my vegetables?"
+msgstr "সবজিতে কখন সেচ দেব?"
+
+msgid "Where can I find the latest weather warning?"
+msgstr "সর্বশেষ আবহাওয়ার সতর্কতা কোথায় পাব?"
+
+msgid "Why are my rice leaves turning yellow?"
+msgstr "আমার ধানের পাতা হলুদ হয়ে যাচ্ছে কেন?"
+
+msgid "Write a question before sending."
+msgstr "পাঠানোর আগে একটি প্রশ্ন লিখুন।"
+
+msgid "Write your farming question here…"
+msgstr "চাষাবাদ সম্পর্কে আপনার প্রশ্ন লিখুন…"
+
+msgid "YOUR FARMING COMPANION"
+msgstr "আপনার কৃষিকাজের সঙ্গী"
+
+msgid "You"
+msgstr "আপনি"
+
+msgid "You have sent several questions. Please wait one minute and try again."
+msgstr "অল্প সময়ে বেশ কয়েকটি প্রশ্ন পাঠানো হয়েছে। এক মিনিট পরে আবার চেষ্টা করুন।"
+
+msgid "Your conversations"
+msgstr "আপনার কথোপকথন"
+
+msgid "Your conversations belong to this browser session. Do not share personal or sensitive information."
+msgstr "এই ব্রাউজারের সেশনে আপনার কথোপকথনগুলো রাখা হয়। ব্যক্তিগত বা গোপন তথ্য লিখবেন না।"
+
+msgid "Your conversations will appear here."
+msgstr "আপনার কথোপকথনগুলো এখানে দেখা যাবে।"
+
+msgid "Your question"
+msgstr "আপনার প্রশ্ন"
+
+msgid "Your question and any farm information you choose are shared with the AI service. Answers can be mistaken; check important decisions with a local agriculture officer."
+msgstr "আপনার প্রশ্ন ও আপনার বেছে দেওয়া খামারের তথ্য AI সেবায় পাঠানো হয়। উত্তরে ভুল থাকতে পারে; গুরুত্বপূর্ণ সিদ্ধান্তে স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।"
+
+msgid "Your question, recent chat messages, and any farm information you choose are shared with the AI service. Answers can be mistaken; check important decisions with a local agriculture officer."
+msgstr "আপনার প্রশ্ন, আগের কিছু বার্তা ও বেছে দেওয়া খামারের তথ্য AI সেবায় পাঠানো হয়। উত্তরে ভুল থাকতে পারে; গুরুত্বপূর্ণ সিদ্ধান্তে স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।"
+
+msgid "Local farming assistant"
+msgstr "স্থানীয় কৃষি সহায়ক"
+
+msgid "Learn more"
+msgstr "আরও জানুন"
+
+msgid "Answers come from this app's farming library. No API key or internet connection is needed to reply."
+msgstr "এই অ্যাপের কৃষি তথ্যভান্ডার থেকে উত্তর দেওয়া হয়। উত্তর পেতে API কী বা ইন্টারনেট লাগে না।"
+
+msgid "Your selected information is used only inside this app to answer this question."
+msgstr "আপনার বেছে দেওয়া তথ্য এই প্রশ্নের উত্তর দিতে শুধু এই অ্যাপের ভেতরেই ব্যবহার হয়।"
+
+msgid "This local assistant uses saved farming guidance, not live weather or prices. For urgent crop problems, speak with a local agriculture officer."
+msgstr "এই স্থানীয় সহায়ক সংরক্ষিত কৃষি নির্দেশনা ব্যবহার করে; সরাসরি আবহাওয়া বা বাজারদর জানায় না। ফসলের জরুরি সমস্যায় স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।"
+
+msgid "Ask about your crops, soil, water, or farm plan…"
+msgstr "আপনার ফসল, মাটি, পানি বা খামারের পরিকল্পনা নিয়ে প্রশ্ন করুন…"
+
+msgid "Use my selected farm information in this chat"
+msgstr "এই আলাপে আমার বেছে দেওয়া খামারের তথ্য ব্যবহার করুন"

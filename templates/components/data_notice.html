@@ -1,0 +1,9 @@
+{% load i18n bangla %}
+{% if climate.status == 'live' %}
+<section class="nasa-data-notice" aria-label="{% translate 'NASA climate data source' %}">
+  <div class="nasa-data-heading"><span class="status-dot"></span><strong>{% translate "NASA POWER data" %}</strong><span class="badge green">{% translate "NASA baseline" %}</span></div>
+  <p>{{ climate.source|localize_text }} · {{ climate.provenance.period|localize_text }}</p>
+  <div class="nasa-data-meta"><span>{% translate "Retrieved:" %} {{ climate.provenance.retrieved_at|bn_number }}</span><span>{% translate "Saved with this farm analysis" %}</span></div>
+  <div class="nasa-data-links"><a class="text-link" href="{% url 'climate:nasa_source' farm.pk %}">{% translate "Download NASA response" %} <svg><use href="#icon-download"/></svg></a>{% if climate.provenance.url %}<a class="text-link" href="{{ climate.provenance.url }}" target="_blank" rel="noopener">{% translate "View NASA source ↗" %}</a>{% endif %}</div>
+</section>
+{% endif %}
