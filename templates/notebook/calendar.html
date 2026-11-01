@@ -1,0 +1,15 @@
+{% extends 'notebook/base.html' %}{% load i18n bangla %}
+{% block notebook_intro %}<p>{% translate "Plan planting, irrigation, fertilizer application, and harvesting for your field." %}</p>{% endblock %}
+{% block notebook_content %}
+<section class="panel notebook-reminders" aria-labelledby="reminder-heading">
+<h2 id="reminder-heading">{% translate "Your reminders" %}</h2><p>{% translate "Reminders appear here when you visit the calendar. No email or push notifications are sent." %}</p>
+<div class="record-counts"><span><strong>{{ overdue_count|bn_number }}</strong> {% translate "overdue" %}</span><span><strong>{{ today_count|bn_number }}</strong> {% translate "due today" %}</span></div>
+{% if reminders %}<ul class="reminder-list">{% for entry in reminders %}<li><a href="{% url 'notebook:edit' farm.pk section entry.pk %}">{{ entry.title }}</a><span>{{ entry.due_date|date:'j M Y'|bn_number }}{% if entry.status == 'overdue' %} · {% translate "Overdue" %}{% elif entry.status == 'today' %} · {% translate "Today" %}{% endif %}</span></li>{% endfor %}</ul>{% else %}<p class="muted">{% translate "You have no reminders due. Upcoming tasks appear below." %}</p>{% endif %}
+</section>
+<h2>{% translate "All planned tasks" %}</h2>
+<div class="record-list">{% for entry in entries %}<article class="panel record-card {% if entry.completed %}record-completed{% endif %}">
+<div class="record-heading"><div><p class="eyebrow">{{ entry.get_event_type_display }}{% if entry.crop %} · {{ entry.crop }}{% endif %}</p><h3>{{ entry.title }}</h3><p>{{ entry.due_date|date:'j F Y'|bn_number }}</p></div><span class="record-status status-{{ entry.status }}">{% if entry.completed %}{% translate "Completed" %}{% elif entry.status == 'overdue' %}{% translate "Overdue" %}{% elif entry.status == 'today' %}{% translate "Today" %}{% else %}{% translate "Upcoming" %}{% endif %}</span></div>
+{% if entry.notes %}<p class="record-notes">{{ entry.notes|linebreaksbr }}</p>{% endif %}
+<div class="record-footer"><form method="post" action="{% url 'notebook:complete' farm.pk entry.pk %}" data-loading-form>{% csrf_token %}<input type="hidden" name="completed" value="{% if entry.completed %}0{% else %}1{% endif %}"><button class="button button-outline" type="submit">{% if entry.completed %}{% translate "Mark as pending" %}{% else %}{% translate "Mark completed" %}{% endif %}</button></form>{% include 'notebook/actions.html' %}</div>
+</article>{% empty %}<div class="panel notebook-empty"><h3>{% translate "Start your crop calendar" %}</h3><p>{% translate "Add a task with a planned date and choose when its reminder should appear." %}</p><a class="button button-primary" href="{% url 'notebook:create' farm.pk section %}">{{ new_label }}</a></div>{% endfor %}</div>
+{% endblock %}

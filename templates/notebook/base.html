@@ -1,0 +1,15 @@
+{% extends 'base.html' %}{% load static i18n bangla %}
+{% block title %}{{ section_label }} · {{ farm.name }} · AgriTwin AI{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{% static 'css/notebook.css' %}">{% endblock %}
+{% block breadcrumb %}{{ farm.name }} <span>/</span> {{ section_label }}{% endblock %}
+{% block content %}
+<div class="page-heading"><div><div class="eyebrow">{{ farm.name }}</div><h1>{{ section_label }}</h1>{% block notebook_intro %}{% endblock %}</div>{% if not form %}<a class="button button-primary" href="{% url 'notebook:create' farm.pk section %}">{{ new_label }}</a>{% endif %}</div>
+{% include 'components/farm_tabs.html' %}
+<nav class="notebook-nav" aria-label="{% translate 'Farm records' %}">
+  <a href="{% url 'notebook:calendar' farm.pk %}" {% if section == 'calendar' %}aria-current="page"{% endif %}>{% translate "Crop calendar" %}</a>
+  <a href="{% url 'notebook:ledger' farm.pk %}" {% if section == 'ledger' %}aria-current="page"{% endif %}>{% translate "Expenses and income" %}</a>
+  <a href="{% url 'notebook:diary' farm.pk %}" {% if section == 'diary' %}aria-current="page"{% endif %}>{% translate "Farm diary" %}</a>
+  <a href="{% url 'notebook:soil' farm.pk %}" {% if section == 'soil' %}aria-current="page"{% endif %}>{% translate "Soil test records" %}</a>
+</nav>
+<div class="notebook-workspace">{% block notebook_content %}{% endblock %}</div>
+{% endblock %}

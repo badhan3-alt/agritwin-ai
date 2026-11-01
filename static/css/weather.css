@@ -1,0 +1,20 @@
+.weather-source { margin-bottom: 24px; padding: 16px 24px; background: #f0f2e7; border: 1px solid #d9e1d2; border-radius: 10px; }
+.weather-source p { margin: 0 0 8px; }
+.weather-source a { color: #173d32; text-decoration: underline; text-underline-offset: 3px; }
+.weather-current { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
+.weather-current h2 { margin: 8px 0; }
+.weather-current p { margin: 0; color: #526451; font-size: 13px; }
+.weather-temperature { color: #173d32; font-size: clamp(32px, 5vw, 48px); line-height: 1.5; white-space: nowrap; }
+.weather-temperature small { margin-left: 8px; font-size: 24px; }
+.metric-grid.weather-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.weather-forecast { min-width: 0; }
+.weather-forecast table { min-width: 700px; }
+.weather-forecast th { white-space: normal; }
+.weather-forecast tbody th { min-width: 112px; }
+.weather-footnote { margin-top: 16px; font-size: 13px; }
+.weather-unavailable { margin-bottom: 24px; }
+@media (max-width: 640px) {
+  .weather-current { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .metric-grid.weather-metrics { grid-template-columns: 1fr; }
+  .weather-source { padding: 16px; }
+}

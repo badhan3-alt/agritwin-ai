@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _
 from django.views.decorators.http import require_GET, require_POST
 from climate.services import NASADataUnavailable
 from farms.models import Farm
-from farms.services import ensure_analysis, session_key
+from farms.services import ensure_analysis, owned_farms, session_key
 from .error_views import csrf_failure  # Keep the previous import path usable.
 
 def home(request):
@@ -32,10 +32,10 @@ def language(request):
 
 @require_POST
 def demo(request):
-    owner = session_key(request)
-    farm = Farm.objects.filter(owner_session=owner, name="Rajshahi example farm").first()
+    farm = owned_farms(request).filter(name="Rajshahi example farm").first()
     if farm is None:
-        farm = Farm.objects.create(owner_session=owner, **Farm.example_defaults())
+        ownership = {"owner": request.user, "owner_session": ""} if request.user.is_authenticated else {"owner_session": session_key(request)}
+        farm = Farm.objects.create(**ownership, **Farm.example_defaults())
     request.session["current_farm_id"] = farm.pk
     try:
         ensure_analysis(farm)

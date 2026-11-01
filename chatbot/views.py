@@ -11,8 +11,7 @@ from django.urls import reverse
 from django.utils.translation import gettext as _
 from django.views.decorators.http import require_GET, require_POST
 
-from farms.models import Farm
-from farms.services import session_key
+from farms.services import owned_farms, session_key
 from .context import farm_context
 from .forms import ChatForm
 from .models import Conversation, Message
@@ -23,7 +22,7 @@ SOURCE_HOSTS = {"ais.gov.bd", "www.ais.gov.bd", "bamis.gov.bd", "www.bamis.gov.b
 SOURCE_HOSTS.update(urlparse(source["url"]).hostname for source in library()["sources"].values())
 
 def _owned_farms(request):
-    return Farm.objects.filter(owner_session=request.session.session_key) if request.session.session_key else Farm.objects.none()
+    return owned_farms(request)
 
 def _owned_conversation(request, pk):
     if not request.session.session_key:

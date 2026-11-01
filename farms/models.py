@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
@@ -12,6 +13,7 @@ def default_crops():
     return ["aman_rice", "boro_rice"]
 
 class Farm(models.Model):
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True, related_name="farms", on_delete=models.CASCADE)
     owner_session = models.CharField(max_length=64, db_index=True, editable=False)
     name = models.CharField(max_length=120, default="My farm")
     location_name = models.CharField(max_length=160, default="Rajshahi, Bangladesh")

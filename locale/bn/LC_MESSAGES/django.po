@@ -1997,3 +1997,1023 @@ msgstr "Landsat 9-এ তোলা বাংলাদেশের উপকূ�
 
 msgid "Image credit:"
 msgstr "ছবির সূত্র:"
+
+msgid "Your farms are linked to your account."
+msgstr "আপনার খামারগুলো আপনার অ্যাকাউন্টের সাথে যুক্ত হয়েছে।"
+
+msgid "Your account is ready. Sign in on another device to access your farms."
+msgstr ""
+"আপনার অ্যাকাউন্ট তৈরি হয়েছে। অন্য ডিভাইসে আপনার খামার দেখতে সাইন ইন করুন।"
+
+msgid "You have signed out."
+msgstr "আপনি সাইন আউট করেছেন।"
+
+msgid "Your password has been changed."
+msgstr "আপনার পাসওয়ার্ড পরিবর্তন হয়েছে।"
+
+msgid "Sign in"
+msgstr "সাইন ইন"
+
+msgid "YOUR FARM WORKSPACE"
+msgstr "আপনার খামারের কর্মক্ষেত্র"
+
+msgid "Welcome back."
+msgstr "আবার স্বাগতম।"
+
+msgid "Sign in to access your farms across devices."
+msgstr "বিভিন্ন ডিভাইসে আপনার খামার দেখতে সাইন ইন করুন।"
+
+msgid "Create an account"
+msgstr "অ্যাকাউন্ট তৈরি করুন"
+
+msgid ""
+"Guest farms saved in this browser will be linked to your account when you "
+"sign in."
+msgstr ""
+"সাইন ইন করলে এই ব্রাউজারে অতিথি হিসেবে সংরক্ষিত খামারগুলো আপনার অ্যাকাউন্টের"
+" সাথে যুক্ত হবে।"
+
+msgid "Continue as a guest"
+msgstr "অতিথি হিসেবে চালিয়ে যান"
+
+msgid "Take your farms with you."
+msgstr "যেখানেই যান, খামার থাকুক সাথে।"
+
+msgid "Create an account to access your saved farms on any device."
+msgstr "যেকোনো ডিভাইসে আপনার সংরক্ষিত খামার দেখতে অ্যাকাউন্ট তৈরি করুন।"
+
+msgid ""
+"Keep your username and password in a safe place. Guest farms in this browser"
+" will be linked to this account."
+msgstr ""
+"আপনার ব্যবহারকারীর নাম ও পাসওয়ার্ড নিরাপদে রাখুন। এই ব্রাউজারের অতিথি "
+"খামারগুলো এই অ্যাকাউন্টে যুক্ত হবে।"
+
+msgid "Already have an account? Sign in"
+msgstr "আগেই অ্যাকাউন্ট আছে? সাইন ইন করুন"
+
+msgid "Your account"
+msgstr "আপনার অ্যাকাউন্ট"
+
+msgid ""
+"Your farms are saved to your account. Sign in with the same username on "
+"another device."
+msgstr ""
+"আপনার খামারগুলো অ্যাকাউন্টে সংরক্ষিত আছে। অন্য ডিভাইসে একই ব্যবহারকারীর নাম "
+"দিয়ে সাইন ইন করুন।"
+
+msgid "Saved farms"
+msgstr "সংরক্ষিত খামার"
+
+msgid "Change password"
+msgstr "পাসওয়ার্ড পরিবর্তন করুন"
+
+msgid "Sign out"
+msgstr "সাইন আউট"
+
+msgid "Enter your current password, then choose a new one."
+msgstr "বর্তমান পাসওয়ার্ড লিখুন, তারপর নতুন পাসওয়ার্ড বেছে নিন।"
+
+msgid "Enter the same password as before, for verification."
+msgstr "নিশ্চিত করার জন্য আগের পাসওয়ার্ডটি আবার লিখুন।"
+
+msgid "Your password can’t be too similar to your other personal information."
+msgstr ""
+"আপনার পাসওয়ার্ড আপনার অন্যান্য ব্যক্তিগত তথ্যের সাথে বেশি মিলে গেলে চলবে "
+"না।"
+
+msgid "Your password can’t be a commonly used password."
+msgstr "বহুল ব্যবহৃত কোনো পাসওয়ার্ড বেছে নেওয়া যাবে না।"
+
+msgid "Your password can’t be entirely numeric."
+msgstr "পাসওয়ার্ডে শুধু সংখ্যা ব্যবহার করা যাবে না।"
+
+msgid "This password is too common."
+msgstr "এই পাসওয়ার্ডটি বহুল ব্যবহৃত।"
+
+msgid "This password is entirely numeric."
+msgstr "এই পাসওয়ার্ডটিতে শুধু সংখ্যা রয়েছে।"
+
+msgid "The password is too similar to the %(verbose_name)s."
+msgstr "পাসওয়ার্ডটি আপনার %(verbose_name)s-এর সাথে বেশি মিলে যাচ্ছে।"
+
+msgid "The two password fields didn’t match."
+msgstr "দুটি পাসওয়ার্ড মেলেনি।"
+
+msgid ""
+"Please enter a correct %(username)s and password. Note that both fields may "
+"be case-sensitive."
+msgstr ""
+"সঠিক %(username)s ও পাসওয়ার্ড লিখুন। বড় ও ছোট হাতের অক্ষর আলাদা হিসেবে "
+"গণ্য হতে পারে।"
+
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr ""
+"আবশ্যক। সর্বোচ্চ ১৫০ অক্ষর। শুধু বর্ণ, সংখ্যা এবং @/./+/-/_ ব্যবহার করুন।"
+
+msgid ""
+"Enter a valid username. This value may contain only letters, numbers, and "
+"@/./+/-/_ characters."
+msgstr ""
+"সঠিক ব্যবহারকারীর নাম লিখুন। শুধু বর্ণ, সংখ্যা এবং @/./+/-/_ ব্যবহার করা "
+"যাবে।"
+
+msgid "A user with that username already exists."
+msgstr "এই ব্যবহারকারীর নামে ইতোমধ্যে একটি অ্যাকাউন্ট আছে।"
+
+msgid "Enter a GeoJSON Polygon with one closed ring."
+msgstr "একটি বন্ধ বলয়সহ GeoJSON Polygon লিখুন।"
+
+msgid "Draw one field boundary without holes."
+msgstr "ভেতরে ফাঁক ছাড়া একটি জমির সীমানা আঁকুন।"
+
+msgid "Use between 3 and 500 boundary corners, then close the ring."
+msgstr "৩ থেকে ৫০০টি কোণা দিয়ে সীমানা এঁকে বলয়টি বন্ধ করুন।"
+
+msgid "Each corner must contain a finite longitude and latitude."
+msgstr "প্রতিটি কোণায় সঠিক দ্রাঘিমাংশ ও অক্ষাংশ থাকতে হবে।"
+
+msgid "Boundary corners must be within the Bangladesh planning area."
+msgstr "সীমানার প্রতিটি কোণা বাংলাদেশের পরিকল্পনা এলাকার মধ্যে হতে হবে।"
+
+msgid "Close the boundary by repeating the first corner at the end."
+msgstr "শেষে প্রথম কোণাটি আবার দিয়ে সীমানা বন্ধ করুন।"
+
+msgid "Boundary corners must be distinct."
+msgstr "সীমানার প্রতিটি কোণা আলাদা হতে হবে।"
+
+msgid "Boundary edges must not cross or touch each other."
+msgstr "সীমানার বাহুগুলো একে অপরকে অতিক্রম বা স্পর্শ করতে পারবে না।"
+
+msgid "Boundary area must be between 1 square metre and 100,000 acres."
+msgstr "সীমানার আয়তন ১ বর্গমিটার থেকে ১,০০,০০০ একরের মধ্যে হতে হবে।"
+
+msgid "Update farm size from this boundary"
+msgstr "এই সীমানা অনুযায়ী খামারের আয়তন হালনাগাদ করুন"
+
+msgid ""
+"Replaces the saved farm area with the estimate. Your NASA analysis is "
+"unchanged because area is not a scoring input."
+msgstr ""
+"সংরক্ষিত আয়তনের বদলে আনুমানিক আয়তন ব্যবহার করবে। আয়তন স্কোর গণনায় "
+"ব্যবহৃত হয় না, তাই নাসার বিশ্লেষণ বদলাবে না।"
+
+msgid "Boundary coordinates (GeoJSON)"
+msgstr "সীমানার স্থানাঙ্ক (GeoJSON)"
+
+msgid ""
+"Longitude first, latitude second. Draw on the map or enter a Polygon with "
+"one closed ring. Saved area is an estimate, not a land survey."
+msgstr ""
+"আগে দ্রাঘিমাংশ, পরে অক্ষাংশ। মানচিত্রে আঁকুন বা একটি বন্ধ বলয়ের Polygon "
+"লিখুন। সংরক্ষিত আয়তন আনুমানিক, জমি জরিপ নয়।"
+
+msgid "Farm boundary saved. Its area is an estimate, not a land survey."
+msgstr "খামারের সীমানা সংরক্ষিত হয়েছে। এর আয়তন আনুমানিক, জমি জরিপ নয়।"
+
+msgid "Boundary removed. Your saved farm size is unchanged."
+msgstr "সীমানা মুছে ফেলা হয়েছে। সংরক্ষিত খামারের আয়তন অপরিবর্তিত আছে।"
+
+msgid "Farm boundary"
+msgstr "খামারের সীমানা"
+
+msgid "Draw your field."
+msgstr "আপনার জমির সীমানা আঁকুন।"
+
+msgid "Mark the corners, save the shape, and estimate its area."
+msgstr "কোণাগুলো চিহ্নিত করুন, আকৃতি সংরক্ষণ করুন এবং আয়তন জানুন।"
+
+msgid ""
+"Click each corner on the map, then choose Close boundary. Use Undo to remove"
+" a corner or Clear to start again."
+msgstr ""
+"মানচিত্রে প্রতিটি কোণায় ক্লিক করে সীমানা বন্ধ করুন। আগের কোণা সরাতে বা নতুন"
+" করে শুরু করতে নিচের বোতাম ব্যবহার করুন।"
+
+msgid ""
+"Map unavailable? Enter the GeoJSON coordinates below to save your boundary."
+msgstr ""
+"মানচিত্র দেখা যাচ্ছে না? সীমানা সংরক্ষণ করতে নিচে GeoJSON স্থানাঙ্ক লিখুন।"
+
+msgid "Close boundary"
+msgstr "সীমানা বন্ধ করুন"
+
+msgid "Undo corner"
+msgstr "শেষ কোণা সরান"
+
+msgid "Clear drawing"
+msgstr "আঁকা মুছুন"
+
+msgid "Corners"
+msgstr "কোণা"
+
+msgid "Boundary closed. Save to calculate its area."
+msgstr "সীমানা বন্ধ হয়েছে। আয়তন গণনা করতে সংরক্ষণ করুন।"
+
+msgid ""
+"Map tiles are unavailable. You can still edit and save coordinates below."
+msgstr ""
+"মানচিত্রের ছবি পাওয়া যাচ্ছে না। নিচে স্থানাঙ্ক সম্পাদনা ও সংরক্ষণ করতে "
+"পারবেন।"
+
+msgid "Coordinate format example"
+msgstr "স্থানাঙ্কের বিন্যাসের উদাহরণ"
+
+msgid "Save boundary"
+msgstr "সীমানা সংরক্ষণ করুন"
+
+msgid "Saved boundary"
+msgstr "সংরক্ষিত সীমানা"
+
+msgid "Estimated area"
+msgstr "আনুমানিক আয়তন"
+
+msgid "Perimeter"
+msgstr "পরিসীমা"
+
+msgid ""
+"WGS84 estimate from your drawn corners. This is not a cadastral map or land "
+"survey."
+msgstr ""
+"আঁকা কোণা থেকে WGS84 অনুযায়ী আনুমানিক হিসাব। এটি মৌজা মানচিত্র বা জমি জরিপ "
+"নয়।"
+
+msgid "Download GeoJSON"
+msgstr "GeoJSON ডাউনলোড করুন"
+
+msgid "Remove saved boundary"
+msgstr "সংরক্ষিত সীমানা মুছুন"
+
+msgid "Saved field boundary, north up"
+msgstr "সংরক্ষিত জমির সীমানা, উত্তর ওপরে"
+
+msgid "Boundary schematic · north up · no basemap"
+msgstr "সীমানার রেখাচিত্র · উত্তর ওপরে · পটভূমিতে মানচিত্র নেই"
+
+msgid "A second result is needed to compare."
+msgstr "তুলনা করতে আরও একটি পরীক্ষার ফল প্রয়োজন।"
+
+msgid "A soil test date cannot be in the future."
+msgstr "মাটি পরীক্ষার তারিখ ভবিষ্যতের হতে পারে না।"
+
+msgid "Activity"
+msgstr "কাজের ধরন"
+
+msgid ""
+"Add a task with a planned date and choose when its reminder should appear."
+msgstr "কাজের পরিকল্পিত তারিখ দিন এবং কত দিন আগে স্মরণ করাতে হবে তা বেছে নিন।"
+
+msgid "Add diary entry"
+msgstr "ডায়েরিতে লিখুন"
+
+msgid "Add soil test"
+msgstr "মাটি পরীক্ষার ফল যোগ করুন"
+
+msgid "Add task"
+msgstr "কাজ যোগ করুন"
+
+msgid "Add transaction"
+msgstr "লেনদেন যোগ করুন"
+
+msgid "Add your first expense or sale to see your recorded profit or loss."
+msgstr "হিসাব অনুযায়ী লাভ বা ক্ষতি দেখতে প্রথম খরচ বা বিক্রির তথ্য যোগ করুন।"
+
+msgid "All planned tasks"
+msgstr "পরিকল্পিত সব কাজ"
+
+msgid "Amount (BDT)"
+msgstr "পরিমাণ (টাকা)"
+
+msgid "Build a soil test history"
+msgstr "মাটি পরীক্ষার ইতিহাস রাখুন"
+
+msgid "Category"
+msgstr "বিভাগ"
+
+msgid "Change:"
+msgstr "পরিবর্তন:"
+
+msgid "Choose a photo smaller than 5 MB."
+msgstr "৫ মেগাবাইটের ছোট একটি ছবি বেছে নিন।"
+
+msgid "Choose either a replacement photo or removal."
+msgstr "নতুন ছবি দেওয়া অথবা পুরোনো ছবি মুছে ফেলার মধ্যে একটি বেছে নিন।"
+
+msgid "Completed"
+msgstr "সম্পন্ন"
+
+msgid "Crop / field"
+msgstr "ফসল / জমি"
+
+msgid "Crop calendar"
+msgstr "ফসলের ক্যালেন্ডার"
+
+msgid "Date"
+msgstr "তারিখ"
+
+msgid "Delete"
+msgstr "মুছে ফেলুন"
+
+msgid "Delete this farm record? This cannot be undone."
+msgstr "খামারের এই তথ্য মুছে ফেলবেন? এটি আর ফিরিয়ে আনা যাবে না।"
+
+msgid "Description"
+msgstr "বিবরণ"
+
+msgid ""
+"Each change compares the latest two recorded values for that measurement. A "
+"higher value does not necessarily mean healthier soil."
+msgstr ""
+"প্রতিটি পরিবর্তন সংশ্লিষ্ট উপাদানের সর্বশেষ দুটি নথিভুক্ত ফলের তুলনা। মান "
+"বাড়লেই মাটির স্বাস্থ্য ভালো হয়েছে এমন নয়।"
+
+msgid "Edit record"
+msgstr "তথ্য সম্পাদনা করুন"
+
+msgid "Enter at least one measured soil result."
+msgstr "মাটি পরীক্ষার অন্তত একটি পরিমাপ করা ফল দিন।"
+
+msgid ""
+"Enter nutrient results in mg/kg (equivalent to ppm for soil mass). Keep the "
+"test method and sample location in your notes. Different methods or sampling"
+" depths may not be comparable."
+msgstr ""
+"পুষ্টি উপাদানের ফল mg/kg এককে দিন (মাটির ভর হিসেবে ppm-এর সমান)। পরীক্ষার "
+"পদ্ধতি ও নমুনা সংগ্রহের স্থান নোটে লিখুন। ভিন্ন পদ্ধতি বা গভীরতার নমুনার ফল "
+"তুলনাযোগ্য নাও হতে পারে।"
+
+msgid "Expense"
+msgstr "খরচ"
+
+msgid "Expenses and income"
+msgstr "খরচ ও আয়"
+
+msgid "Farm diary"
+msgstr "খামারের ডায়েরি"
+
+msgid "Farm record deleted."
+msgstr "খামারের তথ্য মুছে ফেলা হয়েছে।"
+
+msgid "Farm record saved."
+msgstr "খামারের তথ্য সংরক্ষণ করা হয়েছে।"
+
+msgid "Farm records"
+msgstr "খামারের নথি"
+
+msgid "Fertilizer application"
+msgstr "সার প্রয়োগ"
+
+msgid "For example: seed, labor, irrigation, fertilizer, or crop sales."
+msgstr "যেমন: বীজ, শ্রম, সেচ, সার অথবা ফসল বিক্রি।"
+
+msgid "Harvesting"
+msgstr "ফসল সংগ্রহ"
+
+msgid "Income / sale"
+msgstr "আয় / বিক্রি"
+
+msgid "JPEG or PNG, up to 5 MB. Photos are visible only to this farm's owner."
+msgstr ""
+"JPEG অথবা PNG ছবি, সর্বোচ্চ ৫ মেগাবাইট। শুধু খামারের মালিক ছবি দেখতে পারবেন।"
+
+msgid ""
+"Keep dated observations and photos as your field changes through the "
+"seasons."
+msgstr "ঋতুর সঙ্গে জমির পরিবর্তনের পর্যবেক্ষণ ও ছবি তারিখসহ রাখুন।"
+
+msgid "Keep track of your farm finances"
+msgstr "খামারের অর্থের হিসাব রাখুন"
+
+msgid "Laboratory / source"
+msgstr "পরীক্ষাগার / উৎস"
+
+msgid "Latest measurements and change"
+msgstr "সর্বশেষ পরিমাপ ও পরিবর্তন"
+
+msgid "Mark as pending"
+msgstr "অসম্পন্ন হিসেবে চিহ্নিত করুন"
+
+msgid "Mark completed"
+msgstr "সম্পন্ন হিসেবে চিহ্নিত করুন"
+
+msgid "Method, sample location, and notes"
+msgstr "পদ্ধতি, নমুনার স্থান ও নোট"
+
+msgid ""
+"Net equals recorded income minus recorded expenses, across all dates. "
+"Unrecorded costs and sales are not included."
+msgstr ""
+"সব তারিখের নথিভুক্ত আয় থেকে নথিভুক্ত খরচ বাদ দিয়ে নিট ফল হিসাব করা হয়। "
+"লেখা হয়নি এমন খরচ ও বিক্রি এতে ধরা হয় না।"
+
+msgid "Nitrogen"
+msgstr "নাইট্রোজেন"
+
+msgid "Nitrogen (mg/kg)"
+msgstr "নাইট্রোজেন (mg/kg)"
+
+msgid "Not measured"
+msgstr "পরিমাপ করা হয়নি"
+
+msgid "Notes"
+msgstr "নোট"
+
+msgid "Notes and observations"
+msgstr "নোট ও পর্যবেক্ষণ"
+
+msgid "Observation date"
+msgstr "পর্যবেক্ষণের তারিখ"
+
+msgid "Other task"
+msgstr "অন্যান্য কাজ"
+
+msgid "Overdue"
+msgstr "সময় পেরিয়েছে"
+
+msgid "Phosphorus"
+msgstr "ফসফরাস"
+
+msgid "Phosphorus (mg/kg)"
+msgstr "ফসফরাস (mg/kg)"
+
+msgid "Photo"
+msgstr "ছবি"
+
+msgid "Photo (optional)"
+msgstr "ছবি (ঐচ্ছিক)"
+
+msgid "Photo description"
+msgstr "ছবির বিবরণ"
+
+msgid ""
+"Plan planting, irrigation, fertilizer application, and harvesting for your "
+"field."
+msgstr "জমিতে রোপণ, সেচ, সার প্রয়োগ ও ফসল সংগ্রহের পরিকল্পনা করুন।"
+
+msgid "Planned date"
+msgstr "পরিকল্পিত তারিখ"
+
+msgid "Planting"
+msgstr "রোপণ"
+
+msgid "Please review the highlighted fields."
+msgstr "চিহ্নিত ঘরগুলো পরীক্ষা করুন।"
+
+msgid "Potassium"
+msgstr "পটাশিয়াম"
+
+msgid "Potassium (mg/kg)"
+msgstr "পটাশিয়াম (mg/kg)"
+
+msgid ""
+"Record a laboratory or field test. Leave unmeasured values blank; zero is a "
+"measured result."
+msgstr ""
+"পরীক্ষাগার বা মাঠে করা পরীক্ষার ফল লিখুন। পরিমাপ করা হয়নি এমন মান ফাঁকা "
+"রাখুন; শূন্য একটি পরিমাপ করা ফল।"
+
+msgid "Record actual farm costs and sales in Bangladeshi taka (BDT)."
+msgstr "খামারের প্রকৃত খরচ ও বিক্রি বাংলাদেশি টাকায় (BDT) লিখুন।"
+
+msgid "Record type"
+msgstr "নথির ধরন"
+
+msgid "Recorded loss"
+msgstr "হিসাব অনুযায়ী ক্ষতি"
+
+msgid "Recorded net profit"
+msgstr "হিসাব অনুযায়ী নিট লাভ"
+
+msgid "Remind me this many days before"
+msgstr "এত দিন আগে স্মরণ করান"
+
+msgid ""
+"Reminders appear here when you visit the calendar. No email or push "
+"notifications are sent."
+msgstr ""
+"ক্যালেন্ডার খুললে এখানে স্মরণবার্তা দেখা যাবে। ইমেইল বা পুশ বিজ্ঞপ্তি পাঠানো"
+" হয় না।"
+
+msgid "Remove saved photo"
+msgstr "সংরক্ষিত ছবি মুছে ফেলুন"
+
+msgid ""
+"Save a note about crop growth, pests, rain, or work completed. Add a photo "
+"if useful."
+msgstr ""
+"ফসলের বৃদ্ধি, পোকামাকড়, বৃষ্টি অথবা সম্পন্ন কাজ সম্পর্কে নোট রাখুন। "
+"প্রয়োজন হলে ছবি যোগ করুন।"
+
+msgid "Save record"
+msgstr "তথ্য সংরক্ষণ করুন"
+
+msgid "Saved photo"
+msgstr "সংরক্ষিত ছবি"
+
+msgid "Soil test records"
+msgstr "মাটি পরীক্ষার নথি"
+
+msgid "Start your crop calendar"
+msgstr "ফসলের ক্যালেন্ডার শুরু করুন"
+
+msgid "Store measured results and compare your soil over time."
+msgstr ""
+"পরিমাপ করা ফল সংরক্ষণ করুন এবং সময়ের সঙ্গে মাটির পরিবর্তন তুলনা করুন।"
+
+msgid "Task"
+msgstr "কাজ"
+
+msgid "Task status updated."
+msgstr "কাজের অবস্থা হালনাগাদ করা হয়েছে।"
+
+msgid "Test date"
+msgstr "পরীক্ষার তারিখ"
+
+msgid "Test history"
+msgstr "পরীক্ষার ইতিহাস"
+
+msgid "Title"
+msgstr "শিরোনাম"
+
+msgid "Today"
+msgstr "আজ"
+
+msgid "Total expenses"
+msgstr "মোট খরচ"
+
+msgid "Total income"
+msgstr "মোট আয়"
+
+msgid "Upcoming"
+msgstr "আসন্ন"
+
+msgid "Update your saved farm record."
+msgstr "খামারের সংরক্ষিত তথ্য হালনাগাদ করুন।"
+
+msgid "Upload a valid JPEG or PNG photo, at most 20 megapixels and 5 MB."
+msgstr "সঠিক JPEG অথবা PNG ছবি দিন, সর্বোচ্চ ২০ মেগাপিক্সেল ও ৫ মেগাবাইট।"
+
+msgid ""
+"Use measured values only. Nutrients must be in mg/kg; leave unknown results "
+"blank."
+msgstr ""
+"শুধু পরিমাপ করা মান দিন। পুষ্টি উপাদান mg/kg এককে দিতে হবে; অজানা ফল ফাঁকা "
+"রাখুন।"
+
+msgid "You have no reminders due. Upcoming tasks appear below."
+msgstr "এখন কোনো স্মরণবার্তা নেই। আসন্ন কাজ নিচে দেখুন।"
+
+msgid "Your field has a story"
+msgstr "আপনার জমির গল্প আছে"
+
+msgid "Your reminders"
+msgstr "আপনার স্মরণবার্তা"
+
+msgid "due today"
+msgstr "আজ করতে হবে"
+
+msgid "from"
+msgstr "আগের মান"
+
+msgid "overdue"
+msgstr "সময় পেরিয়েছে"
+
+msgid "pH"
+msgstr "pH"
+
+msgid "Weather forecast"
+msgstr "আবহাওয়ার পূর্বাভাস"
+
+msgid "Weather for the week ahead"
+msgstr "আগামী সপ্তাহের আবহাওয়া"
+
+msgid ""
+"Current model conditions and a seven-day forecast for your farm location."
+msgstr ""
+"আপনার খামারের অবস্থানের জন্য বর্তমান মডেলভিত্তিক আবহাওয়া ও সাত দিনের "
+"পূর্বাভাস।"
+
+msgid "Refresh forecast"
+msgstr "পূর্বাভাস হালনাগাদ করুন"
+
+msgid ""
+"These weather model estimates and forecasts come from Open-Meteo. They are "
+"separate from the NASA historical climate averages used for crop analysis "
+"and do not change your saved analysis."
+msgstr ""
+"এই মডেলভিত্তিক আবহাওয়ার হিসাব ও পূর্বাভাস Open-Meteo থেকে নেওয়া। ফসল "
+"বিশ্লেষণে ব্যবহৃত NASA-এর ঐতিহাসিক জলবায়ুর গড় থেকে এগুলো আলাদা এবং আপনার "
+"সংরক্ষিত বিশ্লেষণ পরিবর্তন করে না।"
+
+msgid "Weather data by Open-Meteo"
+msgstr "আবহাওয়ার তথ্য: Open-Meteo"
+
+msgid "Weather is temporarily unavailable"
+msgstr "আবহাওয়ার তথ্য আপাতত পাওয়া যাচ্ছে না"
+
+msgid "Your farm records and saved NASA climate analysis are still available."
+msgstr "আপনার খামারের নথি ও সংরক্ষিত NASA জলবায়ু বিশ্লেষণ এখনও দেখা যাবে।"
+
+msgid "CURRENT MODEL CONDITIONS"
+msgstr "বর্তমান মডেলভিত্তিক আবহাওয়া"
+
+msgid "Valid at"
+msgstr "তথ্যের সময়"
+
+msgid "Current conditions"
+msgstr "বর্তমান আবহাওয়া"
+
+msgid "Relative humidity"
+msgstr "আপেক্ষিক আর্দ্রতা"
+
+msgid "Wind speed"
+msgstr "বাতাসের গতি"
+
+msgid "km/h"
+msgstr "কিমি/ঘণ্টা"
+
+msgid "Precipitation"
+msgstr "বৃষ্টিপাত"
+
+msgid "Over the preceding %(minutes)s minutes"
+msgstr "আগের %(minutes)s মিনিটের পরিমাণ"
+
+msgid "SHORT-TERM OUTLOOK"
+msgstr "স্বল্পমেয়াদি পূর্বাভাস"
+
+msgid "Seven-day forecast"
+msgstr "সাত দিনের পূর্বাভাস"
+
+msgid "Daily weather forecast in Asia/Dhaka time"
+msgstr "ঢাকার সময় অনুযায়ী দৈনিক আবহাওয়ার পূর্বাভাস"
+
+msgid "Conditions"
+msgstr "আবহাওয়া"
+
+msgid "Precipitation (mm)"
+msgstr "বৃষ্টিপাত (মিমি)"
+
+msgid "Rain chance (%)"
+msgstr "বৃষ্টির সম্ভাবনা (%)"
+
+msgid "Maximum wind (km/h)"
+msgstr "সর্বোচ্চ বাতাসের গতি (কিমি/ঘণ্টা)"
+
+msgid ""
+"Forecasts change as weather models update. Rain chance is a probability; "
+"rainfall amounts and wind are model estimates for the surrounding grid area."
+msgstr ""
+"আবহাওয়ার মডেল হালনাগাদ হলে পূর্বাভাসও বদলায়। বৃষ্টির সম্ভাবনা একটি "
+"আনুমানিক সম্ভাবনা; বৃষ্টির পরিমাণ ও বাতাসের গতি আশপাশের গ্রিড এলাকার "
+"মডেলভিত্তিক হিসাব।"
+
+msgid "Successful forecasts are cached for up to 15 minutes."
+msgstr "সফলভাবে পাওয়া পূর্বাভাস সর্বোচ্চ ১৫ মিনিট সংরক্ষণ করে দেখানো হয়।"
+
+msgid "Weather is unavailable for these coordinates."
+msgstr "এই স্থানাঙ্কের আবহাওয়ার তথ্য পাওয়া যাচ্ছে না।"
+
+msgid ""
+"The weather provider is unavailable or returned incomplete data. Please try "
+"again shortly."
+msgstr ""
+"আবহাওয়ার তথ্যদাতা সেবা বন্ধ আছে অথবা অসম্পূর্ণ তথ্য দিয়েছে। একটু পরে আবার "
+"চেষ্টা করুন।"
+
+msgid "Clear sky"
+msgstr "পরিষ্কার আকাশ"
+
+msgid "Mainly clear"
+msgstr "প্রধানত পরিষ্কার"
+
+msgid "Partly cloudy"
+msgstr "আংশিক মেঘলা"
+
+msgid "Overcast"
+msgstr "মেঘাচ্ছন্ন"
+
+msgid "Fog"
+msgstr "কুয়াশা"
+
+msgid "Freezing fog"
+msgstr "হিমায়িত কুয়াশা"
+
+msgid "Light drizzle"
+msgstr "হালকা গুঁড়ি গুঁড়ি বৃষ্টি"
+
+msgid "Drizzle"
+msgstr "গুঁড়ি গুঁড়ি বৃষ্টি"
+
+msgid "Heavy drizzle"
+msgstr "ঘন গুঁড়ি গুঁড়ি বৃষ্টি"
+
+msgid "Freezing drizzle"
+msgstr "হিমায়িত গুঁড়ি গুঁড়ি বৃষ্টি"
+
+msgid "Light rain"
+msgstr "হালকা বৃষ্টি"
+
+msgid "Rain"
+msgstr "বৃষ্টি"
+
+msgid "Heavy rain"
+msgstr "ভারী বৃষ্টি"
+
+msgid "Freezing rain"
+msgstr "হিমায়িত বৃষ্টি"
+
+msgid "Light snow"
+msgstr "হালকা তুষারপাত"
+
+msgid "Snow"
+msgstr "তুষারপাত"
+
+msgid "Heavy snow"
+msgstr "ভারী তুষারপাত"
+
+msgid "Snow grains"
+msgstr "তুষারকণা"
+
+msgid "Light rain showers"
+msgstr "হালকা বৃষ্টির ঝাপটা"
+
+msgid "Rain showers"
+msgstr "বৃষ্টির ঝাপটা"
+
+msgid "Heavy rain showers"
+msgstr "ভারী বৃষ্টির ঝাপটা"
+
+msgid "Snow showers"
+msgstr "তুষারের ঝাপটা"
+
+msgid "Heavy snow showers"
+msgstr "ভারী তুষারের ঝাপটা"
+
+msgid "Thunderstorm"
+msgstr "বজ্রঝড়"
+
+msgid "Thunderstorm with hail"
+msgstr "শিলাবৃষ্টিসহ বজ্রঝড়"
+
+msgid "Conditions unavailable"
+msgstr "আবহাওয়ার অবস্থা পাওয়া যায়নি"
+
+msgid "Download PDF"
+msgstr "PDF ডাউনলোড করুন"
+
+msgid "Prepared"
+msgstr "প্রস্তুতের সময়"
+
+msgid "Farm profile"
+msgstr "খামারের তথ্য"
+
+msgid "Coordinates"
+msgstr "স্থানাঙ্ক"
+
+msgid "Field"
+msgstr "তথ্য"
+
+msgid "Saved value"
+msgstr "সংরক্ষিত মান"
+
+msgid "Not recorded"
+msgstr "লেখা হয়নি"
+
+msgid "Farm boundary map"
+msgstr "খামারের সীমানার মানচিত্র"
+
+msgid ""
+"North-up boundary schematic. No basemap. The drawn outline and estimated "
+"area are not a land survey."
+msgstr ""
+"উত্তর দিক ওপরে রেখে সীমানার রূপরেখা দেখানো হয়েছে। পটভূমির মানচিত্র নেই। "
+"আঁকা সীমানা ও আনুমানিক আয়তন জমি জরিপের ফল নয়।"
+
+msgid "Estimated area (acres)"
+msgstr "আনুমানিক আয়তন (একর)"
+
+msgid "Perimeter (m)"
+msgstr "পরিসীমা (মিটার)"
+
+msgid ""
+"No farm boundary has been saved. Coordinates above identify the saved farm "
+"location."
+msgstr ""
+"খামারের সীমানা সংরক্ষণ করা হয়নি। ওপরের স্থানাঙ্ক সংরক্ষিত খামারের অবস্থান "
+"নির্দেশ করে।"
+
+msgid "Saved climate analysis and crop comparison"
+msgstr "সংরক্ষিত জলবায়ু বিশ্লেষণ ও ফসলের তুলনা"
+
+msgid "Climate indicator"
+msgstr "জলবায়ু সূচক"
+
+msgid "Saved baseline"
+msgstr "সংরক্ষিত ভিত্তি"
+
+msgid ""
+"Historical NASA POWER climate averages are not current weather or a "
+"forecast."
+msgstr ""
+"NASA POWER-এর ঐতিহাসিক জলবায়ুর গড় বর্তমান আবহাওয়া বা পূর্বাভাস নয়।"
+
+msgid "Source and retrieval time"
+msgstr "তথ্যসূত্র ও সংগ্রহের সময়"
+
+msgid ""
+"No validated NASA analysis is saved. Farm details and records are exported "
+"below; climate values and crop scores are unavailable."
+msgstr ""
+"যাচাই করা NASA বিশ্লেষণ সংরক্ষিত নেই। নিচে খামারের তথ্য ও নথি দেওয়া হয়েছে;"
+" জলবায়ুর মান ও ফসলের স্কোর পাওয়া যাচ্ছে না।"
+
+msgid "Crop calendar and reminders"
+msgstr "ফসলের কাজের ক্যালেন্ডার ও মনে করিয়ে দেওয়া"
+
+msgid "Task and crop"
+msgstr "কাজ ও ফসল"
+
+msgid "Status"
+msgstr "অবস্থা"
+
+msgid "Due today"
+msgstr "আজকের কাজ"
+
+msgid "Reminder lead time (days)"
+msgstr "আগে মনে করিয়ে দেওয়ার সময় (দিন)"
+
+msgid "No calendar events recorded."
+msgstr "ক্যালেন্ডারে কোনো কাজ লেখা নেই।"
+
+msgid ""
+"Reminders appear inside AgriTwin. This PDF is a snapshot and does not send "
+"notifications."
+msgstr ""
+"AgriTwin-এর ভেতরে মনে করিয়ে দেওয়া হয়। এই PDF-এ সংরক্ষণের সময়ের তথ্য "
+"রয়েছে; এটি কোনো বিজ্ঞপ্তি পাঠায় না।"
+
+msgid "Actual income and expenses"
+msgstr "প্রকৃত আয় ও খরচ"
+
+msgid "Income (BDT)"
+msgstr "আয় (টাকা)"
+
+msgid "Expenses (BDT)"
+msgstr "খরচ (টাকা)"
+
+msgid "Net profit / loss (BDT)"
+msgstr "নিট লাভ / ক্ষতি (টাকা)"
+
+msgid ""
+"Totals use recorded transactions only. Missing costs or sales affect the "
+"result; these are not predicted earnings."
+msgstr ""
+"মোট হিসাব শুধু লেখা লেনদেনের ভিত্তিতে করা। কোনো খরচ বা বিক্রয় বাদ গেলে ফল "
+"বদলাবে; এটি আয়ের পূর্বাভাস নয়।"
+
+msgid "No income or expense records yet."
+msgstr "এখনও আয় বা খরচের কোনো নথি নেই।"
+
+msgid "Soil test history"
+msgstr "মাটি পরীক্ষার ইতিহাস"
+
+msgid "N (mg/kg)"
+msgstr "নাইট্রোজেন (মিগ্রা/কেজি)"
+
+msgid "P (mg/kg)"
+msgstr "ফসফরাস (মিগ্রা/কেজি)"
+
+msgid "K (mg/kg)"
+msgstr "পটাশিয়াম (মিগ্রা/কেজি)"
+
+msgid "No measured soil tests recorded."
+msgstr "মাটি পরীক্ষার কোনো পরিমাপ লেখা নেই।"
+
+msgid ""
+"Nutrients are recorded in mg/kg. Compare results only when sampling and "
+"laboratory methods are comparable. Soil records do not automatically change "
+"the farm profile or crop scores."
+msgstr ""
+"পুষ্টি উপাদান মিগ্রা/কেজি এককে লেখা হয়। নমুনা সংগ্রহ ও পরীক্ষাগারের পদ্ধতি "
+"তুলনাযোগ্য হলেই ফল তুলনা করুন। মাটির নথি স্বয়ংক্রিয়ভাবে খামারের তথ্য বা "
+"ফসলের স্কোর পরিবর্তন করে না।"
+
+msgid "Photo saved in the private farm diary."
+msgstr "ব্যক্তিগত খামার ডায়েরিতে ছবি সংরক্ষিত আছে।"
+
+msgid "No diary entries recorded."
+msgstr "ডায়েরিতে কোনো নথি নেই।"
+
+msgid "Before you decide"
+msgstr "সিদ্ধান্ত নেওয়ার আগে"
+
+msgid ""
+"This report contains your private farm information. Share it only with "
+"people you choose."
+msgstr ""
+"এই প্রতিবেদনে আপনার ব্যক্তিগত খামারের তথ্য রয়েছে। শুধু আপনার পছন্দের "
+"ব্যক্তিদের সঙ্গেই এটি শেয়ার করুন।"
+
+msgid "Page"
+msgstr "পৃষ্ঠা"
+
+msgid "Expenses & income"
+msgstr "খরচ ও আয়"
+
+msgid "Boundary"
+msgstr "সীমানা"
+
+msgid "Diary"
+msgstr "দিনলিপি"
+
+msgid "Soil tests"
+msgstr "মাটি পরীক্ষা"
+
+msgid "Weather"
+msgstr "আবহাওয়া"
+
+msgid "estimated acres"
+msgstr "আনুমানিক একর"
+
+msgid "Draw your field and estimate its area."
+msgstr "জমির সীমানা এঁকে আনুমানিক আয়তন জানুন।"
+
+msgid "Net recorded balance"
+msgstr "নথিভুক্ত নিট হিসাব"
+
+msgid "dated entries"
+msgstr "তারিখসহ নথি"
+
+msgid "saved tests"
+msgstr "সংরক্ষিত পরীক্ষা"
+
+msgid "Current conditions and the next 7 days."
+msgstr "বর্তমান অবস্থা ও আগামী ৭ দিনের পূর্বাভাস।"
+
+msgid "Guest farms stay in this browser until you sign in."
+msgstr "সাইন ইন করার আগ পর্যন্ত অতিথি খামারগুলো এই ব্রাউজারে থাকবে।"
+
+msgid "Create an account to keep your farms across devices."
+msgstr "বিভিন্ন ডিভাইসে খামার দেখতে অ্যাকাউন্ট তৈরি করুন।"
+
+msgid ""
+"Every climate analysis uses NASA POWER data. If a request fails, AgriTwin "
+"keeps any previously saved valid analysis with its retrieval date. Without a"
+" valid NASA baseline, climate results and crop scores stay unavailable. A "
+"PDF can still export your saved farm details and records, with the missing "
+"analysis clearly marked."
+msgstr ""
+"প্রতিটি জলবায়ু বিশ্লেষণে নাসা পাওয়ারের তথ্য ব্যবহৃত হয়। অনুরোধ ব্যর্থ হলে"
+" আগের বৈধ বিশ্লেষণ ও সংগ্রহের তারিখ রাখা হয়। বৈধ তথ্য না থাকলে জলবায়ুর ফল "
+"ও ফসলের স্কোর দেখানো হয় না। তখনও সংরক্ষিত খামার ও নথির পিডিএফ ডাউনলোড করা "
+"যায়; অনুপস্থিত বিশ্লেষণ স্পষ্টভাবে উল্লেখ থাকে।"
+
+msgid ""
+"Sign in to save farms to your account and access them on another device. "
+"Guest farms depend on this browser session until you sign in. Live weather "
+"forecasts use Open-Meteo separately from NASA historical climate data."
+msgstr ""
+"অ্যাকাউন্টে খামার সংরক্ষণ ও অন্য ডিভাইসে দেখতে সাইন ইন করুন। সাইন ইন না করা "
+"পর্যন্ত অতিথি খামারগুলো এই ব্রাউজার সেশনের ওপর নির্ভর করে। চলতি আবহাওয়ার "
+"পূর্বাভাস Open-Meteo থেকে আসে, নাসার ঐতিহাসিক জলবায়ুর তথ্য থেকে আলাদাভাবে।"
+
+msgid ""
+"Climate results, rotation scores, and simulations need a valid NASA "
+"baseline. You can still download your saved farm details and records as a "
+"PDF."
+msgstr ""
+"জলবায়ুর ফল, ফসলের স্কোর ও পরিস্থিতি পরীক্ষা দেখতে নাসার বৈধ তথ্য প্রয়োজন। "
+"তবে সংরক্ষিত খামার ও নথির পিডিএফ ডাউনলোড করতে পারবেন।"
+
+msgid ""
+"This boundary is smaller than the minimum farm size of 0.01 acres. Save it "
+"without updating farm size."
+msgstr ""
+"এই সীমানার আয়তন খামারের ন্যূনতম আয়তন ০.০১ একরের চেয়ে ছোট। খামারের আয়তন "
+"হালনাগাদ না করে সীমানা সংরক্ষণ করুন।"
+
+msgid "Account"
+msgstr "অ্যাকাউন্ট"
+
+msgid "Saved to your account · Added"
+msgstr "অ্যাকাউন্টে সংরক্ষিত · যোগ করা হয়েছে"
+
+msgid ""
+"Delete this farm and all its saved records and photos? This cannot be "
+"undone."
+msgstr ""
+"এই খামার এবং এর সব সংরক্ষিত নথি ও ছবি মুছবেন? এটি আর ফেরত আনা যাবে না।"
+
+msgid "Farm and all its saved records and photos deleted."
+msgstr "খামার এবং এর সব সংরক্ষিত নথি ও ছবি মুছে ফেলা হয়েছে।"
+
+msgid "Your password must contain at least %(min_length)d character."
+msgid_plural "Your password must contain at least %(min_length)d characters."
+msgstr[0] "আপনার পাসওয়ার্ডে কমপক্ষে %(min_length)d অক্ষর থাকতে হবে।"
+msgstr[1] "আপনার পাসওয়ার্ডে কমপক্ষে %(min_length)d অক্ষর থাকতে হবে।"
+
+msgid "This password is too short. It must contain at least %d character."
+msgid_plural ""
+"This password is too short. It must contain at least %d characters."
+msgstr[0] "পাসওয়ার্ডটি খুব ছোট। এতে কমপক্ষে %d অক্ষর থাকতে হবে।"
+msgstr[1] "পাসওয়ার্ডটি খুব ছোট। এতে কমপক্ষে %d অক্ষর থাকতে হবে।"

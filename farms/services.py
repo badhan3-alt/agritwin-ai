@@ -9,8 +9,17 @@ def session_key(request):
         request.session.create()
     return request.session.session_key
 
+def owned_farms(request):
+    """Account ownership takes precedence; a session can only access guest farms."""
+    if request.user.is_authenticated:
+        return Farm.objects.filter(owner=request.user)
+    if request.session.session_key:
+        return Farm.objects.filter(owner__isnull=True, owner_session=request.session.session_key)
+    return Farm.objects.none()
+
+
 def owned_farm(request, pk, *, select=True):
-    farm = get_object_or_404(Farm, pk=pk, owner_session=request.session.session_key) if request.session.session_key else get_object_or_404(Farm.objects.none(), pk=pk)
+    farm = get_object_or_404(owned_farms(request), pk=pk)
     if select:
         request.session["current_farm_id"] = farm.pk
     return farm

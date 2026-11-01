@@ -1,0 +1,18 @@
+[
+  {
+    "msgid": "Your password must contain at least %(min_length)d character.",
+    "msgid_plural": "Your password must contain at least %(min_length)d characters.",
+    "msgstr": {
+      "0": "আপনার পাসওয়ার্ডে কমপক্ষে %(min_length)d অক্ষর থাকতে হবে।",
+      "1": "আপনার পাসওয়ার্ডে কমপক্ষে %(min_length)d অক্ষর থাকতে হবে।"
+    }
+  },
+  {
+    "msgid": "This password is too short. It must contain at least %d character.",
+    "msgid_plural": "This password is too short. It must contain at least %d characters.",
+    "msgstr": {
+      "0": "পাসওয়ার্ডটি খুব ছোট। এতে কমপক্ষে %d অক্ষর থাকতে হবে।",
+      "1": "পাসওয়ার্ডটি খুব ছোট। এতে কমপক্ষে %d অক্ষর থাকতে হবে।"
+    }
+  }
+]

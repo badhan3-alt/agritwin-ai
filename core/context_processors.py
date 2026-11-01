@@ -1,10 +1,10 @@
-from farms.models import Farm
+from farms.services import owned_farms
 from django.conf import settings
 from django.utils.translation import gettext as _
 
 def navigation(request):
     language = getattr(request, "LANGUAGE_CODE", settings.LANGUAGE_CODE)
-    owned = Farm.objects.filter(owner_session=request.session.session_key) if request.session.session_key else Farm.objects.none()
+    owned = owned_farms(request)
     current = owned.filter(pk=request.session.get("current_farm_id")).first()
     ui = {"home": _("Overview"), "farms": _("My farms"), "setup": _("Farm setup"), "climate": _("Climate insights"), "rotations": _("Crop rotations"), "simulator": _("Digital twin"), "reports": _("Farm report"), "about": _("The science"), "new_farm": _("Add a farm"), "explore_demo": _("Explore NASA example farm")}
     js_translations = {

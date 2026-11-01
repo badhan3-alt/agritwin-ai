@@ -6,10 +6,10 @@ from django.utils.translation import gettext as _
 from climate.services import NASADataUnavailable
 from .forms import FarmForm, REGIONS
 from .models import Farm
-from .services import analysis_context, ensure_analysis, owned_farm, session_key
+from .services import analysis_context, ensure_analysis, owned_farm, owned_farms, session_key
 
 def farm_list(request):
-    farms = Farm.objects.filter(owner_session=request.session.session_key) if request.session.session_key else Farm.objects.none()
+    farms = owned_farms(request)
     return render(request, "farms/list.html", {"farms": farms, "active_page": "farms"})
 
 @require_http_methods(["GET", "POST"])
@@ -17,7 +17,11 @@ def create(request):
     form = FarmForm(request.POST if request.method == "POST" else None)
     if request.method == "POST" and form.is_valid():
         farm = form.save(commit=False)
-        farm.owner_session = session_key(request)
+        if request.user.is_authenticated:
+            farm.owner = request.user
+            farm.owner_session = ""
+        else:
+            farm.owner_session = session_key(request)
         farm.save()
         request.session["current_farm_id"] = farm.pk
         try:
@@ -31,11 +35,12 @@ def create(request):
 
 def detail(request, pk):
     farm = owned_farm(request, pk)
+    from notebook.services import farm_record_summary
     try:
         context = analysis_context(farm)
     except NASADataUnavailable as error:
         context = {"farm": farm, "analysis": None, "climate": None, "strategies": [], "recommended": None, "climate_error": str(error)}
-    return render(request, "farms/detail.html", {**context, "active_page": "farms"})
+    return render(request, "farms/detail.html", {**context, "records": farm_record_summary(farm), "active_page": "farms"})
 
 @require_http_methods(["GET", "POST"])
 def edit(request, pk):
@@ -61,5 +66,5 @@ def delete(request, pk):
     farm.delete()
     if request.session.get("current_farm_id") == pk:
         request.session.pop("current_farm_id", None)
-    messages.success(request, _("Farm and its saved analysis deleted."))
+    messages.success(request, _("Farm and all its saved records and photos deleted."))
     return redirect("farms:list")

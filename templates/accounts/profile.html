@@ -1,0 +1,10 @@
+{% extends 'base.html' %}{% load i18n bangla %}
+{% block title %}{% translate "Your account" %} · AgriTwin AI{% endblock %}
+{% block breadcrumb %}{% translate "Your account" %}{% endblock %}
+{% block content %}
+<div class="page-heading"><div><div class="eyebrow">{% translate "YOUR FARM WORKSPACE" %}</div><h1>{% translate "Your account" %}</h1><p>{% translate "Your farms are saved to your account. Sign in with the same username on another device." %}</p></div></div>
+<section class="panel form-section account-panel">
+<h2>{{ user.get_username }}</h2><p>{% translate "Saved farms" %}: {{ farms_count|bn_number }}</p>
+<div class="form-actions"><a class="button button-primary" href="{% url 'farms:list' %}">{% translate "My farms" %}</a><a class="button button-outline" href="{% url 'accounts:password_change' %}">{% translate "Change password" %}</a></div>
+<form method="post" action="{% url 'accounts:logout' %}" data-loading-form>{% csrf_token %}<button type="submit" class="text-link">{% translate "Sign out" %}</button></form>
+</section>{% endblock %}

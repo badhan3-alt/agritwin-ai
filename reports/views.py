@@ -25,9 +25,15 @@ def safe_cell(value):
     return "'" + text if text.startswith(("=", "+", "-", "@", "\t", "\r", "\n")) else text
 
 def download(request, pk, format):
-    if format not in {"json", "csv"}:
+    if format not in {"json", "csv", "pdf"}:
         raise Http404("Unsupported report format")
     farm = owned_farm(request, pk)
+    if format == "pdf":
+        from .pdf import build_pdf_report
+        response = HttpResponse(build_pdf_report(farm), content_type="application/pdf")
+        response["Content-Disposition"] = f'attachment; filename="agritwin-farm-{farm.pk}.pdf"'
+        response["Cache-Control"] = "private, no-store"
+        return response
     try:
         context = analysis_context(farm)
     except NASADataUnavailable as error:

@@ -1,0 +1,9 @@
+{% load i18n bangla %}
+<div class="farm-tool-grid">
+  <a class="farm-tool-card" href="{% url 'boundaries:editor' farm.pk %}"><strong>{% translate "Farm boundary" %}</strong><span>{% if farm.boundary %}{{ farm.boundary.area_acres|floatformat:3|bn_number }} {% translate "estimated acres" %}{% else %}{% translate "Draw your field and estimate its area." %}{% endif %}</span></a>
+  <a class="farm-tool-card" href="{% url 'notebook:calendar' farm.pk %}"><strong>{% translate "Crop calendar" %}</strong><span>{{ records.overdue_count|bn_number }} {% translate "overdue" %} · {{ records.today_count|bn_number }} {% translate "due today" %}</span></a>
+  <a class="farm-tool-card" href="{% url 'notebook:ledger' farm.pk %}"><strong>{% translate "Expenses & income" %}</strong><span>{% translate "Net recorded balance" %}: BDT {{ records.finances.net|floatformat:2|bn_number }}</span></a>
+  <a class="farm-tool-card" href="{% url 'notebook:diary' farm.pk %}"><strong>{% translate "Farm diary" %}</strong><span>{{ records.diary_count|bn_number }} {% translate "dated entries" %}</span></a>
+  <a class="farm-tool-card" href="{% url 'notebook:soil' farm.pk %}"><strong>{% translate "Soil test records" %}</strong><span>{{ records.soil_test_count|bn_number }} {% translate "saved tests" %}</span></a>
+  <a class="farm-tool-card" href="{% url 'weather:dashboard' farm.pk %}"><strong>{% translate "Weather forecast" %}</strong><span>{% translate "Current conditions and the next 7 days." %}</span></a>
+</div>

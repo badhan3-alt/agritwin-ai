@@ -5,6 +5,10 @@ __pycache__/
 
 # Environments
 .env
+.env.*
+!.env.example
+*.pem
+*.key
 .venv
 env/
 venv/
@@ -36,3 +40,5 @@ staticfiles/
 .coverage
 htmlcov/
 artifacts/
+media/
+tmp/

@@ -1,0 +1,10 @@
+{% extends 'notebook/base.html' %}{% load i18n %}
+{% block notebook_intro %}<p>{% if editing %}{% translate "Update your saved farm record." %}{% else %}{{ new_label }}{% endif %}</p>{% endblock %}
+{% block notebook_content %}
+<section class="panel notebook-form-panel"><h2>{% if editing %}{% translate "Edit record" %}{% else %}{{ new_label }}{% endif %}</h2>
+<form method="post" enctype="multipart/form-data" data-loading-form>{% csrf_token %}
+{% if form.errors %}<div class="notice error" id="farm-form-errors" role="alert" tabindex="-1"><div><strong>{% translate "Please review the highlighted fields." %}</strong><ul>{% for field in form %}{% for error in field.errors %}<li><a href="#{{ field.id_for_label }}">{{ field.label }}: {{ error }}</a></li>{% endfor %}{% endfor %}{% for error in form.non_field_errors %}<li>{{ error }}</li>{% endfor %}</ul></div></div>{% endif %}
+{% if section == 'soil' %}<p class="field-help">{% translate "Use measured values only. Nutrients must be in mg/kg; leave unknown results blank." %}</p>{% endif %}
+{% if saved_photo_url %}<figure class="diary-photo"><img src="{{ saved_photo_url }}" alt="{{ saved_photo_alt }}"><figcaption>{% translate "Saved photo" %}</figcaption></figure>{% endif %}
+<div class="notebook-form-fields">{% for field in form %}{% include 'components/field.html' with field=field %}{% endfor %}</div><div class="button-group"><button type="submit" class="button button-primary">{% translate "Save record" %}</button><a class="button button-outline" href="{{ return_url }}">{% translate "Cancel" %}</a></div>
+</form></section>{% endblock %}

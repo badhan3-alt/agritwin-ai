@@ -1,0 +1,34 @@
+{% extends 'base.html' %}{% load static i18n bangla l10n %}
+{% block title %}{% translate "Farm boundary" %} · {{ farm.name }}{% endblock %}
+{% block breadcrumb %}{{ farm.name }} <span>/</span> {% translate "Farm boundary" %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}"><link rel="stylesheet" href="{% static 'css/farm-tools.css' %}"><script defer src="{% static 'vendor/leaflet/leaflet.js' %}"></script><script defer src="{% static 'js/boundary.js' %}"></script>{% endblock %}
+{% block content %}
+<div class="page-heading"><div><div class="eyebrow">{{ farm.name }}</div><h1>{% translate "Draw your field." %}</h1><p>{% translate "Mark the corners, save the shape, and estimate its area." %}</p></div></div>
+{% include 'components/farm_tabs.html' %}
+<section class="panel form-section">
+  <h2>{% translate "Farm boundary" %}</h2>
+  <p id="boundary-instructions">{% translate "Click each corner on the map, then choose Close boundary. Use Undo to remove a corner or Clear to start again." %}</p>
+  <div id="boundary-map" class="boundary-map" data-lat="{{ farm.latitude|unlocalize }}" data-lon="{{ farm.longitude|unlocalize }}" aria-describedby="boundary-instructions"><p>{% translate "Map unavailable? Enter the GeoJSON coordinates below to save your boundary." %}</p></div>
+  <div class="button-group boundary-controls" hidden>
+    <button type="button" class="button button-outline" data-boundary-action="close">{% translate "Close boundary" %}</button>
+    <button type="button" class="button button-outline" data-boundary-action="undo">{% translate "Undo corner" %}</button>
+    <button type="button" class="button button-outline" data-boundary-action="clear">{% translate "Clear drawing" %}</button>
+  </div>
+  <p role="status" aria-live="polite" id="boundary-status" data-corners="{% translate 'Corners' %}" data-closed="{% translate 'Boundary closed. Save to calculate its area.' %}" data-failed="{% translate 'Map tiles are unavailable. You can still edit and save coordinates below.' %}"></p>
+  <form method="post" data-loading-form>{% csrf_token %}
+    {% if form.errors %}<div class="notice error" id="farm-form-errors" role="alert" tabindex="-1"><ul>{% for field in form %}{% for error in field.errors %}<li><a href="#{{ field.auto_id }}">{{ field.label }}: {{ error }}</a></li>{% endfor %}{% endfor %}{% for error in form.non_field_errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
+    {% include 'components/field.html' with field=form.geometry %}
+    <details><summary>{% translate "Coordinate format example" %}</summary><pre class="coordinate-example">{"type":"Polygon","coordinates":[[[88.604,24.374],[88.605,24.374],[88.605,24.375],[88.604,24.374]]]}</pre></details>
+    <div class="field boundary-area-option">{{ form.use_estimated_area }} <label for="{{ form.use_estimated_area.id_for_label }}">{{ form.use_estimated_area.label }}</label><p class="field-help">{{ form.use_estimated_area.help_text }}</p></div>
+    <button class="button button-primary" type="submit">{% translate "Save boundary" %}</button>
+  </form>
+</section>
+{% if boundary %}
+<section class="panel form-section"><h2>{% translate "Saved boundary" %}</h2>
+  {% include 'boundaries/schematic.html' %}
+  <dl class="profile-list"><div><dt>{% translate "Estimated area" %}</dt><dd>{{ boundary.area_acres|floatformat:3|bn_number }} {% translate "acres" %} / {{ boundary.area_square_metres|floatformat:0|bn_number }} m²</dd></div><div><dt>{% translate "Perimeter" %}</dt><dd>{{ boundary.perimeter_metres|floatformat:1|bn_number }} m</dd></div></dl>
+  <p class="muted">{% translate "WGS84 estimate from your drawn corners. This is not a cadastral map or land survey." %}</p>
+  <div class="button-group"><a class="button button-outline" href="{% url 'boundaries:download' farm.pk %}">{% translate "Download GeoJSON" %}</a><form method="post" action="{% url 'boundaries:delete' farm.pk %}">{% csrf_token %}<button type="submit" class="button button-outline">{% translate "Remove saved boundary" %}</button></form></div>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,2 @@
+{% load i18n %}
+<div class="record-actions"><a class="button button-outline" href="{% url 'notebook:edit' farm.pk section entry.pk %}">{% translate "Edit" %}</a><form method="post" action="{% url 'notebook:delete' farm.pk section entry.pk %}" data-confirm="{% translate 'Delete this farm record? This cannot be undone.' %}" data-loading-form>{% csrf_token %}<button class="danger-link" type="submit">{% translate "Delete" %}</button></form></div>

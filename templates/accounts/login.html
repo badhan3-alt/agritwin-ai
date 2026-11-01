@@ -1,0 +1,14 @@
+{% extends 'base.html' %}{% load i18n %}
+{% block title %}{% translate "Sign in" %} · AgriTwin AI{% endblock %}
+{% block breadcrumb %}{% translate "Sign in" %}{% endblock %}
+{% block content %}
+<div class="page-heading"><div><div class="eyebrow">{% translate "YOUR FARM WORKSPACE" %}</div><h1>{% translate "Welcome back." %}</h1><p>{% translate "Sign in to access your farms across devices." %}</p></div></div>
+<section class="panel form-section account-panel">
+<form method="post" data-loading-form>{% csrf_token %}<input type="hidden" name="next" value="{{ next }}">
+{% include 'accounts/form_errors.html' %}
+{% for field in form %}{% include 'components/field.html' with field=field %}{% endfor %}
+<div class="form-actions"><button type="submit" class="button button-primary">{% translate "Sign in" %}</button><a class="text-link" href="{% url 'accounts:signup' %}?next={{ next|urlencode }}">{% translate "Create an account" %}</a></div>
+</form>
+<p class="field-help">{% translate "Guest farms saved in this browser will be linked to your account when you sign in." %}</p>
+<p><a href="{% url 'farms:list' %}">{% translate "Continue as a guest" %}</a></p>
+</section>{% endblock %}
